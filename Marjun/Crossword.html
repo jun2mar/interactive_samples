@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cross word Puzzel</title>
+  <link rel="stylesheet" href="Crossword.css">
+</head>
+  <body onload="initializeScreen()">
+  <div id="leftBox">
+  <table id="puzzel">
+
+  </table>
+  </div>
+  <div id="rightBox">
+  <table>
+    <tr><td><input class="butt"  type="submit" value="Clear All" onclick="clearAllClicked()"></td>
+    <td><input class="butt"  type="submit" value="Check" onclick="checkClicked()"></td>
+    <td><input class="butt"  type="submit" value="Solve" onclick="solveClicked()"></td>
+    <td><input class="butt"  type="submit" value="Clue" onclick="clueClicked()"></td></tr>
+  </table>
+  </div>
+  <table id="hintsTable">
+      <tr>
+        <td><strong>Horizontal:</strong></td><td><strong>Vertical:</strong></td>
+      </tr>
+      <tr>
+        <td>3. Cultural Hub (Hyderabad)</td><td>1. Education Hub (Pune)</td>
+      </tr>
+      <tr>
+        <td>5. India's financial capital (Mumbai)</td><td>2. Information Technology Hub (Bangalore)</td>
+      </tr>
+      <tr>
+        <td>6. Saffron region (Kashmir)</td><td>4. Capital of India (Delhi)</td>
+  </table>
+
+</body>
+<script>
+    //Adds the hint numbers
+  function addHint(){
+    document.getElementById("txt_0_4").placeholder = "1";
+    document.getElementById("txt_2_6").placeholder = "2";
+    document.getElementById("txt_3_1").placeholder = "3";;
+    document.getElementById("txt_3_9").placeholder = "4";
+    document.getElementById("txt_6_2").placeholder = "5";
+    document.getElementById("txt_9_0").placeholder = "6";
+  }
+  //Stores ID of the selected cell into currentTextInput
+  function textInputFocus(txtID123){
+    currentTextInput = txtID123;
+  }
+  //Returns Array
+  function preparePuzzelArray(){
+  var items = [	[0, 0, 0, 0, 'p', 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 'u', 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 'n', 0, 'b', 0, 0, 0],
+          [0, 'h', 'y', 'd', 'e', 'r', 'a', 'b', 'a', 'd'],
+          [0, 0, 0, 0, 0, 0, 'n', 0, 0, 'e'],
+          [0, 0, 0, 0, 0, 0, 'g', 0, 0, 'l'],
+          [0, 0, 'm', 'u', 'm', 'b', 'a', 'i', 0,'h'],
+          [0, 0, 0, 0, 0, 0, 'l', 0, 'p', 'i'],
+          [0, 0, 0, 0, 0, 0, 'o', 0, 0, 0],
+          ['k', 'a', 's', 'h', 'm', 'i','r', 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 'e', 0, 0, 0]
+        ];
+  return items;
+  }
+</script>
+<script src="Crossword.js"></script>
+</html> 
