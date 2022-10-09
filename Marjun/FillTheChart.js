@@ -29,6 +29,7 @@ fchartData.forEach(function(data){
                 newCell.innerHTML = drag.innerHTML;
                 if(drag.innerHTML == newCell.getAttribute("data-ans")){
                     newCell.className = "successdrag";
+                    drag.classList.add("disabled");
                 }else{
                     newCell.className = "errordrag";
                 }

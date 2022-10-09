@@ -36,6 +36,7 @@ vennGroups.forEach( box => {
             event.target.parentNode.appendChild(newBtn);
 
             event.target.parentNode.classList.remove("enter");
+            venndrag.classList.add("disabled");
 
         } else {
             newBtn.classList.add("incorrect")
