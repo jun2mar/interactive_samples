@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <title></title>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round" rel="stylesheet">
+
+
+     <link rel="stylesheet" href="organizerstyle.css">
+</head>
+
+<body>
+
+<div class="container ">
+
+<div style="margin-bottom: 50px;">
+     <div class="row justify-content-start" >
+          <div class="col-md-3 p-1">
+               <div class="card-body p-2 item" draggable="true" id="ans1" data-set="choice1+">
+               choice 1 positive 
+               </div>
+          </div>
+          <div class="col-md-3 p-1">
+               <div class="card-body p-2 item" draggable="true" id="ans2" data-set="choice1-">
+               choice 1 negative 
+               </div>
+          </div>
+          <div class="col-md-3 p-1">
+               <div class="card-body p-2 item" draggable="true" id="ans3" data-set="choice2+">
+               choice 2 postive 
+               </div>
+          </div>
+          <div class="col-md-3 p-1">
+               <div class="card-body p-2 item" draggable="true" id="ans4" data-set="choice2-">
+               choice 2 negative 
+               </div>
+          </div>
+          <div class="col-md-3 p-1">
+               <div class="card-body p-2 item" draggable="true" id="ans5" data-set="choicef">
+                 final decision
+               </div>
+          </div>
+         
+     </div>
+ </div>
+     
+
+     <div class="row justify-content-center" style="margin-top: 20px;">
+          <div class="col-md-12">
+              <table class="table table" id="table">
+                  <thead>
+                         <tr width="100%" >
+                              <th scope="col" width="35%" colspan="4" class="no-border"></th>
+                              <th scope="col"  colspan="4" class="text-center border">Should people take their pets on vaction? <br>
+                              (Problem to consider)</th>
+                              <th scope="col" width="35%" colspan="4" class="no-border"></th>
+                         </tr>
+                    </thead>
+                    <tbody>
+                         <tr width="100%">
+                              <th colspan="4" class="no-border"></th>
+                              <th class="no-border"></th>
+                              <th colspan="4" class="no-border"></th>
+                         </tr>
+                         <tr width="100%">
+                             
+                              <th class="text-center border" colspan="4">Go on vacation with the pet <br> (Choice 1)</th>
+                              <th colspan="4" class="no-border"></th>
+                              <th class="text-center border" colspan="4">Leave the pet at home or with someone<br> (Choice 2)</th>
+                         </tr>
+                    </tbody>
+               </table>
+               <table class="table table-bordered" >
+                    <thead>
+                         <tr width="80%">
+                             <th class="text-center header_head">+</th>
+                             <th class="text-center header_head">-</th>
+                             <th class="text-center header_head">+</th>
+                             <th class="text-center header_head">-</th>
+                         </tr>
+                    </thead>
+                    <tbody>
+                         <tr width="100%">
+                             <td class="dropbox box" data-set="choice1+"></td> 
+                             <td class="dropbox box" data-set="choice1-"></td> 
+                             <td class="dropbox box" data-set="choice2+"></td> 
+                             <td class="dropbox box" data-set="choice2-"></td> 
+                         </tr>
+                         <tr width="100%">
+                             <td class="dropbox box"  data-set="choice1+"></td> 
+                             <td class="dropbox box" data-set="choice1-"></td> 
+                             <td class="dropbox box" data-set="choice2+"></td> 
+                             <td class="dropbox box" data-set="choice2-"></td> 
+                         </tr>
+                       
+               </table>
+              
+                <table class="table" id="table">
+                  <thead>
+                         <tr width="100%">
+                              <th scope="col" width="35%" colspan="4" class="no-border"></th>
+                              <th scope="col"  colspan="4" class="text-center border">( Your final decision )</th>
+                              <th scope="col" width="35%" colspan="4" class="no-border"></th>
+                         </tr>
+                    </thead>
+                    <tbody>
+                         <tr width="100%">
+                              <th colspan="4" class="no-border"></th>
+                              <th class="dropbox box" style="border:1px solid lightgray"  data-set="choicef"></th>
+                              <th colspan="4" class="no-border"></th>
+                         </tr>
+                      
+                    </tbody>
+               </table>
+                   
+             
+          </div>
+     </div>
+
+</div>
+
+    
+     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+     
+     <script type="text/javascript"  src="organizer.js"></script>
+
+</body>
+
+</html>

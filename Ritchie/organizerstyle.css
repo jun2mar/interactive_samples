@@ -1,0 +1,70 @@
+.header_head{
+     font-size:20px;
+}
+.header_ans{
+     /* padding:15px; */
+     height:50px;
+}
+#dropzone {
+     width: 250px;
+}
+#option1 {
+     width: 250px;
+}
+.relativebox{
+     position: relative !important;
+}
+.cssbox{
+     position: absolute !important;
+     justify-content: center !important;
+     align-items: center !important;
+     display: flex !important;
+}
+.positionback{
+     top:0px !important;
+     left:0px !important;
+}
+.dropbox {
+     width: 210px;
+     height: 50px;
+     background-color: #59dad7;
+     /* border-radius: 100px; */
+}
+
+.hoveringbox {
+     background-color: #6eefec;
+}
+
+.draggingbox{
+     background-color: #ff6f69 !important;
+}
+
+.hide {
+     display: none;
+}
+
+.card-body{
+     border: 1px solid lightgray;
+     padding:10px;
+     border-radius:10px;
+}
+.wrong{
+     background-color:#ff6f69;
+}
+.no-border{
+     border: 0px;
+}
+.image-size{
+     width:250px;
+     height: 250px;
+}
+.image-drop{
+     width:100%;
+     height: 430px;
+     filter: blur(10px);  
+}
+.backgrounddrop{
+     background-color: white;
+}
+
+
