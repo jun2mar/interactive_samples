@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style type="text/css">
+
+body {
+	margin: 0 auto;
+}
+
+section {
+    width: 700px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+section#main {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    position: relative;
+    width: 700px;
+    height: 600px;
+    margin-bottom: 50px;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    margin: 40px auto;
+}
+
+h1 {
+    position: absolute;
+    top: 0;
+    left: 0%;
+}
+
+.point {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+#point1_cont p {
+    display: inline;
+    margin: 0;
+}
+
+.item {
+    width: 24px;
+    text-align: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #808080;
+    margin-right: 10px;
+}
+.btn:hover {
+    background: #565656;
+    color: #fff;
+    cursor: pointer;
+}
+
+.point_cont {
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+#point1_cont {
+    top: 280px;
+    left: 140px;
+}
+
+#point2_cont {
+    top: 165px;
+    left: 390px;
+}
+
+#point3_cont {
+    top: 440px;
+    left: 215px;
+}
+
+
+#point1_cont .point {
+    background: #f00;
+}
+
+#point2_cont .point {
+    background: #0f0;
+}
+
+#point3_cont .point {
+    background: #00f;
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+
+
+<section id="main">
+    <div id="container">
+        <canvas id="my-canvas" width="700" height="600">
+            
+        </canvas>
+        <div id="point1_cont" class="point_cont">
+            <div class="point"></div>
+            <p>A ( <span><input type="text" class="item" id="item_1" name="item_1" placeholder="x" size="5" maxlength="5" onfocusout="checkValue(this)"/></span>, <span><input type="text" class="item" id="item_2" name="item_1" placeholder="y" size="5" maxlength="5" onfocusout="checkValue(this)"></span> )</p>
+        </div>
+        <div id="point2_cont" class="point_cont">
+            <div class="point"></div>
+            <p>B ( <span><input type="text" class="item" id="item_3" name="item_3" placeholder="x" size="5" maxlength="5" onfocusout="checkValue(this)"/></span>, <span><input type="text" class="item" id="item_4" name="item_4" placeholder="y" size="5" maxlength="5" onfocusout="checkValue(this)"></span> )</p>
+        </div>
+        <div id="point3_cont" class="point_cont">
+            <div class="point"></div>
+            <p>B ( <span><input type="text" class="item" id="item_5" name="item_5" placeholder="x" size="5" maxlength="5" onfocusout="checkValue(this)"/></span>, <span><input type="text" class="item" id="item_6" name="item_6" placeholder="y" size="5" maxlength="5" onfocusout="checkValue(this)"></span> )</p>
+        </div>
+    </div>
+</section>
+<section>
+    <input class="btn" type="button"  type="submit" value="Solve" onclick="solveClicked()">
+    <input class="btn" type="button"  type="submit" value="Reset" onclick="resetClicked()">
+</section>
+
+
+<script type="text/javascript" charset="utf-8">
+
+var itemsAnswer = ['-3', '1', '2', '3', '-1.5', '-2.5'];
+
+
+function checkValue(obj) {
+    var temp1 = obj.id;
+    var token = temp1.split("_");
+    var itemIndex = token[1];
+
+    var selectedItem = document.getElementById('item_' + itemIndex);
+    if(selectedItem.value != itemsAnswer[itemIndex - 1]) {
+        selectedItem.style.background = 'red';
+    } else {
+        selectedItem.style.background = 'lime';
+    }
+
+}
+
+function solveClicked() {
+    for(var i = 0; i < itemsAnswer.length; i++) {
+        var selectedItem = document.getElementById('item_' + (i+1) );
+        selectedItem.value = itemsAnswer[i];
+        selectedItem.style.background = 'lime';
+    }
+}
+
+function resetClicked() {
+    for(var i = 0; i < itemsAnswer.length; i++) {
+        var selectedItem = document.getElementById('item_' + (i+1) );
+        selectedItem.value = "";
+        selectedItem.style.background = 'white';
+    }
+}
+
+var grid_size = 50;
+var x_axis_distance_grid_lines = 6;
+var y_axis_distance_grid_lines = 6;
+var x_axis_starting_point = { number: 1, suffix: '' };
+var y_axis_starting_point = { number: 1, suffix: '' };
+
+var canvas = document.getElementById("my-canvas");
+var ctx = canvas.getContext("2d");
+
+var canvas_width = canvas.width;
+var canvas_height = canvas.height;
+
+var num_lines_x = Math.floor(2*canvas_height/grid_size);
+var num_lines_y = Math.floor(2*canvas_width/(grid_size));
+
+
+// Draw grid lines along X-axis
+for(var i=0; i<=num_lines_x; i++) {
+    ctx.beginPath();
+    ctx.lineWidth = 1;
+    
+    // If line represents X-axis draw in different color
+    if(i == x_axis_distance_grid_lines) 
+        ctx.strokeStyle = "#000000";
+    else
+        ctx.strokeStyle = "#e9e9e9";
+    
+    if(i == num_lines_x) {
+        ctx.moveTo(0, grid_size*i);
+        ctx.lineTo(canvas_width, grid_size*i);
+    }
+    else {
+        ctx.moveTo(0, grid_size*i +0.5);
+        ctx.lineTo(canvas_width, grid_size*i +0.5);
+    }
+    ctx.stroke();
+}
+
+// Draw grid lines along Y-axis
+for(i=0; i<=num_lines_y; i++) {
+    ctx.beginPath();
+    ctx.lineWidth = 1;
+    
+    // If line represents X-axis draw in different color
+    if(i == y_axis_distance_grid_lines) 
+        ctx.strokeStyle = "#000000";
+    else
+        ctx.strokeStyle = "#e9e9e9";
+    
+    if(i == num_lines_y) {
+        ctx.moveTo(grid_size*i, 0);
+        ctx.lineTo(grid_size*i, canvas_height);
+    }
+    else {
+        ctx.moveTo(grid_size*i+0.5, 0);
+        ctx.lineTo(grid_size*i+0.5, canvas_height);
+    }
+    ctx.stroke();
+}
+
+// Translate to the new origin. Now Y-axis of the canvas is opposite to the Y-axis of the graph. So the y-coordinate of each element will be negative of the actual
+ctx.translate(y_axis_distance_grid_lines*grid_size, x_axis_distance_grid_lines*grid_size);
+
+// Ticks marks along the positive X-axis
+for(i=1; i<(num_lines_y - y_axis_distance_grid_lines); i++) {
+    ctx.beginPath();
+    ctx.lineWidth = 1;
+    ctx.strokeStyle = "#000000";
+
+    // Draw a tick mark 6px long (-3 to 3)
+    ctx.moveTo(grid_size*i+0.5, -3);
+    ctx.lineTo(grid_size*i+0.5, 3);
+    ctx.stroke();
+
+    // Text value at that point
+    ctx.font = '12px Arial';
+    ctx.textAlign = 'start';
+    ctx.fillText(x_axis_starting_point.number*i + x_axis_starting_point.suffix, grid_size*i-2, 15);
+}
+
+// Ticks marks along the negative X-axis
+for(i=1; i<y_axis_distance_grid_lines; i++) {
+    ctx.beginPath();
+    ctx.lineWidth = 1;
+    ctx.strokeStyle = "#000000";
+
+    // Draw a tick mark 6px long (-3 to 3)
+    ctx.moveTo(-grid_size*i+0.5, -3);
+    ctx.lineTo(-grid_size*i+0.5, 3);
+    ctx.stroke();
+
+    // Text value at that point
+    ctx.font = '12px Arial';
+    ctx.textAlign = 'end';
+    ctx.fillText(-x_axis_starting_point.number*i + x_axis_starting_point.suffix, -grid_size*i+3, 15);
+}
+
+// Ticks marks along the positive Y-axis
+// Positive Y-axis of graph is negative Y-axis of the canvas
+for(i=1; i<(num_lines_x - x_axis_distance_grid_lines); i++) {
+    ctx.beginPath();
+    ctx.lineWidth = 1;
+    ctx.strokeStyle = "#000000";
+
+    // Draw a tick mark 6px long (-3 to 3)
+    ctx.moveTo(-3, grid_size*i+0.5);
+    ctx.lineTo(3, grid_size*i+0.5);
+    ctx.stroke();
+
+    // Text value at that point
+    ctx.font = '12px Arial';
+    ctx.textAlign = 'start';
+    ctx.fillText(-y_axis_starting_point.number*i + y_axis_starting_point.suffix, 8, grid_size*i+3);
+}
+
+// Ticks marks along the negative Y-axis
+// Negative Y-axis of graph is positive Y-axis of the canvas
+for(i=1; i<x_axis_distance_grid_lines; i++) {
+    ctx.beginPath();
+    ctx.lineWidth = 1;
+    ctx.strokeStyle = "#000000";
+
+    // Draw a tick mark 6px long (-3 to 3)
+    ctx.moveTo(-3, -grid_size*i+0.5);
+    ctx.lineTo(3, -grid_size*i+0.5);
+    ctx.stroke();
+
+    // Text value at that point
+    ctx.font = '12px Arial';
+    ctx.textAlign = 'start';
+    ctx.fillText(y_axis_starting_point.number*i + y_axis_starting_point.suffix, 8, -grid_size*i+3);
+}
+
+
+</script>
+</body>
+
+</html>
