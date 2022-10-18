@@ -1,0 +1,29 @@
+/* .fchartContainer{
+    border: solid;
+    height: 100vh;
+} */
+.fchartGroups{
+    height: 100vh;
+    padding: 1rem 1rem;
+}
+.fchartGroups.enter{ border: 5px dashed #00beff; }
+.fchartGroups button.correct{
+    border-color: var(--bs-success); margin-bottom: .5rem;
+}
+.fchartGroups button.incorrect{
+    border-color: var(--bs-danger); margin-bottom: .5rem;
+}
+#fchartTableBody .successdrag{
+    color: green;
+    font-weight: bold;
+}
+
+#fchartTableBody .errordrag{
+    color: red;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+#fchartTableBody .ondrag{
+    border-color: #ff0018;
+}

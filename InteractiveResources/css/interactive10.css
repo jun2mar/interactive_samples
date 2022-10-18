@@ -1,0 +1,111 @@
+body {
+  margin: 0 auto;
+}
+
+section {
+  width: 700px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+section#interactive10 {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+#container {
+  position: relative;
+  width: 700px;
+  height: 600px;
+  margin-bottom: 50px;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  margin: 40px auto;
+}
+
+h1 {
+  position: absolute;
+  top: 0;
+  left: 0%;
+}
+
+.point {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+#point1_cont p {
+  display: inline;
+  margin: 0;
+}
+
+.item {
+  width: 50px;
+  text-align: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid #808080;
+  margin-right: 10px;
+}
+
+.btn:hover {
+  background: #565656;
+  color: #fff;
+  cursor: pointer;
+}
+
+.point_cont {
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+
+/* POINTS */
+
+
+#point1_cont {
+  top: 280px;
+  left: 140px;
+}
+
+#point2_cont {
+  top: 165px;
+  left: 390px;
+}
+
+#point3_cont {
+  top: 440px;
+  left: 215px;
+}
+
+
+#point1_cont .point {
+  background: #f00;
+}
+
+#point2_cont .point {
+  background: #0f0;
+}
+
+#point3_cont .point {
+  background: #00f;
+}

@@ -1,0 +1,63 @@
+.intr_three_list ul li{
+    border: none;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.3rem;
+
+    background-color: transparent;
+    margin-bottom: -2rem;
+}
+.intr_three_list ul li:first-child{
+    padding-left: 6rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+/* .intr_three_list ul li:nth-child(odd){
+    background: #fff;
+} */
+/* .intr_three_list ul li:nth-child(even){
+    background: #cce3e7;
+} */
+.intr_three_list ul li dt{
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.intr_three_list ul li dl dd{
+    font-size: 18px;
+}
+.intr_three_list ul li dl dd span{
+    color: #fab22c;
+    font-weight: 500;
+}
+.intr_three_list ul li dl dd input{
+    /* border-bottom: 1px solid #fab22c!important; */
+    border: none;
+    background-color: transparent;
+    /* border-radius: 0; */
+    font-size: 1.3rem;
+    padding: 0;
+    padding-left: 1rem;
+    border-radius: 50rem 0px 0px 50rem;
+}
+.intr_three_list ul li dl dd button[data-qs_count]{ 
+    border-radius: 0px 50rem 50rem 0px !important;
+    font-weight: 600;
+    background-color: black;
+}
+.intr_three_list ul li dl dd button[data-qs_count].glow-on-hover-success{
+    background: #20c997!important;
+}
+.intr_three_list ul li dl dd button[data-qs_count].glow-on-hover-wrong{
+    background: #ff5756!important;
+}
+.intr_three_list ul li dl dd span.error_mes {
+    top: -21px;
+    font-size: 14px;
+    left: 17px;
+}
+.intr_three_list ul li dl dd input:focus{
+    box-shadow: none;
+    outline: none;
+}

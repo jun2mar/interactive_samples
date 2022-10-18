@@ -1,0 +1,26 @@
+.intr_two_list .intr_two_box .intr_two_box_ans{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.intr_two_box_ans.correct { color: var(--bs-success); }
+.intr_two_box_ans.incorrect { color: var(--bs-danger); text-decoration: line-through; }
+.intr_two_box_ans.correct span{ background: var(--bs-success) !important; }
+.intr_two_box_ans.incorrect span{ background: var(--bs-danger)!important; }
+.intr_two_list .intr_two_box .intr_two_box_ans span{
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    border-radius: 50%;
+    margin-left: 1rem;
+    pointer-events: none;
+}

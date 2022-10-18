@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interactive Showcase</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round" rel="stylesheet">
+        
+        <link href="InteractiveResources/css/interactive1.css" rel="stylesheet">
+        <link href="InteractiveResources/css/interactive2.css" rel="stylesheet">
+        <link href="InteractiveResources/css/interactive3.css" rel="stylesheet">
+        <link href="InteractiveResources/css/interactive4.css" rel="stylesheet">
+        <link href="InteractiveResources/css/Crossword.css" rel="stylesheet">
+        <link href="InteractiveResources/css/FillTheChart.css" rel="stylesheet">
+        <link href="InteractiveResources/css/Venndiagram.css" rel="stylesheet">
+        <link href="InteractiveResources/css/Organizer.css" rel="stylesheet">
+        <link href="InteractiveResources/css/Imageblur.css" rel="stylesheet">
+        <link rel="stylesheet" href="InteractiveResources/css/interactive10.css">
+
+        <script src="InteractiveResources/js/jquery-3.6.1.min.js"></script>
+
+        <style>
+            .interactives{
+                padding-top: 5rem;
+                padding-bottom: 30rem;
+            }
+            .interactives:nth-of-type(odd) {
+                background-color: #F0F0F0;
+            }
+                
+            .interactives:nth-of-type(even) {
+                background-color: #E8E8E8;
+            }
+
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        </style>
+     
+    </head>
+    <body>
+        <div class="container" style="background-color: #f5f5f5;">
+            <div class="row justify-content-md-center my-5">
+                <div class="col-6 mt-5">
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="#interactive1">1. Choose correct answer</a></li>
+                        <li class="list-group-item"><a href="#interactive2">2. Yes or no choices</a></li>
+                        <li class="list-group-item"><a href="#interactive3">3. Write in the input field</a></li>
+                        <li class="list-group-item"><a href="#interactive4">4. Drag and drop</a></li>
+                        <li class="list-group-item"><a href="#interactive5">5. Crossword</a></li>
+                        <li class="list-group-item"><a href="#interactive6">6. Fill the chart</a></li>
+                        <li class="list-group-item"><a href="#interactive7">7. Venn Diagram</a></li>
+                        <li class="list-group-item"><a href="#interactive8">8. Organizer</a></li>
+                        <li class="list-group-item"><a href="#interactive9">9. Image blur</a></li>
+                        <li class="list-group-item"><a href="#interactive10">10. Find the Value of X and Y</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- INTERACTIVE ONE -->
+            <div class="row px-5 interactives" id="interactive1">
+                <div class="col-12"><h3># Select correct answer</h3></div>
+                <div class="col-12">
+                    <ul class="list-group intr_one_list">
+                        <li class="list-group-item">
+                            <div class="intr_one_list_title">
+                                <span>1. Question one <input type="text" readonly></span>
+                            </div>
+                            <div class="intr_one_list_ans">
+                                <div class="form-check">
+                                    <input class="form-check-input intr_one_ans" type="checkbox" data-value="yes">
+                                    <label class="form-check-label">Answer 1</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input intr_one_ans" type="checkbox" data-value="no">
+                                    <label class="form-check-label">Answer 2</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input intr_one_ans" type="checkbox" data-value="no">
+                                    <label class="form-check-label">Answer 3</label>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="intr_one_list_title">
+                                <span>2. Question two <input type="text" readonly></span>
+                            </div>
+                            <div class="intr_one_list_ans">
+                                <div class="form-check">
+                                    <input class="form-check-input intr_one_ans" type="checkbox" data-value="yes">
+                                    <label class="form-check-label">Answer 1</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input intr_one_ans" type="checkbox" data-value="no">
+                                    <label class="form-check-label">Answer 2</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input intr_one_ans" type="checkbox" data-value="no">
+                                    <label class="form-check-label">Answer 3</label>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="intr_one_list_title">
+                                <span>3. Question three <input type="text" readonly></span>
+                            </div>
+                            <div class="intr_one_list_ans">
+                                <div class="form-check">
+                                    <input class="form-check-input intr_one_ans" type="checkbox" data-value="yes">
+                                    <label class="form-check-label">Answer 1</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input intr_one_ans" type="checkbox" data-value="no">
+                                    <label class="form-check-label">Answer 2</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input intr_one_ans" type="checkbox" data-value="no">
+                                    <label class="form-check-label">Answer 3</label>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- INTERACTIVE TWO -->
+            <div class="row px-5 interactives" id="interactive2">
+                <div class="col-12"><h3># Choose the correct answer</h3></div>
+                <div class="col-12">
+                    <div class="intr_two_list">
+                        <div class="row p-3">
+                            <div class="intr_two_box">
+                                <p class="fs-4"><strong>1. ______ Question one.</strong></p>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="fs-5 intr_two_box_ans" data-ans="true">
+                                            <span>A</span> Answer one
+                                        </div>
+                                        <div class="fs-5 intr_two_box_ans" data-ans="">
+                                            <span>B</span> Answer two
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row p-3">
+                            <div class="intr_two_box">
+                                <p class="fs-4"><strong>2. ______ Question two.</strong></p>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="fs-5 intr_two_box_ans" data-ans="">
+                                            <span>A</span> Answer one
+                                        </div>
+                                        <div class="fs-5 intr_two_box_ans" data-ans="true">
+                                            <span>B</span> Answer two
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row p-3">
+                            <div class="intr_two_box">
+                                <p class="fs-4"><strong>3. ______ Question three.</strong></p>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="fs-5 intr_two_box_ans" data-ans="">
+                                            <span>A</span> Answer one
+                                        </div>
+                                        <div class="fs-5 intr_two_box_ans" data-ans="true">
+                                            <span>B</span> Answer two
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- INTERACTIVE THREE -->
+            <div class="row px-5 interactives" id="interactive3">
+                <div class="col-12"><h3># Write the correct answer in the parentheses.</h3></div>
+                <div class="col-12">
+                    <div class="intr_three_list">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <dl>
+                                    <dd class="d-flex align-items-center"> 
+                                        1. Lorem Ipsum is simply 
+                                        <span class="input-group me-1 px-2" style="width: 45%!important;">
+                                            <input type="text" class="form-control bg-white" id="intr_three_list_q1" data-ans="answerone">
+                                            <button class="btn text-white ps-2 pe-2" data-error_counter="3" data-qs_count="1" id="intr_three_list_btn_q1" onclick="checkInputs(this)" type="button">Check</button>
+                                            <span id="intr_three_list_ans1" class="hidden position-absolute error_mes bg-danger ps-1 pe-1 text-white"></span>
+                                        </span>
+                                        dummy text.
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="list-group-item">
+                                <dl>
+                                    <dd class="d-flex align-items-center"> 
+                                        2. Lorem Ipsum is simply 
+                                        <span class="input-group me-1 px-2" style="width: 45%!important;">
+                                            <input type="text" class="form-control bg-white" id="intr_three_list_q2" data-ans="answertwo">
+                                            <button class="btn text-white ps-2 pe-2" data-error_counter="3" data-qs_count="2" id="intr_three_list_btn_q2" onclick="checkInputs(this)" type="button">Check</button>
+                                            <span id="intr_three_list_ans2" class="hidden position-absolute error_mes bg-danger ps-1 pe-1 text-white"></span>
+                                        </span>
+                                        dummy text.
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="list-group-item mt-4">
+                                <dl>
+                                    <dd class="d-flex align-items-center"> 
+                                        3. Lorem Ipsum is simply 
+                                        <span class="input-group me-1 px-2" style="width: 45%!important;">
+                                            <input type="text" class="form-control bg-white" id="intr_three_list_q3" data-ans="answerthree">
+                                            <button class="btn text-white ps-2 pe-2" data-error_counter="3" data-qs_count="3" id="intr_three_list_btn_q3" onclick="checkInputs(this)" type="button">Check</button>
+                                            <span id="intr_three_list_ans3" class="hidden position-absolute error_mes bg-danger ps-1 pe-1 text-white"></span>
+                                        </span>
+                                        dummy text.
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- INTERACTIVE FOUR -->
+            <div class="row px-5 interactives" id="interactive4">
+                <div class="col-12"><h3># Drag the correct answer from the right to picture:</h3></div>
+                <div class="col-12">
+                    <ul class="list-group intr_four_list">
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col pe-5 intr_four_list_todrag" id="intr_four_list_q1" draggable="true">
+                                    <div class="intr_four_list_left" data-title="Question one"><span class="intr_four_list_reslbl"></span></div>
+                                </div>
+                                <div class="col ps-5 intr_four_list_todrop" data-ans="intr_four_list_q2" id="right">
+                                    <img src="Https://m.fyioc.com/Spanish2/Lesson16/img_12.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col pe-5 intr_four_list_todrag" id="intr_four_list_q2" draggable="true">
+                                    <div class="intr_four_list_left" data-title="Question two"><span class="intr_four_list_reslbl"></span></div>
+                                </div>
+                                <div class="col ps-5 intr_four_list_todrop" data-ans="intr_four_list_q1" id="right">
+                                    <img src="Https://m.fyioc.com/Spanish2/Lesson16/img_13.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col pe-5 intr_four_list_todrag" id="intr_four_list_q3" draggable="true">
+                                    <div class="intr_four_list_left" data-title="Question three"><span class="intr_four_list_reslbl"></span></div>
+                                </div>
+                                <div class="col ps-5 intr_four_list_todrop" data-ans="intr_four_list_q3" id="right">
+                                    <img src="Https://m.fyioc.com/Spanish2/Lesson16/img_14.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- INTERACTIVE FIVE -->
+            <div class="row px-5 interactives" id="interactive5">
+                <div class="col-12"><h3>#Crossword</h3></div>
+                <div class="col-12">
+                    <script>
+                        $( document ).ready(function() {
+                            initializeScreen()
+                        });
+                        function addHint(){
+                            document.getElementById("txt_0_4").placeholder = "1";
+                            document.getElementById("txt_2_6").placeholder = "2";
+                            document.getElementById("txt_3_1").placeholder = "3";
+                            document.getElementById("txt_3_9").placeholder = "4";
+                            document.getElementById("txt_6_2").placeholder = "5";
+                            document.getElementById("txt_9_0").placeholder = "6";
+                        }
+                        //Stores ID of the selected cell into currentTextInput
+                        function textInputFocus(txtID123){
+                            currentTextInput = txtID123;
+                        }
+                        //Returns Array
+                        function preparePuzzelArray(){
+                            var items = [
+                                    [0, 0, 0, 0, 'p', 0, 0, 0, 0, 0],
+                                    [0, 0, 0, 0, 'u', 0, 0, 0, 0, 0],
+                                    [0, 0, 0, 0, 'n', 0, 'b', 0, 0, 0],
+                                    [0, 'h', 'y', 'd', 'e', 'r', 'a', 'b', 'a', 'd'],
+                                    [0, 0, 0, 0, 0, 0, 'n', 0, 0, 'e'],
+                                    [0, 0, 0, 0, 0, 0, 'g', 0, 0, 'l'],
+                                    [0, 0, 'm', 'u', 'm', 'b', 'a', 'i', 0,'h'],
+                                    [0, 0, 0, 0, 0, 0, 'l', 0, 'p', 'i'],
+                                    [0, 0, 0, 0, 0, 0, 'o', 0, 0, 0],
+                                    ['k', 'a', 's', 'h', 'm', 'i','r', 0, 0, 0],
+                                    [0, 0, 0, 0, 0, 0, 'e', 0, 0, 0]
+                                ];
+                            return items;
+                        }
+                    </script>
+                    <div class="row">
+                        <div class="col-12" id="leftBox">
+                            <table id="puzzel"></table>
+                        </div>
+                        <div class="col-5" id="rightBox">
+                            <table class="table">
+                                <tr>
+                                    <td><input class="butt" type="submit" value="Clear All" onclick="clearAllClicked()"></td>
+                                    <td><input class="butt" type="submit" value="Check" onclick="checkClicked()"></td>
+                                    <td><input class="butt" type="submit" value="Solve" onclick="solveClicked()"></td>
+                                    <td><input class="butt" type="submit" value="Clue" onclick="clueClicked()"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-7">
+                            <table id="hintsTable">
+                                <tr>
+                                  <td><strong>Horizontal:</strong></td><td><strong>Vertical:</strong></td>
+                                </tr>
+                                <tr>
+                                  <td>3. Cultural Hub (Hyderabad)</td><td>1. Education Hub (Pune)</td>
+                                </tr>
+                                <tr>
+                                  <td>5. India's financial capital (Mumbai)</td><td>2. Information Technology Hub (Bangalore)</td>
+                                </tr>
+                                <tr>
+                                  <td>6. Saffron region (Kashmir)</td><td>4. Capital of India (Delhi)</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- INTERACTIVE SIX -->
+            <div class="row px-5 interactives" id="interactive6">
+                <div class="col-12"><h3>#Fill the chart</h3></div>
+                <div class="col-12">
+                    <script>
+                        var fchartData = [];
+                        fchartData[0] = [
+                            { "item": "Item one", "default": true },
+                            { "item": "Item two", "default": false },
+                            { "item": "Item three", "default": false }
+                        ];
+                        fchartData[1] = [
+                            { "item": "Item four", "default": true },
+                            { "item": "Item five", "default": false },
+                            { "item": "Item six", "default": false }
+                        ];
+                        fchartData[2] = [
+                            { "item": "Item seven", "default": false },
+                            { "item": "Item eight", "default": true },
+                            { "item": "Item nine", "default": false }
+                        ];
+                    </script>
+            
+                    <div class="fchartBtns mt-5">
+                        <div class="row">
+                            <div class="col text-center">
+                                <button draggable="true" class="btn btn-outline-primary btndrag" type="button">Item one</button>
+                                <button draggable="true" class="btn btn-outline-primary btndrag" type="button">Item two</button>
+                                <button draggable="true" class="btn btn-outline-primary btndrag" type="button">Item three</button>
+                                <button draggable="true" class="btn btn-outline-primary btndrag" type="button">Item four</button>
+                                <button draggable="true" class="btn btn-outline-primary btndrag" type="button">Item five</button>
+                                <button draggable="true" class="btn btn-outline-primary btndrag" type="button">Item six</button>
+                                <button draggable="true" class="btn btn-outline-primary btndrag" type="button">Item seven</button>
+                                <button draggable="true" class="btn btn-outline-primary btndrag" type="button">Item eight</button>
+                                <button draggable="true" class="btn btn-outline-primary btndrag" type="button">Item nine</button>
+                                <button draggable="true" class="btn btn-outline-primary btndrag" type="button">Item ten</button>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="row">
+                        <div class="col">
+                            <div class="pt-4 pb-5">
+                                <table class="table table-bordered table-striped table-inverse table-responsive fchartTable">
+                                    <thead>
+                                        <tr>
+                                            <th>Header 1</th>
+                                            <th>Header 2</th>
+                                            <th>Header 3</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="fchartTableBody"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- INTERACTIVE FOUR -->
+            <div class="row px-5 interactives" id="interactive7" style="padding-bottom: 1rem;">
+                <div class="col-12"><h3>#Venn diagram</h3></div>
+                <div class="col-12">
+                    <div class="vennBtns">
+                        <div class="row mt-5">
+                            <div class="col text-center">
+                                <button draggable="true" class="btn btn-outline-primary btndrag" type="button">Item one</button>
+                                <button draggable="true" class="btn btn-outline-primary btndrag" type="button">Item two</button>
+                                <button draggable="true" class="btn btn-outline-primary btndrag" type="button">Item three</button>
+                                <button draggable="true" class="btn btn-outline-primary btndrag" type="button">Item four</button>
+                                <button draggable="true" class="btn btn-outline-primary btndrag" type="button">Item five</button>
+                                <button draggable="true" class="btn btn-outline-primary btndrag" type="button">Item six</button>
+                                <button draggable="true" class="btn btn-outline-primary btndrag" type="button">Item seven</button>
+                                <button draggable="true" class="btn btn-outline-primary btndrag" type="button">Item eight</button>
+                                <button draggable="true" class="btn btn-outline-primary btndrag" type="button">Item nine</button>
+                                <button draggable="true" class="btn btn-outline-primary btndrag" type="button">Item ten</button>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <article class="Venn2 mt-5">
+                        <div class="circle one vennGroups" data-ans="Item one,Item two,Item three">
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="circle two vennGroups" data-ans="Item four,Item five,Item six">
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="shape onetwo vennGroups" data-ans="Item seven,Item eight,Item nine,Item ten">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+
+            <div class="row px-5 interactives" id="interactive8">
+                <div class="col-12"><h3>#Organizer</h3></div>
+                <div class="col-12">
+                    <div class="container ">
+                    <div style="margin-bottom: 50px;">
+                        <div class="row justify-content-start" >
+                            <div class="col-md-3 p-1">
+                                <div class="card-body p-2 item" draggable="true" id="ans1" data-set="choice1+">
+                                choice 1 positive 
+                                </div>
+                            </div>
+                            <div class="col-md-3 p-1">
+                                <div class="card-body p-2 item" draggable="true" id="ans2" data-set="choice1-">
+                                choice 1 negative 
+                                </div>
+                            </div>
+                            <div class="col-md-3 p-1">
+                                <div class="card-body p-2 item" draggable="true" id="ans3" data-set="choice2+">
+                                choice 2 postive 
+                                </div>
+                            </div>
+                            <div class="col-md-3 p-1">
+                                <div class="card-body p-2 item" draggable="true" id="ans4" data-set="choice2-">
+                                choice 2 negative 
+                                </div>
+                            </div>
+                            <div class="col-md-3 p-1">
+                                <div class="card-body p-2 item" draggable="true" id="ans5" data-set="choicef">
+                                    final decision
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                        
+
+                        <div class="row justify-content-center" style="margin-top: 20px;">
+                            <div class="col-md-12">
+                                <table class="table" id="table">
+                                    <thead>
+                                            <tr width="100%" >
+                                                <th scope="col" width="35%" colspan="4" class="no-border"></th>
+                                                <th scope="col"  colspan="4" class="text-center bordertable">Should people take their pets on vaction? <br>
+                                                (Problem to consider)</th>
+                                                <th scope="col" width="35%" colspan="4" class="no-border"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr width="100%">
+                                                <td colspan="4" class="no-border"></td>
+                                                <td class="no-border"></td>
+                                                <td colspan="4" class="no-border"></td>
+                                            </tr>
+                                            <tr width="100%">
+                                                
+                                                <td class="text-center bordertable" colspan="4">Go on vacation with the pet <br> (Choice 1)</td>
+                                                <td colspan="4" class="no-border"></td>
+                                                <td class="text-center bordertable" colspan="4">Leave the pet at home or with someone<br> (Choice 2)</td>
+                                            </tr>
+                                        </tbody>
+                                </table>
+                                <table class="table" >
+                                        <thead>
+                                            <tr width="80%">
+                                                <td class="text-center bordertable header_head">+</td>
+                                                <td class="text-center bordertable header_head">-</td>
+                                                <td class="text-center bordertable header_head">+</td>
+                                                <td class="text-center bordertable header_head">-</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr width="100%">
+                                                <td class="dropbox box bordertable" data-set="choice1+"></td> 
+                                                <td class="dropbox box bordertable" data-set="choice1-"></td> 
+                                                <td class="dropbox box bordertable" data-set="choice2+"></td> 
+                                                <td class="dropbox box bordertable" data-set="choice2-"></td> 
+                                            </tr>
+                                            <tr width="100%">
+                                                <td class="dropbox box bordertable"  data-set="choice1+"></td> 
+                                                <td class="dropbox box bordertable" data-set="choice1-"></td> 
+                                                <td class="dropbox box bordertable" data-set="choice2+"></td> 
+                                                <td class="dropbox box bordertable" data-set="choice2-"></td> 
+                                            </tr>
+                                        
+                                </table>
+                                
+                                    <table class="table" id="table">
+                                    <thead>
+                                            <tr width="100%">
+                                                <td scope="col" width="35%" colspan="4" class="no-border"></td>
+                                                <td scope="col"  colspan="4" class="text-center bordertable">( Your final decision )</td>
+                                                <td scope="col" width="35%" colspan="4" class="no-border"></td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr width="100%">
+                                                <td colspan="4" class="no-border"></td>
+                                                <td class="dropbox box" style="border:1px solid black"  data-set="choicef"></td>
+                                                <td colspan="4" class="no-border"></td>
+                                            </tr>
+                                        
+                                        </tbody>
+                                </table>
+                                    
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                  
+                </div>
+            </div>
+
+             <div class="row px-5 interactives" id="interactive9">
+                <div class="col-12"><h3>#Image blur</h3></div>
+                <div class="col-12">
+                    <div class="container">
+
+                        <div class="row mt-2">
+                            <div class="col-md-3 text-center" >
+                                <img src="BlurImages/image3.jpg" class="image-size itemimage"  draggable="true" id="img3" data-set="image3">
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <img src="BlurImages/image4.jpg" class="image-size itemimage" draggable="true" id="img4" data-set="image4">
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <img src="BlurImages/image1.jpg" class="image-size itemimage" draggable="true" id="img1" data-set="image1">
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <img src="BlurImages/image2.jpg" class="image-size itemimage" draggable="true" id="img2" data-set="image2">
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center mt-5">
+                            <div class="col-md-4 p-1 border-image boximage" >
+                                <img src="BlurImages/image1.jpg" class="image-drop" id="drop1" data-set="image1">
+                            </div>
+                            <div class="col-md-4 p-1 border-image boximage" >
+                                <img src="BlurImages/image2.jpg" class="image-drop " id="drop2" data-set="image2" >
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-md-4 p-1 border-image boximage" >
+                                <img src="BlurImages/image3.jpg" class="image-drop "  id="drop3" data-set="image3">
+                            </div>
+                            <div class="col-md-4 p-1 border-image boximage">
+                                <img src="BlurImages/image4.jpg" class="image-drop "  id="drop4" data-set="image4" >
+                            </div>
+                        </div>
+                                
+                        </div>
+                </div>
+            </div>
+
+
+            <!-- Interactive 10 -->
+            <div class="row px-5 interactives" id="interactive10">
+                <section>
+                    <div id="container">
+                        <canvas id="my-canvas" width="700" height="600">
+                            
+                        </canvas>
+                        <div id="point1_cont" class="point_cont">
+                            <div class="point"></div>
+                            <p>A ( <span><input type="text" class="item" id="item_1" name="item_1" placeholder="x" size="5" maxlength="5" onfocusout="checkValueInteractive10(this)"/></span>, <span><input type="text" class="item" id="item_2" name="item_1" placeholder="y" size="5" maxlength="5" onfocusout="checkValue(this)"></span> )</p>
+                        </div>
+                        <div id="point2_cont" class="point_cont">
+                            <div class="point"></div>
+                            <p>B ( <span><input type="text" class="item" id="item_3" name="item_3" placeholder="x" size="5" maxlength="5" onfocusout="checkValueInteractive10(this)"/></span>, <span><input type="text" class="item" id="item_4" name="item_4" placeholder="y" size="5" maxlength="5" onfocusout="checkValue(this)"></span> )</p>
+                        </div>
+                        <div id="point3_cont" class="point_cont">
+                            <div class="point"></div>
+                            <p>B ( <span><input type="text" class="item" id="item_5" name="item_5" placeholder="x" size="5" maxlength="5" onfocusout="checkValueInteractive10(this)"/></span>, <span><input type="text" class="item" id="item_6" name="item_6" placeholder="y" size="5" maxlength="5" onfocusout="checkValue(this)"></span> )</p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <input class="btn" type="button"  type="submit" value="Solve" onclick="solveClickedInteractive10()">
+                    <input class="btn" type="button"  type="submit" value="Reset" onclick="resetClickedInteractive10()">
+                </section>
+            </div>
+            <!-- End of Interactive 10 -->
+
+
+
+        </div>
+    </body>
+    <script src="InteractiveResources/js/Imageblur.js"></script>
+    <script src="InteractiveResources/js/interactive1.js"></script>
+    <script src="InteractiveResources/js/interactive2.js"></script>
+    <script src="InteractiveResources/js/interactive3.js"></script>
+    <script src="InteractiveResources/js/interactive4.js"></script>
+    <script src="InteractiveResources/js/Crossword.js"></script>
+    <script src="InteractiveResources/js/FillTheChart.js"></script>
+    <script src="InteractiveResources/js/Venndiagram.js"></script>
+    <script src="InteractiveResources/js/Organizer.js"></script>
+    <script src="InteractiveResources/js/interactive10.js"></script>
+    
+</html>
