@@ -41,15 +41,15 @@
     padding-left: 1rem;
     border-radius: 50rem 0px 0px 50rem;
 }
-.intr_three_list ul li dl dd button[data-qs_count]{ 
+.intr_three_list ul li dl dd button{ 
     border-radius: 0px 50rem 50rem 0px !important;
     font-weight: 600;
     background-color: black;
 }
-.intr_three_list ul li dl dd button[data-qs_count].glow-on-hover-success{
+.intr_three_list ul li dl dd button.glow-on-hover-success{
     background: #20c997!important;
 }
-.intr_three_list ul li dl dd button[data-qs_count].glow-on-hover-wrong{
+.intr_three_list ul li dl dd button.glow-on-hover-wrong{
     background: #ff5756!important;
 }
 .intr_three_list ul li dl dd span.error_mes {

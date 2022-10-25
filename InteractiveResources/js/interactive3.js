@@ -1,12 +1,10 @@
-function checkInputs(){
-    const answerNumber = event.target.dataset.qs_count
-    const triesRemaining = event.target.dataset.error_counter
-    const selectorString = `intr_three_list_q${answerNumber}`
-    const selectorStringButton = `intr_three_list_btn_q${answerNumber}`
-    const selectorStringAnswer = `intr_three_list_ans${answerNumber}`
-    const quizTwoAnswer = document.getElementById(selectorString);
-    const quizTwoAnswerButton = document.getElementById(selectorStringButton)
-    const quizTwoAnswerText = document.getElementById(selectorStringAnswer)
+function checkInputs(e){
+    const parentID = e.target.parentElement.id;
+
+    const quizTwoAnswer = document.getElementById(parentID).querySelector("input");
+    const quizTwoAnswerButton = document.getElementById(parentID).querySelector("button");
+    const quizTwoAnswerText = document.getElementById(parentID).querySelector("span");
+
     const answer = quizTwoAnswer.getAttribute('data-ans')
     const userAnswer = quizTwoAnswer.value.toLowerCase()
     const correctAnswer = userAnswer === answer.toLowerCase() ? true : false
@@ -16,6 +14,12 @@ function checkInputs(){
         quizTwoAnswerButton.classList.add('glow-on-hover')
         quizTwoAnswerButton.innerText = 'Check'
     }
+
+    if(!e.target.dataset.error_counter){
+        quizTwoAnswerButton.setAttribute('data-error_counter', 3);
+    }
+    const triesRemaining = e.target.dataset.error_counter;
+
     if(correctAnswer){
         quizTwoAnswer.classList.remove("is-invalid")
         quizTwoAnswer.classList.add("is-valid")
@@ -41,7 +45,7 @@ function checkInputs(){
         } else {
             updateTries = Number(triesRemaining) - 1;
         }
-        document.getElementById(selectorStringButton).setAttribute('data-error_counter', updateTries)
+        quizTwoAnswerButton.setAttribute('data-error_counter', updateTries)
         if(quizTwoAnswerButton.getAttribute('data-error_counter') == 0 ){
             quizTwoAnswerText.innerHTML = `Answer: ${quizTwoAnswer.getAttribute('data-ans')}`
             quizTwoAnswerText.classList.remove('hidden')
