@@ -29,7 +29,7 @@ section#interactive10 {
   margin-bottom: 50px;
 }
 
-canvas {
+#my-canvas {
   position: absolute;
   top: 0;
   left: 0;
