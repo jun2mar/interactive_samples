@@ -9,8 +9,7 @@
         <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet"> -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round" rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        
+
         <link href="InteractiveResources/css/interactive1.css" rel="stylesheet">
         <link href="InteractiveResources/css/interactive2.css" rel="stylesheet">
         <link href="InteractiveResources/css/interactive3.css" rel="stylesheet">
@@ -626,50 +625,6 @@
             </div>
             <!-- End of Interactive 10 -->
 
-            <!-- Interactive 11 BAR CHART -->
-            <div class="row interactives" id="interactive11">
-                <section>
-                    <div class="col-6">
-                        <div class="table-responsive">
-                            <table class="table table-striped border">
-                                <thead class="thead-inverse">
-                                    <tr>
-                                        <th class="text-center">Favorite pop princess</th>
-                                        <th class="text-center">Votes</th>
-                                    </tr>
-                                </thead>
-                                <tbody class="barchartinner"></tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="col-6 pt-5">
-                        <div id="chartReport"></div>
-                    </div>
-                </section>
-            </div>
-            <script>
-                var canvasID = 'barchart';
-                var chartTitle = "Bar graph";
-                var chartTableData = [
-                    { text: 'Madonna', value: '20' },
-                    { text: 'Christina Aguilera', value: '15' },
-                    { text: 'Mariah Carey', value: '35' },
-                    { text: 'Miley Cyrus', value: '65' },
-                    { text: 'Rihanna', value: '40' },
-                ];
-                var chartLabels = [];
-                var chartData = [];
-                var backgroundColor = [];
-                var borderColor = [];
-
-                document.addEventListener("DOMContentLoaded", function(){
-                    initChartData();
-                });
-
-            </script>
-            <!-- End of Interactive 11 -->
-
-
         </div>
     </body>
     <script src="InteractiveResources/js/Imageblur.js"></script>
@@ -682,6 +637,5 @@
     <script src="InteractiveResources/js/Venndiagram.js"></script>
     <script src="InteractiveResources/js/Organizer.js"></script>
     <script src="InteractiveResources/js/interactive10.js"></script>
-    <script src="InteractiveResources/js/barchart.js"></script>
     
 </html>
