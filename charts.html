@@ -60,22 +60,22 @@
                 </div>
             </div>
             <script>
-                var canvasID = 'barchart';
-                var chartTitle = "Bar graph";
-                var chartTableData = [
+                var PiecanvasID = 'barchart';
+                var PiechartTitle = "Bar graph";
+                var PiechartTableData = [
                     { text: 'Madonna', value: '20' },
                     { text: 'Christina Aguilera', value: '15' },
                     { text: 'Mariah Carey', value: '35' },
                     { text: 'Miley Cyrus', value: '65' },
                     { text: 'Rihanna', value: '40' },
                 ];
-                var chartLabels = [];
-                var chartData = [];
-                var backgroundColor = [];
-                var borderColor = [];
+                var PiechartLabels = [];
+                var PiechartData = [];
+                var PiebackgroundColor = [];
+                var PieborderColor = [];
 
                 document.addEventListener("DOMContentLoaded", function(){
-                    initChartData();
+                    PieinitChartData();
                 });
 
             </script>
@@ -85,13 +85,14 @@
 
     <script src="InteractiveResources/js/jquery-3.6.1.min.js"></script>
     <script src="InteractiveResources/js/chart-3.9.1.js"></script>
+    <script src="InteractiveResources/js/barchart.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <script>
         
 
-    async function loadChart(){
-        chartData = [];
-        document.querySelector("#chartReport").innerHTML = "<canvas id=\"" + canvasID + "\"></canvas>";
+    async function PieloadChart(){
+        PiechartData = [];
+        document.querySelector("#chartReport").innerHTML = "<canvas id=\"" + PiecanvasID + "\"></canvas>";
 
         // CHECK INPUT VALUES
         const chartinputs = document.querySelectorAll(".chartinputs");
@@ -135,20 +136,20 @@
             }
 
             value = (value != "") ? parseInt(value) : 0;
-            chartData.push(parseInt(value));
+            PiechartData.push(parseInt(value));
         });
 
         // CREATE BAR CHART
-        const ctx = document.getElementById(canvasID).getContext('2d');
+        const ctx = document.getElementById(PiecanvasID).getContext('2d');
         const chart = new Chart(ctx, {
-            type: 'bar',
+            type: 'pie',
             data: {
-                labels: chartLabels,
+                labels: PiechartLabels,
                 datasets: [{
-                    label: chartTitle,
-                    data: chartData,
-                    backgroundColor: backgroundColor,
-                    borderColor: borderColor,
+                    label: PiechartTitle,
+                    data: PiechartData,
+                    backgroundColor: PiebackgroundColor,
+                    PieborderColor: PieborderColor,
                     borderWidth: 1
                 }]
             },
@@ -162,12 +163,12 @@
         });
     }
 
-    async function initChartData(){
+    async function PieinitChartData(){
         const barchartinner = document.querySelector(".barchartinner");
         barchartinner.innerHTML = "";
 
         // INITIALIZE DATA
-        await chartTableData.forEach((element, index) => {
+        await PiechartTableData.forEach((element, index) => {
             let row = barchartinner.insertRow();
             
             let cell1 = row.insertCell();
@@ -188,19 +189,19 @@
             btn.classList.add("btn-primary");
             btn.setAttribute("datainputid", "chartdata_" + index);
             btn.innerHTML = "Check";
-            btn.addEventListener("click", loadChart);
+            btn.addEventListener("click", PieloadChart);
             cell3.appendChild(btn);
 
-            chartLabels.push(element.text);
+            PiechartLabels.push(element.text);
 
             let o = Math.round, r = Math.random, s = 255;
             let color = 'rgba(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s);
             let bgColor = color + ',' + 0.6 + ')';
             let brdrColor = color + ',' + 2 + ')';
-            backgroundColor.push(bgColor);
-            borderColor.push(brdrColor);
+            PiebackgroundColor.push(bgColor);
+            PieborderColor.push(brdrColor);
         });
-        await loadChart();
+        await PieloadChart();
     }
     </script>
 

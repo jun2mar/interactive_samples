@@ -1,10 +1,10 @@
-async function BarloadChart(){
-    BarchartData = [];
-    document.querySelector("#barchartReport").innerHTML = "<canvas id=\"" + BarcanvasID + "\"></canvas>";
+async function PieloadChart(){
+    PiechartData = [];
+    document.querySelector("#piechartReport").innerHTML = "<canvas id=\"" + PiecanvasID + "\"></canvas>";
 
     // CHECK INPUT VALUES
-    const barchartinputs = document.querySelectorAll(".barchartinputs");
-    await barchartinputs.forEach((element, index) => {
+    const piechartinputs = document.querySelectorAll(".piechartinputs");
+    await piechartinputs.forEach((element, index) => {
         let value = element.value.toLowerCase();
         let answer = element.getAttribute('datavalue').toLowerCase();
 
@@ -44,20 +44,20 @@ async function BarloadChart(){
         }
 
         value = (value != "") ? parseInt(value) : 0;
-        BarchartData.push(parseInt(value));
+        PiechartData.push(parseInt(value));
     });
 
-    // CREATE BAR CHART
-    const ctx = document.getElementById(BarcanvasID).getContext('2d');
+    // CREATE PIE CHART
+    const ctx = document.getElementById(PiecanvasID).getContext('2d');
     const chart = new Chart(ctx, {
-        type: 'bar',
+        type: 'pie',
         data: {
-            labels: BarchartLabels,
+            labels: PiechartLabels,
             datasets: [{
-                label: BarchartTitle,
-                data: BarchartData,
-                backgroundColor: BarbackgroundColor,
-                BarborderColor: BarborderColor,
+                label: PiechartTitle,
+                data: PiechartData,
+                backgroundColor: PiebackgroundColor,
+                PieborderColor: PieborderColor,
                 borderWidth: 1
             }]
         },
@@ -71,13 +71,13 @@ async function BarloadChart(){
     });
 }
 
-async function BarinitChartData(){
-    const barchartinner = document.querySelector(".barchartinner");
-    barchartinner.innerHTML = "";
+async function PieinitChartData(){
+    const piechartinner = document.querySelector(".piechartinner");
+    piechartinner.innerHTML = "";
 
     // INITIALIZE DATA
-    await BarchartTableData.forEach((element, index) => {
-        let row = barchartinner.insertRow();
+    await PiechartTableData.forEach((element, index) => {
+        let row = piechartinner.insertRow();
         
         let cell1 = row.insertCell();
         cell1.innerHTML = element.text;
@@ -88,7 +88,7 @@ async function BarinitChartData(){
         input.setAttribute("id", "chartdata_" + index);
         input.setAttribute("datavalue", element.value);
         input.classList.add("form-control");
-        input.classList.add("barchartinputs");
+        input.classList.add("piechartinputs");
         cell2.appendChild(input);
 
         let cell3 = row.insertCell();
@@ -97,17 +97,17 @@ async function BarinitChartData(){
         btn.classList.add("btn-primary");
         btn.setAttribute("datainputid", "chartdata_" + index);
         btn.innerHTML = "Check";
-        btn.addEventListener("click", BarloadChart);
+        btn.addEventListener("click", PieloadChart);
         cell3.appendChild(btn);
 
-        BarchartLabels.push(element.text);
+        PiechartLabels.push(element.text);
 
         let o = Math.round, r = Math.random, s = 255;
         let color = 'rgba(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s);
         let bgColor = color + ',' + 0.6 + ')';
         let brdrColor = color + ',' + 2 + ')';
-        BarbackgroundColor.push(bgColor);
-        BarborderColor.push(brdrColor);
+        PiebackgroundColor.push(bgColor);
+        PieborderColor.push(brdrColor);
     });
-    await BarloadChart();
+    await PieloadChart();
 }

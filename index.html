@@ -58,7 +58,8 @@
                         <li class="list-group-item"><a href="#interactive8">8. Organizer</a></li>
                         <li class="list-group-item"><a href="#interactive9">9. Image blur</a></li>
                         <li class="list-group-item"><a href="#interactive10">10. Find the Value of X and Y</a></li>
-                        <li class="list-group-item"><a href="#interactive11">10. Bar chart</a></li>
+                        <li class="list-group-item"><a href="#interactive11">11. Bar chart</a></li>
+                        <li class="list-group-item"><a href="#interactive12">12. Pie chart</a></li>
                     </ul>
                 </div>
             </div>
@@ -625,6 +626,89 @@
             </div>
             <!-- End of Interactive 10 -->
 
+            <!-- Interactive 11 BAR CHART -->
+            <div class="row interactives" id="interactive11">
+                <div class="col-12"><h3>#Bar Graph</h3></div>
+                <div class="col-6">
+                    <div class="table-responsive">
+                        <table class="table table-striped border">
+                            <thead class="thead-inverse">
+                                <tr>
+                                    <th class="text-center">Favorite pop princess</th>
+                                    <th class="text-center">Votes</th>
+                                </tr>
+                            </thead>
+                            <tbody class="barchartinner"></tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-6 pt-5">
+                    <div id="barchartReport"></div>
+                </div>
+            </div>
+            <script>
+                var BarcanvasID = 'barchart';
+                var BarchartTitle = "Bar graph";
+                var BarchartTableData = [
+                    { text: 'Madonna', value: '20' },
+                    { text: 'Christina Aguilera', value: '15' },
+                    { text: 'Mariah Carey', value: '35' },
+                    { text: 'Miley Cyrus', value: '65' },
+                    { text: 'Rihanna', value: '40' },
+                ];
+                var BarchartLabels = [];
+                var BarchartData = [];
+                var BarbackgroundColor = [];
+                var BarborderColor = [];
+
+                document.addEventListener("DOMContentLoaded", function(){
+                    BarinitChartData();
+                });
+
+            </script>
+            <!-- End of Interactive 11 -->
+
+            <!-- Interactive 12 PIE CHART -->
+            <div class="row interactives" id="interactive12">
+                <div class="col-12"><h3>#Pie Graph</h3></div>
+                <div class="col-6">
+                    <div class="table-responsive">
+                        <table class="table table-striped border">
+                            <thead class="thead-inverse">
+                                <tr>
+                                    <th class="text-center">Favorite Web site</th>
+                                    <th class="text-center">Votes</th>
+                                </tr>
+                            </thead>
+                            <tbody class="piechartinner"></tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-6 pt-5">
+                    <div id="piechartReport"></div>
+                </div>
+            </div>
+            <script>
+                var PiecanvasID = 'piechart';
+                var PiechartTitle = "Pie graph";
+                var PiechartTableData = [
+                    { text: 'Nick.com', value: '24' },
+                    { text: 'WB.com', value: '18' },
+                    { text: 'Sports illustrated', value: '42' },
+                    { text: 'Barbie.com', value: '78' },
+                    { text: 'Dragon Ball Z', value: '48' },
+                ];
+                var PiechartLabels = [];
+                var PiechartData = [];
+                var PiebackgroundColor = [];
+                var PieborderColor = [];
+
+                document.addEventListener("DOMContentLoaded", function(){
+                    PieinitChartData();
+                });
+            </script>
+            <!-- End of Interactive 12 -->
+
         </div>
     </body>
     <script src="InteractiveResources/js/Imageblur.js"></script>
@@ -637,5 +721,9 @@
     <script src="InteractiveResources/js/Venndiagram.js"></script>
     <script src="InteractiveResources/js/Organizer.js"></script>
     <script src="InteractiveResources/js/interactive10.js"></script>
+
+    <script src="InteractiveResources/js/chart-3.9.1.js"></script>
+    <script src="InteractiveResources/js/barchart.js"></script>
+    <script src="InteractiveResources/js/piechart.js"></script>
     
 </html>
