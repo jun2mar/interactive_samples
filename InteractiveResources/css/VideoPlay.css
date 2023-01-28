@@ -1,0 +1,34 @@
+.play_button{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 91%;
+    z-index: 99999;
+}
+.play_button .opacity{ opacity: 0; }
+.play_button:hover .opacity{ opacity: 1; }
+
+#pause_vid,
+#play_vid{ 
+    height: 100px;
+    width: 100px;
+    background: #ee8500;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 8px solid #fff;
+    transition: 300ms all ease-in-out;
+}
+#pause_vid:hover,
+#play_vid:hover{ 
+    background: #fff;
+    border: 8px solid #ee8500;
+}
+#pause_vid:hover span,
+#play_vid:hover span{
+    color: #ee8500;
+}
+#pause_vid span,
+#play_vid span{ font-size: 5rem; color: #fff; pointer-events: none; }

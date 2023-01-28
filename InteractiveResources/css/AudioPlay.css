@@ -1,0 +1,21 @@
+#buttonHolder button{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#buttonHolder button span{ font-size: 2rem; color: #000; }
+
+.audio_playing button{
+    pointer-events: none;
+    opacity: 1;
+}
+.audio_playing button.playing{
+    pointer-events: visible!important;
+}
+
+#btnPause span,
+#btnPlayTone span{
+    pointer-events: none;
+}
