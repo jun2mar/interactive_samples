@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interactive Showcase</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    </head>
+    <body class="p-3 m-0 border-0 bd-example">
+        <style>
+            .toCorrect{
+                color: red;
+                cursor: pointer;
+            }
+            .popover-body{
+                text-align: center!important;
+            }
+        </style>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+            <span class="position-relative fw-bold toCorrect" data-ans="had" data-choices="has,had" onclick="popOverPopup(event)">have</span> 
+            been the industry's standard dummy text ever since the 1500s, when an unknown printer
+            <span class="position-relative fw-bold toCorrect" data-ans="took" data-choices="take,took" onclick="popOverPopup(event)">taken</span> 
+            a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+    </body>
+    <script>
+        function popOverPopup(event){
+            const element = event.currentTarget;
+
+            const rand = 'id' + Math.floor(Math.random() * 9000000000) + 1;
+            if(!element.getAttribute('id')){
+                element.setAttribute('id', rand);
+            }
+
+            let choices = element.getAttribute('data-choices');
+            choices = choices.split(',');
+
+            let popString = document.createElement('div');
+            popString.setAttribute('id', rand);
+            popString.setAttribute('class', 'pop-options');
+            choices.forEach(element => {
+                let span = document.createElement('span');
+                span.innerHTML = element;
+                span.className = 'btn btn-primary btn-sm mx-2';
+                span.setAttribute('datas', rand);
+                popString.appendChild(span)
+            });
+            element.setAttribute('data-bs-content', popString.outerHTML);
+            element.setAttribute('data-bs-title', "Choose correct answer");
+            element.setAttribute('data-bs-placement', 'bottom');
+            element.setAttribute('data-bs-html', 'true');
+            element.setAttribute('data-bs-toggle', 'popover');
+            $('#' + rand + '[data-bs-toggle="popover"]').popover('show');
+
+            // ADD ONCLICK EVENT ON CHOICES
+            $('#' + rand).on('shown.bs.popover', function () {
+                const popOptions = document.querySelectorAll(".pop-options span")
+                popOptions.forEach(element => {
+                    element.onclick = function () {
+                        popOverAnswer(rand, element.innerHTML)
+                    };
+                });
+            });
+        }
+        
+        function popOverAnswer(id, selectedAnswer){
+            let parent = document.querySelector('#' + id);
+            correctAnswer = parent.getAttribute('data-ans');
+            parent.classList.remove("text-decoration-line-through");
+            parent.classList.remove("text-decoration-underline");
+            parent.classList.remove("fw-bold");
+            parent.classList.remove("text-error");
+            parent.classList.remove("text-success");
+             
+            if(correctAnswer == selectedAnswer){
+                parent.className += ' text-decoration-underline fw-bold text-success';
+                parent.innerHTML = correctAnswer;
+            }else{
+                parent.innerHTML = selectedAnswer;
+                let smallSpan = document.createElement('small');
+                smallSpan.innerHTML = correctAnswer;
+                smallSpan.style.position = 'absolute';
+                smallSpan.style.top = '-1em';
+                smallSpan.style.right = '.5em';
+                smallSpan.style.color = 'green';
+
+                parent.appendChild(smallSpan);
+                parent.className += ' text-decoration-line-through fw-bold text-error';
+                console.log("WRONG")
+            }
+            
+            $('[data-bs-toggle="popover"]').popover('hide');
+        }
+    </script>
+</html>
