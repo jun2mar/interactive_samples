@@ -25,12 +25,24 @@
             <span class="position-relative fw-bold toCorrect" data-ans="had" data-choices="has,had" onclick="popOverPopup(event)">have</span> 
             been the industry's standard dummy text ever since the 1500s, when an unknown printer
             <span class="position-relative fw-bold toCorrect" data-ans="took" data-choices="take,took" onclick="popOverPopup(event)">taken</span> 
-            a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and 
+            <span class="position-relative fw-bold toCorrect" data-ans="took" data-choices="some,more" onclick="popOverPopup(event)">many</span> 
+            recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         </p>
     </body>
     
 
     <script>
+        // document.addEventListener("DOMContentLoaded", function(){
+        //     PieinitChartData();
+        // });
+        $(function() {
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+                return new bootstrap.Popover(popoverTriggerEl)
+            })
+        });
+
         function popOverPopup(event){
             const element = event.currentTarget;
 
