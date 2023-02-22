@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 5</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+        <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round" rel="stylesheet">
+
+        <link href="https://m.fyioc.com/WhyNotScripts/css/VideoPlay.css" rel="stylesheet">
+        <link href="https://m.fyioc.com/WhyNotScripts/css/interactive2.css" rel="stylesheet">
+        <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+        
+    </head>
+    <style>
+        .container{
+            max-width: 1080px;
+        }
+        div:has(.container):last-child{
+            padding-bottom: 5em;
+        }
+        .fontArvo{
+            font-family: 'Arvo', sans-serif;
+        }
+        .section{
+            position: relative;
+        }
+        .section_one{
+            background: url('ENG1U2.L5/ENG1U2.L5_img_1.jpg') no-repeat;
+            background-size: cover;
+            background-position: left;
+            padding-top: 8rem;
+            padding-bottom: 16rem;
+        }
+        .section_three{
+            background: url('ENG1U2.L5/ENG1U2.L5_img_2.jpg') no-repeat;
+            background-size: cover;
+            background-position: left;
+            padding-top: 14rem;
+            padding-bottom: 14rem;
+        }
+        ul li{
+            padding: .6em 0;
+            list-style-type: square;
+        }
+        .sectionTitle{
+            color: #9df0fe;
+        }
+        .intr_two li{
+            padding: 1em 0;
+        }
+        .intr_two_list .intr_two_box .intr_two_box_ans span {
+            background: #f3f3f3;
+        }
+        .intr_two_list .intr_two_box .intr_two_box_ans {
+            font-size: 1.2rem;
+        }
+    </style>
+    <body>
+        <div class="main">
+            <div style="background-color: #20adc5;">
+                <div class="container text-dark">
+                    <div class="row section section_one d-flex justify-content-end" style="background-color: #20adc5;">
+                        <div class="col-8 mx-5">
+                            <p class="display-2 fw-bold text-center fontArvo">Mango Street: <br />Part 3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="background-color: #9df0fe;">
+                <div class="container text-dark">
+                    <div class="row section section_two py-5" style="background-color: #078198;">
+                        <div class="col-11 mx-5 text-white">
+                            <p class="fs-4 fw-bold">What You Should Know</p>
+                            <p class="fs-5">Before you begin, you should:</p>
+                            <ul class="fs-5">
+                                <li>Know how to search the Internet for specific information</li>
+                                <li>Know how to cite sources within the text</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row section section_three py-5" style="background-color: #078198;">
+                        <div class="col-4 ms-5 text-white"><br /><br /><br /></div>
+                    </div>
+                    <div class="row section section_four py-5" style="background-color: #078198;">
+                        <div class="col-11 mx-5 text-white">
+                            <p class="fs-4 fw-bold">Lesson Expectations</p>
+                            <p class="fs-5">By the end of this lesson, you should be able to:</p>
+                            <ul class="fs-5">
+                                <li>Analyze the author's purpose and determine the main idea or essential message</li>
+                                <li>Explain how ideas, values, and themes of a literary work relate to society</li>
+                                <li>Organize information to show understanding or relationships among facts using the Internet</li>
+                                <li>Generate ideas from multiple sources</li>
+                                <li>Practice writing that addresses purpose, audience, a controlling idea, logical sequence (e.g., a letter).</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row section section_five py-5 d-flex justify-content-center" style="background-color: #ffffff;">
+                        <div class="col-8 mx-5 text-center">
+                            <img src="ENG1U2.L5/ENG1U2.L5_img_3.jpg" class="img-fluid" alt="">
+                            <h3 class="fw-bold my-5">The right to education?</h3>
+                            <img src="ENG1U2.L5/ENG1U2.L5_img_4.jpg" class="img-fluid" alt="">
+                            <h3 class="fw-bold my-5">The right to life?</h3>
+                            <img src="ENG1U2.L5/ENG1U2.L5_img_5.jpg" class="img-fluid" alt="">
+                            <h3 class="fw-bold my-5">The right To work?</h3>
+                            <img src="ENG1U2.L5/ENG1U2.L5_img_6.jpg" class="img-fluid" alt="">
+                            <h3 class="fw-bold my-5">The right To protection under the law?</h3>
+                            <img src="ENG1U2.L5/ENG1U2.L5_img_7.jpg" class="img-fluid" alt="">
+                            <h3 class="fw-bold my-5">The right To vote?</h3>
+                            <img src="ENG1U2.L5/ENG1U2.L5_img_8.jpg" class="img-fluid" alt="">
+                            <h3 class="fw-bold my-5">The right To a fair trial and due process?</h3>
+                        </div>
+                    </div>
+                    <div class="row section section_six py-5" style="background-color: #078198;">
+                        <div class="col-11 mx-5 text-white text-center">
+                            <p class="fs-2 fw-bold my-auto">HUMAN RIGHTS</p>
+                        </div>
+                    </div>
+                    <div class="row section section_seven py-5" style="background-color: #ffffff;">
+                        <div class="col-11 mx-5 text-dark">
+                            <p class="fs-5">What are your rights as a human being? What rights do others have? What would you do to protect those rights?</p>
+                            <p class="fs-5">Some possible “rights” are mentioned in the slideshow to the left. Which of these do you believe are, in fact, human rights? Consider this question as you move through this lesson.</p>
+                            <p class="fs-5">Watch the documentary on “The Story of Human Rights.</p>
+                            <p class="fs-5">What are Human rights? What do you do when two different human rights seem to be in conflict? How can you determine what is the most “right” thing to do?</p>
+                            <div class="ratio ratio-16x9 my-5">
+                                <video class="video-fluid" loop controls>
+                                    <source src="https://m.fyioc.com/WhyNotVideos/Ess1u1l1v1.mp4" type="video/mp4" />
+                                </video>
+                                <div class="play_button">
+                                    <div id="play_vid">
+                                        <span class="material-icons-outlined">play_arrow</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="fs-5">Take a few minutes to complete this survey. Think carefully about each question before choosing an answer.</p>
+                            <p class="fs-5">Reflections</p>
+                            <p class="fs-5">Consider the following statements:</p>
+                            <ul class="fs-5">
+                                <li>Killing is wrong in most cases.</li>
+                                <li>People should be allowed to say or write what they wish in most cases.</li>
+                                <li>In most cases it is wrong to keep someone else a slave.</li>
+                            </ul>
+                            <p class="fs-5">Write a paragraph responding to each statement explaining why you agree, disagree, or are uncertain.</p>
+                            <div class="form-group">
+                              <textarea class="form-control" name="" id="" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row section section_eight d-flex justify-content-center py-5" style="background-color: #078198;">
+                        <div class="col-10 mx-5 text-dark text-center">
+                            <p class="fs-2 fw-bold sectionTitle">LESSON KEYWORDS</p>
+                            <div class="card my-5">
+                                <div class="card-body" style="background-color: #9df0fe;">
+                                    <p class="card-text fs-5 fw-bold">HUMAN RIGHTS</p>
+                                </div>
+                                <div class="card-body" style="background-color: #ecf8f6;">
+                                    <p class="card-text fs-5">Human rights are the basic rights that every person is entitled to just because they are human.</p>
+                                </div>
+                            </div>
+                            <div class="card my-5">
+                                <div class="card-body" style="background-color: #9df0fe;">
+                                    <p class="card-text fs-5 fw-bold">LEGAL RIGHTS</p>
+                                </div>
+                                <div class="card-body" style="background-color: #ecf8f6;">
+                                    <p class="card-text fs-5">Legal rights are the rights that are recognized and protected by the law.</p>
+                                </div>
+                            </div>
+                            <div class="card my-5">
+                                <div class="card-body" style="background-color: #9df0fe;">
+                                    <p class="card-text fs-5 fw-bold">MORAL RIGHTS</p>
+                                </div>
+                                <div class="card-body" style="background-color: #ecf8f6;">
+                                    <p class="card-text fs-5">Moral rights are rights that are based on ethical or moral principles.</p>
+                                </div>
+                            </div>
+                            <div class="card my-5">
+                                <div class="card-body" style="background-color: #9df0fe;">
+                                    <p class="card-text fs-5 fw-bold">SOCIAL JUSTICE</p>
+                                </div>
+                                <div class="card-body" style="background-color: #ecf8f6;">
+                                    <p class="card-text fs-5">Social justice is the idea that everyone should have equal rights and opportunities, regardless of their race, gender, religion, or other social group.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row section section_nine py-5" style="background-color: #ffffff;">
+                        <div class="col-11 mx-5 text-dark">
+                            <p class="fs-2 fw-bold my-auto">REFLECTIONS</p>
+                            <p class="fs-5 mt-3">Are Human rights? What do you do when two different human rights seem to be in conflict? How can you determine what is the most “right” thing to do?</p>
+                            <p class="fs-5">Take a few minutes to complete the following survey. Think carefully about each question before choosing an answer.</p>
+                            <p class="fs-5">Consider the following statements:</p>
+                            <ul class="fs-5">
+                                <li>Killing is wrong in most cases.</li>
+                                <li>People should be allowed to say or write what they wish in most cases.</li>
+                                <li>In most cases it is wrong to keep someone else a slave.</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="row section section_ten py-5" style="background-color: #078198;">
+                        <div class="col-11 mx-5 text-white text-center">
+                            <p class="fs-2 fw-bold my-auto">HUMAN RIGHTS QUESTIONNAIRE</p>
+                        </div>
+                    </div>
+                    <div class="row section section_eleven py-5" style="background-color: #ffffff;">
+                        <div class="col-11 mx-5 text-dark">
+                            <ol class="mt-4 intr_two">
+                                <li>
+                                    <span class="fs-5">If you were giving the United States a "report card" on how we are doing when it comes to the following issues, would you give the country an <strong>"A," "B," "C," "D" or "F"</strong>?</span>
+                                    <div class="intr_two_list my-2">
+                                        <div class="intr_two_box">
+                                            <div class="row fs-5 mt-5">
+                                                <div class="col-12">
+                                                    <div class="intr_two_box_ans" data-ans="true">
+                                                        <span>A)</span> Providing young people with access to a quality education
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="intr_two_box_ans" data-ans="true">
+                                                        <span>B)</span> Respecting one another
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="intr_two_box_ans" data-ans="true">
+                                                        <span>C)</span> Ensuring equal treatment and equal pay for women in the workplace
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="intr_two_box_ans" data-ans="true">
+                                                        <span>D)</span> Helping poor people
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="intr_two_box_ans" data-ans="true">
+                                                        <span>E)</span> Protecting the environment
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="intr_two_box_ans" data-ans="true">
+                                                        <span>F)</span> Being tolerant of people who have different value systems or lifestyles
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="intr_two_box_ans" data-ans="true">
+                                                        <span>G)</span> Providing access to affordable healthcare
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="fs-5">From your point of view, how serious is the overall human rights situation in the United States?</span>
+                                    <div class="intr_two_list my-2">
+                                        <div class="intr_two_box">
+                                            <div class="row fs-5 mt-5">
+                                                <div class="col-12">
+                                                    <div class="intr_two_box_ans" data-ans="true">
+                                                        <span>A)</span> ___ A very serious problem
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="intr_two_box_ans" data-ans="true">
+                                                        <span>B)</span> ___ A fairly serious problem
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="intr_two_box_ans" data-ans="true">
+                                                        <span>C)</span> ___ A minor problem
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="intr_two_box_ans" data-ans="true">
+                                                        <span>D)</span> ___ Not a problem
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="intr_two_box_ans" data-ans="true">
+                                                        <span>E)</span> ___ Not sure
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="fs-5">Thinking about the human rights situation in countries all over the world, how would you rank the United States?</span>
+                                    <div class="intr_two_list my-2">
+                                        <div class="intr_two_box">
+                                            <div class="row fs-5 mt-5">
+                                                <div class="col-12">
+                                                    <div class="intr_two_box_ans" data-ans="true">
+                                                        <span>A)</span> ___ One of the very best
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="intr_two_box_ans" data-ans="true">
+                                                        <span>B)</span> ___ Above average
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="intr_two_box_ans" data-ans="true">
+                                                        <span>C)</span> ___ A little below average
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="intr_two_box_ans" data-ans="true">
+                                                        <span>D)</span> ___ Near the bottom
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="intr_two_box_ans" data-ans="true">
+                                                        <span>E)</span> ___ Not sure
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="fs-5">As far as you know, is there an official document that sets forth human rights for everyone worldwide?</span>
+                                    <div class="intr_two_list my-2">
+                                        <div class="intr_two_box">
+                                            <div class="row fs-5 mt-5">
+                                                <div class="col-12">
+                                                    <div class="intr_two_box_ans" data-ans="true">
+                                                        <span>A)</span> ___ Yes, there is an official document. Name: <input style="width: 30%;" type="text" class="form-control ms-4" name="" id="" aria-describedby="helpId" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="intr_two_box_ans" data-ans="true">
+                                                        <span>B)</span> ___ No, there is not an official document.
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="intr_two_box_ans" data-ans="true">
+                                                        <span>C)</span> ___ Not sure
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="fs-5">From your perspective as a student, do you feel that you are or are not learning things in school that will help your generation to care about and deal with the issues and problems facing our society? Questions selected from a national survey developed by Peter Hart Research Associates, Inc., for Human Rights USA.</span>
+                                    <div class="intr_two_list my-2">
+                                        <div class="intr_two_box">
+                                            <div class="row fs-5 mt-5">
+                                                <div class="col-12">
+                                                    <div class="intr_two_box_ans" data-ans="true">
+                                                        <span>A)</span> ___ Yes, I am learning to deal with societal problems in school.
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="intr_two_box_ans" data-ans="true">
+                                                        <span>B)</span> ___ No, I am not learning to deal with societal problems in school.
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="intr_two_box_ans" data-ans="true">
+                                                        <span>C)</span> ___ Not sure.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+                            <p class="fs-5">Now that you have completed the survey, compare your responses with those from a national youth survey.</p>
+                        </div>
+                    </div>
+                    <div class="row section section_twelve py-5" style="background-color: #078198;">
+                        <div class="col-11 mx-5 text-white text-center">
+                            <p class="fs-2 fw-bold my-auto">HUMAN RIGHTS AND <br /> MANGO STREET</p>
+                        </div>
+                    </div>
+                    <div class="row section section_thirteen py-5" style="background-color: #ffffff;">
+                        <div class="col-11 mx-5 text-dark">
+                            <p class="fs-5">So how do we relate human rights to our discussion and analysis of The House on Mango Street? Let's read the last part of the book now and analyze and dissect the real issues that Cisneros draws attention to in each of the vignettes in Part Three (Chapters 22-44). To encourage your critical thinking, as you read, think about the following two questions:</p>
+                            <p class="fs-5">What social or cultural commentary is Cisneros magnifying?</p>
+                            <p class="fs-5">How do these issues relate to human rights?</p>
+                            <p class="fs-5">Cisneros has a subtle way of shining some light on issues that could become an extensive study or discussion. Through her snapshots, she exposes very little in regards to her stance on any issues, but she does touch on very important concerns. And, Cisneros subtly states these societal problems that are in the Latino Community.</p>
+                            <p class="fs-5">Julia Alvarez mentioned in her interview, “Writing is not about solving a problem, rather stating it correctly.” Sandra Cisneros does not exactly state a problem, but she shines a faint yet powerful light on these issues. She leads us into very powerful discussions about human rights and societal concerns that we can relate to all humans, not just Latinos.”</p>
+                        </div>
+                    </div>
+
+                    <style>
+                        .carousel-control-next-icon {
+                            background-image: url(ENG1U2.L5/arrowLeft.png);
+                        }
+                        .carousel-control-prev-icon {
+                            background-image: url(ENG1U2.L5/arrowRight.png);
+                        }
+                    </style>
+                    <div class="row section section_fourteen d-flex justify-content-center py-5" style="background-color: #52cfe5;">
+                        <div class="col-9 mx-5 text-dark text-center">
+                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_1.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_2.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_3.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_4.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_5.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_6.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_7.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_8.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_9.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_10.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_11.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_12.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_13.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_14.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_15.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_16.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_17.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_18.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_19.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_20.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_21.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_22.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_23.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_24.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_25.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_26.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_27.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_28.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_29.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_30.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_31.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_32.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_33.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_34.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_35.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_36.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_37.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_38.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_39.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_40.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_41.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_42.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_43.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_44.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_45.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_46.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_47.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_48.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_49.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_50.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_51.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_52.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_53.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_54.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_55.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_56.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_57.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_58.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_59.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_60.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_61.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_62.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_63.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_64.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_65.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_66.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_67.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_68.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_69.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_70.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_71.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_72.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_73.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_74.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_75.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_76.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_77.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_78.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_79.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_80.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_81.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_82.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_83.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_84.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_85.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_86.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_87.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_88.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_89.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_90.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_91.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_92.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_93.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_94.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_95.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_96.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_97.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_98.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_99.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_19.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ENG1U2.L5/The-House-On-Mango-Street-Book1024_101.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="row section section_fifteen py-5" style="background-color: #ffffff;">
+                        <div class="col-11 mx-5 text-dark">
+                            <p class="fs-2 fw-bold">REFLEXIONS:</p>
+                            <p class="fs-5">Imagine someone says: "Killing is wrong in most cases." You might disagree and believe that the death penalty should be enforced in certain situations. To explain your answer, you could say that you think the death penalty can serve as a deterrent for severe crimes and can provide justice for victims and their families. However, you might also pose the question: "What if the person being punished is innocent? Should we consider the possibility of wrongful execution?" This can lead to a deeper discussion about the complex issue of the death penalty and the value of human life.</p>
+                            <img src="ENG1U2.L5/ENG1U2.L5_img_10.png" class="img-fluid" alt="">
+                            <p class="fs-5 mt-5">Every individual has the natural right listed in this image, and there are several documents that outline these including the U.S. Bill of Rights and the Universal Declaration of Human Rights adopted by the United Nations.</p>
+                            <img src="ENG1U2.L5/ENG1U2.L5_img_11.jpg" class="img-fluid" alt="">
+                            <p class="fs-5">Now, let's say the statement is: "People should be allowed to say or write whatever they wish." You might have some doubts about this. You might ask: "What if they are writing hate speech or spreading harmful ideas? Does that mean we should allow it? What if they are saying something hurtful or offensive about someone you care about, like your mom? Should they still be allowed to say it?" Asking these questions can help you think more critically about the issue of free speech and whether there are limits to it. You could also consider the counterargument: "What if we weren't allowed to express ourselves freely? How would that affect our ability to share ideas and opinions?" This can lead to a meaningful discussion about the importance of free expression and how to balance it with the need for respect and responsibility.</p>
+                        </div>
+                    </div>
+                    <div class="row section section_sixteen py-5" style="background-color: #078198;">
+                        <div class="col-11 mx-5 text-white text-center">
+                            <p class="fs-2 fw-bold">WHAT ARE HUMAN RIGHTS <br />AND WHO DECIDES:</p>
+                        </div>
+                    </div>
+                    <div class="row section section_seventeen py-5" style="background-color: #ffffff;">
+                        <div class="col-11 mx-5 text-dark">
+                            <p class="fs-5">According to <a href="http://www.amnestyusa.org" target="_blank">www.amnestyusa.org:</a></p>
+                            <p class="fs-5">The word “rights” is used in a number of different contexts to include legal, moral, and human rights. These rights which are thought to have universal application are known as human rights.</p>
+                            <p class="fs-5">Legal rights are laid down by law. Some countries (such as the U.S.) have a Bill of Rights. In others, such rights are written into their Constitutions. In others (such as the UK), legal rights are not written down in either a Constitution or a Bill of Rights; instead it is assumed that a person has the right to do something until a ruling to the contrary has been made by a court or by Parliament.</p>
+                            <p class="fs-5">Moral Rights are often taken to mean rights which are not enshrined in any formal code but which nonetheless are held to be reasonable; some examples of this might be the right to privacy or the right to confidentiality.</p>
+                            <div class="row">
+                                <div class="col-6"><img src="ENG1U2.L5/ENG1U2.L5_img_12.jpg" class="img-fluid" alt=""></div>
+                                <div class="col-6 my-auto"><p class="fs-5">The basics rights and freedoms to which all humans are entitled, often held to include the right to life and liberty, freedom of thought and expression, and equality before the law.</p></div>
+                                <div class="col-6 mt-5"><img src="ENG1U2.L5/ENG1U2.L5_img_13.jpg" class="img-fluid" alt=""></div>
+                                <div class="col-6 my-auto"><p class="fs-5">Moral rights are principles or values that are considered to be fundamental to a fair and just society. They are often related to the inherent dignity and worth of all human beings, and are considered to be universal and applicable to all people, regardless of their cultural, social, or economic background.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row section section_eighteen py-5" style="background-color: #078198;">
+                        <div class="col-11 mx-5 text-white text-center">
+                            <p class="fs-2 fw-bold">HUMAN RIGHTS AND<br /> MANGO STREET</p>
+                        </div>
+                    </div>
+                    <div class="row section section_nineteen py-5" style="background-color: #ffffff;">
+                        <div class="col-11 mx-5 text-dark">
+                            <p class="fs-5">So how do we relate human rights to our discussion and analysis of The House on Mango Street? You should have already read the last part of the book. Now let’s analyze and dissect the real issues that Cisneros draws attention to in each of the vignettes in part three (chapters 22-44).</p>
+                            <p class="fs-5">What social or cultural commentary is Cisneros magnifying?</p>
+                            <p class="fs-5">How do these issues relate to human rights?</p>
+                            <p class="fs-5">Cisneros has a subtle way of shining some light on issues that could become an extensive study or discussion. Through her snapshots, she exposes very little in regards to her stance on any issues, but she does touch on very important concerns. And, Cisneros subtly states these societal problems that are in the Latino Community.</p>
+                            <p class="fs-5">Julia Alvarez mentioned in her interview, “Writing is not about solving a problem, rather stating it correctly.” Sandra Cisneros does not exactly state a problem, but she shines a faint yet powerful light on these issues. She leads us into very powerful discussions about human rights and societal concerns that we can relate to all humans, not just Latinos.</p>
+                        </div>
+                    </div>
+                    <div class="row section section_twenty py-5" style="background-color: #078198;">
+                        <div class="col-11 mx-5 text-white text-center">
+                            <p class="fs-2 fw-bold">ASSIGMENT: <br />MANGO STREET: PART 3</p>
+                        </div>
+                    </div>
+                    <style>
+                        :root{
+                            --dragbutton: #6fdcf0;
+                        }
+                        .swap_drop{
+                            background-color: #6fdcf0;
+                        }
+                        div.row.section.section_twentyone.py-5 > div > div > div > button{
+                            height: 5em;
+                            background-color: var(--dragbutton);
+                            border-color: var(--dragbutton);
+                        }
+                    </style>
+                    <div class="row section section_twentyone py-5" style="background-color: #ffffff;">
+                        <div class="col-11 mx-5 text-dark">
+                            <p class="fs-5">In this activity, you will use what you've learned about human rights, legal rights, moral rights, and social justice to identify which category each sentence belongs to. Read each sentence carefully and then drag it to the appropriate category. This will help you understand how to identify situations where these rights are being violated.</p>
+                            <div class="row" style="position: sticky; top: 10px;">
+                                <div class="col-3 text-center d-grid gap-2">
+                                    <button type="button" class="btn btn-block fw-bold dragChoices" draggable="true">Human rights</button>
+                                </div>
+                                <div class="col-3 text-center d-grid gap-2">
+                                    <button type="button" class="btn btn-block fw-bold dragChoices" draggable="true">Legal rights</button>
+                                </div>
+                                <div class="col-3 text-center d-grid gap-2">
+                                    <button type="button" class="btn btn-block fw-bold dragChoices" draggable="true">Moral rights</button>
+                                </div>
+                                <div class="col-3 text-center d-grid gap-2">
+                                    <button type="button" class="btn btn-block fw-bold dragChoices" draggable="true">Social justice</button>
+                                </div>
+                            </div>
+                            <ol class="mt-5 fs-5 p-5" style="background-color: #ecf8f6;">
+                                <li>
+                                    <p>It is a violation of <span data-ans="Human rights" class="toDropAns">_______</span> for someone to be denied an education because of their race, religion, or other personal characteristics.</p>
+                                </li>
+                                <li>
+                                    <p>It is a violation of <span data-ans="Human rights" class="toDropAns">_______</span> for someone to be subjected to physical, sexual, or emotional abuse or violence.</p>
+                                </li>
+                                <li>
+                                    <p>It is a violation of <span data-ans="Human rights" class="toDropAns">_______</span> for someone to be discriminated against or treated unfairly because of their gender, sexual orientation, or other personal characteristics.</p>
+                                </li>
+                                <li>
+                                    <p>It is a violation of <span data-ans="Human rights" class="toDropAns">_______</span> for someone to be denied the right to freely express their opinions and beliefs, or to participate in the political process.</p>
+                                </li>
+                                <li>
+                                    <p>It is a violation of <span data-ans="Human rights" class="toDropAns">_______</span> for someone to be denied basic necessities like food, shelter, and medical care.(Human rights)</p>
+                                </li>
+                                <li>
+                                    <p>It is a violation of <span data-ans="Legal rights" class="toDropAns">_______</span> for someone to be denied the right to vote or participate in the political process because of their race, religion, or other personal characteristics.</p>
+                                </li>
+                                <li>
+                                    <p>It is a violation of <span data-ans="Legal rights" class="toDropAns">_______</span> for someone to be denied equal access to education, employment, or other opportunities because of their race, religion, or other personal characteristics.</p>
+                                </li>
+                                <li>
+                                    <p>It is a violation of <span data-ans="Legal rights" class="toDropAns">_______</span> for someone to be subjected to segregation or discrimination based on their race, religion, or other personal characteristics.</p>
+                                </li>
+                                <li>
+                                    <p>It is a violation of <span data-ans="Legal rights" class="toDropAns">_______</span> for someone to be subjected to racial profiling or discrimination by law enforcement or other government officials.</p>
+                                </li>
+                                <li>
+                                    <p>It is a violation of <span data-ans="Legal rights" class="toDropAns">_______</span> for someone to be denied the right to own property or enter into contracts because of their race, religion, or other personal characteristics.</p>
+                                </li>
+                                <li>
+                                    <p>It is a violation of <span data-ans="Moral rights" class="toDropAns">_______</span> for someone to be treated as a means to an end, rather than an end in themselves.</p>
+                                </li>
+                                <li>
+                                    <p>It is a violation of <span data-ans="Moral rights" class="toDropAns">_______</span> for someone to be denied respect and dignity as a human being.</p>
+                                </li>
+                                <li>
+                                    <p>It is a violation of <span data-ans="Moral rights" class="toDropAns">_______</span> for someone to be subjected to physical, sexual, or emotional abuse or exploitation.</p>
+                                </li>
+                                <li>
+                                    <p>It is a violation of <span data-ans="Moral rights" class="toDropAns">_______</span> for someone to be denied the right to make decisions about their own life and body.</p>
+                                </li>
+                                <li>
+                                    <p>It is a violation of <span data-ans="Moral rights" class="toDropAns">_______</span> for someone to be denied the right to privacy or have their personal information disclosed without their consent.</p>
+                                </li>
+                                <li>
+                                    <p>It is a violation of <span data-ans="Social justice" class="toDropAns">_______</span> for people to be denied equal access to education, employment, and other opportunities because of their race, religion, or other personal characteristics.</p>
+                                </li>
+                                <li>
+                                    <p>It is a violation of <span data-ans="Social justice" class="toDropAns">_______</span> for people to be subjected to discrimination or prejudice based on their personal characteristics.</p>
+                                </li>
+                                <li>
+                                    <p>It is a violation of <span data-ans="Social justice" class="toDropAns">_______</span> for people to be denied fair and equal treatment under the law.</p>
+                                </li>
+                                <li>
+                                    <p>It is a violation of <span data-ans="Social justice" class="toDropAns">_______</span> for people to be denied the right to participate in the political process and have their voices heard.</p>
+                                </li>
+                                <li>
+                                    <p>It is a violation of <span data-ans="Social justice" class="toDropAns">_______</span> for people to be denied access to basic necessities like food, shelter, and medical care.</p>
+                                </li>
+
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Assessment Quiz -->
+                <table style="width: 710px; height: auto; margin-left: auto; margin-right: auto; margin-top: 5em;" border="1" cellpadding="20">
+                    <tbody>
+                    <tr>
+                    <td style="background-color: white; width: 710px; ">
+                    <b><span style="font-family: arial,helvetica,sans-serif;">&nbsp;  Answer the following questions.</span> </b>
+                    <p><a:question index="1" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="2" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="3" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="4" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="5" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="6" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="7" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="8" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="9" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="10" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="11" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="12" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="13" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="14" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="15" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="16" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="17" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="18" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="19" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="20" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <!-- Assessment Quiz -->
+
+            </div>
+        </div>
+    </body>
+    <script src="https://m.fyioc.com/WhyNotScripts/js/interactive2.js"></script>
+    <script src="https://m.fyioc.com/WhyNotScripts/js/VideoPlay.js"></script>
+    <!-- <link href="https://m.fyioc.com/WhyNotScripts/js/jquery-3.6.1.min.js" rel="stylesheet"> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script>
+        // INTERACTIVE 11 START DRAG AND SWAP SCRIPT
+        const toDrag = document.querySelectorAll(".dragChoices")
+        const toDrop = document.querySelectorAll(".toDropAns")
+
+        toDrag.forEach((elem) => {
+            elem.addEventListener("dragstart", (event) => {
+                event.dataTransfer.setData("answer", event.currentTarget.innerHTML)
+            })
+        })
+
+        toDrop.forEach((elem) => {
+            this.dragValidation(elem)
+        })
+
+        function dragValidation(elem) {
+            elem.addEventListener("dragover", (event) => {
+                event.preventDefault()
+            })
+            elem.addEventListener("drop", (event) => {
+                event.preventDefault()
+                const answer = event.dataTransfer.getData("answer")
+                const correctAnswer = event.currentTarget.getAttribute("data-ans")
+
+                let addAnswer = event.currentTarget;
+                addAnswer.className += ' fst-italic text-decoration-underline fw-bold';
+                addAnswer.innerHTML = answer;
+                addAnswer.style.fontSize = '18px';
+
+                this.dragCheckMatch(addAnswer, answer, correctAnswer);
+            })
+        }
+
+        function dragCheckMatch(currentTarget, answer, correctAnswer){
+            if(answer == correctAnswer){
+                currentTarget.style.color = 'green';
+            }else{
+                currentTarget.style.color = 'red';
+                setTimeout(function() {
+                    currentTarget.innerHTML = "_________";
+                }, 1000);
+            }
+        }
+        // INTERACTIVE 11 END
+    </script>
+</html>
