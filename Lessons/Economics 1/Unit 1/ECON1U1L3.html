@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 3</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round" rel="stylesheet">
+
+        <link href="https://m.fyioc.com/WhyNotScripts/css/VideoPlay.css" rel="stylesheet">
+        <link href="https://m.fyioc.com/WhyNotScripts/css/AudioPlay.css" rel="stylesheet">
+        <link href="https://m.fyioc.com/WhyNotScripts/css/interactive2.css" rel="stylesheet">
+    </head>
+    <style>
+        :root{
+            --font-one: 'Montserrat', sans-serif;
+            --font-two: 'Arvo', serif;
+        }
+        .container{
+            max-width: 1080px;
+        }
+        div:has(.container):last-child{
+            padding-bottom: 5em;
+        }
+        .fontArvo{
+            font-family: 'Arvo', sans-serif;
+        }
+        .section{
+            position: relative;
+        }
+        .section_one{
+            font-family: var(--font-one);
+            background: url('https://lh3.googleusercontent.com/u/0/drive-viewer/AAOQEORRKEGpvcxJIeZtFKSGTZ4l-REH-KIC344qP86CqorHv9h2QzyB83l41IJBrxp4Nj4oOSEGpApmTmHIRZYHGoeyh9JG4g=w1920-h386') no-repeat; /* ECON1U1L3_img_1.jpg */
+            background-size: cover;
+            background-position: left;
+            padding-top: 4rem;
+            padding-bottom: 8rem;
+        }
+        .section_two{
+            font-family: var(--font-one);
+            background: url('https://lh3.googleusercontent.com/u/0/drive-viewer/AAOQEOQrXy9zrIeX3uamVNIhH-PLI-TKgYpCCoewGq6YuictBSiDJYe7g3GZOF-49HpdmCSGJ58a9aqyS-cfW8mPZrkMJ21b=w1920-h386') no-repeat; /* ECON1U1L3_img_2.jpg */
+            background-size: cover;
+            background-position: left;
+            padding-top: 4rem;
+            padding-bottom: 8rem;
+        }
+        .section_four{
+            font-family: var(--font-one);
+            background: url('https://lh3.googleusercontent.com/u/0/drive-viewer/AAOQEOTlLvRwoDLXzVXvwAlkOl6sK3vq-kPHj9Gzwx3bDhuQso_vNnTtXO7tz9ME55gus5AcXuZH0_gLOkr77nv9gMcgda3anQ=w1920-h386') no-repeat; /* ECON1U1L3_img_3.jpg */
+            background-size: cover;
+            background-position: left;
+            padding-top: 8rem;
+            padding-bottom: 8rem;
+        }
+        .section_five{
+            font-family: var(--font-one);
+            background: url('https://lh3.googleusercontent.com/u/0/drive-viewer/AAOQEORKs4Vf-gJ1t3lKcdl-11ThshmPxCSKjPDum70cJaJ1jsFS8gV_VuugjxeuzLNY4B6js4klFA1nocbH3DrclfPy6xbl=w1920-h386') no-repeat; /* ECON1U1L3_img_4.jpg */
+            background-size: cover;
+            background-position: left;
+            padding-top: 8rem;
+            padding-bottom: 8rem;
+        }
+        .section_seven{
+            font-family: var(--font-one);
+            background: url('https://lh3.googleusercontent.com/u/0/drive-viewer/AAOQEOQ6bnzWN2zjPJ1NMdCoI_38jSRAXK_RVU4-fDYsaY8lDhdEsjtD4OUbbPF8EJnLaow3G2g0-RUyViCDUtXu4SbcN2fImg=w1920-h386') no-repeat; /* ECON1U1L3_img_5.jpg */
+            background-size: cover;
+            background-position: left;
+            padding-top: 8rem;
+            padding-bottom: 8rem;
+        }
+    </style>
+    <body>
+        <div class="main fs-5">
+            <div style="background-color: #4c9943;">
+                <div class="container text-dark">
+                    <div class="row section section_one d-flex justify-content-end" style="background-color: white;">
+                        <div class="col-8 text-center">
+                            <div class="ms-5">
+                                <p class="display-2 fw-bold">Opportunity <br />Cost</p>
+                                <p class="ms-5 mt-5 fs-4 fw-bold text-uppercase">OPPORTUNITY COST <br /> AND TRADE OFFS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="background-color: #67b05a;">
+                <div class="container text-white">
+                    <div class="row section section_two py-5" style="background-color: white;">
+                        <div class="col-7 mx-5">
+                            <p>In Economics, the term "opportunity cost", has a very specific meaning: It is defined as the next best alternative, the thing you gave up to get the thing you choose.</p>
+                            <p>Goods and services have price tags, but opportunity cost is not necessarily measured in dollars. Keep in mind that the opportunity cost could be the time you might have spent doing your next important activity.</p>
+                            <p>When individuals and governments make a decision involving opportunity costs, we say they made a trade-off. By understanding opportunity cost, you will be able to understand why individuals and nations specialize and trade.</p>
+                        </div>
+                    </div>
+                    <div class="row section section_three py-5" style="background-color: #3e8333;">
+                        <div class="col-11 mx-5 text-white">
+                            <div class="row">
+                                <div class="col-8">
+                                    <p>By the end of this lesson, you should be able to:</p>
+                                    <ul class="fs-5">
+                                        <li>Define trade-off.</li>
+                                        <li>Define opportunity costs.</li>
+                                        <li>Communicate the relationship. between economics and choice.</li>
+                                        <li>Describe how society's trade-offs can be represented on a production possibilities frontier.</li>
+                                    </ul>
+                                </div>
+                                <div class="col-4 my-auto">
+                                    <p class="fs-1 fw-bold">Lesson <br />Expectations</p>
+                                </div>
+                                <div class="col-4 my-auto mt-5">
+                                    <p class="fs-1 fw-bold">Lesson <br />Keywords</p>
+                                </div>
+                                <div class="col-8 mt-5">
+                                    <style>
+                                        .material-icons{
+                                            font-size: 30px !important;
+                                        }
+                                    </style>
+                                    <ul class="fs-5">
+                                        <li class="my-3">
+                                            <div class="row">
+                                                <div class="col-6">Cost-benefit analysis</div>
+                                                <div class="col-6">
+                                                    <button class="float-end" style="background-color: #ffffff; border-radius: 50%;" class="btn text-dark" id="btnPlayTone" data-audio="Biografía"></button>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="my-3">
+                                           <div class="row">
+                                                <div class="col-6">Production possibilities frontier</div>
+                                                <div class="col-6">
+                                                    <button class="float-end" style="background-color: #ffffff; border-radius: 50%;" class="btn text-dark" id="btnPlayTone" data-audio="Biografía"></button>
+                                                </div>
+                                           </div>
+                                        </li>
+                                        <li class="my-3">
+                                           <div class="row">
+                                                <div class="col-6">Society</div>
+                                                <div class="col-6">
+                                                    <button class="float-end" style="background-color: #ffffff; border-radius: 50%;" class="btn text-dark" id="btnPlayTone" data-audio="Biografía"></button>
+                                                </div>
+                                           </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row section section_four py-5" style="background-color: #3e8333;">
+                        <div class="col-11 mx-5 text-dark py-4">
+                            <div class="row d-flex justify-content-end">
+                                <div class="col-5">
+                                    <p class="fs-2 fw-bold text-center">Responsible<br />Decisions</p>
+                                    <p>A responsible decision, from an economist's perspective, is a decision that maximizes the enjoyment and minimizes the costs to the decision-maker. This is both a short-term and long-term analysis, though.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row section section_five py-5" style="background-color: #3e8333;">
+                        <div class="col-6 mx-5 text-dark">
+                            <p class="fs-2 fw-bold text-center">Pros and Cons of a <br />Decision</p>
+                            <p>The pros and cons of something are its advantages and disadvantages, which you consider carefully so that you can make a sensible decision</p>
+                            <p>Whenever you consider taking a particular course of action, you usually identify the pros and cons associated with the decision. If you decide to cut class, you may enjoy your time off, but when your parents find out that you ditched school, you will get grounded for two weeks.Economists not only examine these pros and cons for individuals, but also for societies.</p>
+                        </div>
+                    </div>
+                    <div class="row section section_six py-5" style="background-color: #88bd7f;">
+                        <div class="col-11 mx-5 text-dark">
+                            <p class="fs-2 fw-bold text-center">Cost Benefit Analysis</p>
+                            <p>Is a technique used to help make an informed decision and to determine if it is a good or bad decision. Fortunately for you, using a simple cost benefit analysis can help you make good or bad decisions, too.</p>
+                            <p>A good way of developing a cost-benefit analysis is to draw a "T" on a piece of paper, labeling one side as "PRO" and the other side as "CON." You then write down all of the pros and cons associated with a particular course of action and then think about what you value more. Do the pros outweigh the cons? Or vice versa? Ultimately, you have to make a decision.</p>
+                        </div>
+                    </div>
+                    <div class="row section section_seven py-5" style="background-color: #88bd7f;">
+                        <div class="col-7 mx-5 text-dark">
+                            <p class="fs-2 fw-bold text-center">Opportunity Cost in a <br />Social Context</p>
+                            <p>We know that we must make choices on a daily basis as consenting adults living in a free society. But our society it self through a democratic government also needs to come together to make collective choices, from how much we spend on health care, defense, senior retirement, and education policy.</p>
+                            <p>Which cola tastes better, Coke or Pepsi? If you choose one, you can’t also choose the other, unless you want a massive sugar rush and a load of calories</p>
+                        </div>
+                    </div>
+                    <div class="row section section_eight py-5" style="background-color: #3e8333;">
+                        <div class="col-11 mx-5">
+                            <p class="fs-2 fw-bold text-center">ECONOMICS</p>
+                            <p class="text-center">Opportunity Cost in a Social Context</p>
+                            <div class="ratio ratio-16x9">
+                                <video class="video-fluid" loop controls>
+                                    <source src="Https://m.fyioc.com/Spanish1/Lesson28/L28V1-REV5.mp4" type="video/mp4" />
+                                </video>
+                                <div class="play_button">
+                                    <div id="play_vid">
+                                        <span class="material-icons-outlined">play_arrow</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row section section_nine py-5" style="background-color: #ffffff;">
+                        <div class="col-11 mx-5 text-dark">
+                            <div class="row">
+                                <div class="col-6">
+                                    <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AAOQEOT1YHsStCeTawG80SCfQQ7pUaEgquhDgSSU7gGS67yc7NNh3w2Vcm0jNPc733C1OSLlG2TGLbwPgWAlIFWBE8jYfj1S2g=w1920-h386" class="img-fluid"> <!-- ECON1U1L3_img_6.jpg -->
+                                </div>
+                                <div class="col-6">
+                                    <p>If the government attempts to solve all problems, they will probably fail at adequately addressing any of them. Consequently, rational governments, as individuals, engage in cost-benefit analysis in order to derive courses of action.</p>
+                                    <p>A graphical representation of society’s choices in production illustrating tradeoffs when allocating resources.</p>
+                                    <p>Watch the production possibilities frontier video tutorial <strong>HERE</strong>.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row section section_ten py-5" style="background-color: #3e8333;">
+                        <div class="col-11 mx-5">
+                            <p class="fs-2 fw-bold text-center">ECONOMICS</p>
+                            <p class="text-center">Production Possibilities Frontier</p>
+                            <div class="ratio ratio-16x9">
+                                <video class="video-fluid" loop controls>
+                                    <source src="Https://m.fyioc.com/Spanish1/Lesson28/L28V1-REV5.mp4" type="video/mp4" />
+                                </video>
+                                <div class="play_button">
+                                    <div id="play_vid">
+                                        <span class="material-icons-outlined">play_arrow</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row section section_eleven py-5" style="background-color: #ffffff;">
+                        <div class="col-11 mx-5 text-dark">
+                            <p class="fs-2 fw-bold text-center">Inside and Outside the Frontier</p>
+                            <p>Can you produce outside the frontier? Not today, but you’d like to improve society, technologically speaking, to get your frontier to expand in the future to contain those points. economists generally like to plot labor-intensive goods against machine-intensive goods to demonstrate more clearly that societies generally face tradeoffs between goods of these types. Don’t get too bogged down in the realism of the comparison.No answer is correct for society. If the people wish to produce more of one particular type of good than another, the democratic process will work to provide for such an allocation of resources. But it would be highly inefficient for society to produce inside of the frontier so societies tend to avoid these options since it costs nothing to get more of both types of goods by moving from the inside of the curve to points along the curve.Societies also recognize that it benefits everyone to invest in technology in order to expand the frontier so that future generations can enjoy more of both goods, ensuring the American dream for years to come.</p>
+                            <p class="fw-bold mt-4">
+                                YES or NO / TRUE or FALSE QUESTIONS <br />
+                                Read the last paragraph carefully and answer correctly the True and False Questions
+                            </p>
+                            <ol class="mt-4">
+                                <li>
+                                    <span class="fs-5">Economists generally like to plot labor-intensive goods against machine-intensive goods to demonstrate more clearly that societies generally face tradeoffs between goods of these types.</span>
+                                    <div class="intr_two_list my-2">
+                                        <div class="intr_two_box">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="fs-5 intr_two_box_ans" data-ans="true">
+                                                        <span>A)</span> True
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="fs-5 intr_two_box_ans" data-ans="">
+                                                        <span>B)</span> False
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="fs-5">Societies does not recognize that it benefits everyone to invest in technology in order to expand the frontier so that future generations can enjoy more of both goods.</span>
+                                    <div class="intr_two_list my-2">
+                                        <div class="intr_two_box">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="fs-5 intr_two_box_ans" data-ans="">
+                                                        <span>A)</span> True
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="fs-5 intr_two_box_ans" data-ans="true">
+                                                        <span>B)</span> False
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="fs-5">If the people wish to produce more of one particular type of good than another, the democratic process will work to provide for such an allocation of resources.</span>
+                                    <div class="intr_two_list my-2">
+                                        <div class="intr_two_box">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="fs-5 intr_two_box_ans" data-ans="true">
+                                                        <span>A)</span> True
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="fs-5 intr_two_box_ans" data-ans="">
+                                                        <span>B)</span> False
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="fs-5">It would be highly sufficient for society to produce inside of the frontier.</span>
+                                    <div class="intr_two_list my-2">
+                                        <div class="intr_two_box">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="fs-5 intr_two_box_ans" data-ans="">
+                                                        <span>A)</span> True
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="fs-5 intr_two_box_ans" data-ans="true">
+                                                        <span>B)</span> False
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="row section section_twelve py-5" style="background-color: #dafdd4;">
+                        <div class="col-11 mx-5 text-dark fs-5">
+                            <p class="fs-2 fw-bold text-center">ASSIGNMENT</p>
+                            <p class="fw-bold">In this activity, the student must connect an image with the correct description</p>
+                            <div class="row d-flex justify-content-center my-4">
+                                <div class="col-6 mx-5 intr_11_title py-5">
+                                    <p class="text-dark fs-5 px-1">A responsible decision, from an economist's perspective, is a decision that maximizes the enjoyment and minimizes the costs to the decision-maker.</p>
+                                </div>
+                                <div class="col-3 mx-5">
+                                    <div class="row">
+                                        <div class="col-12 intr_11_wrap_choice">
+                                            <div id="p1_q1" class="swap_drop position-relative" data-isdrag="" draggable="true">
+                                                <div class="intr_11_choice" data-ans="p1_q2" data-text="p1_q1">
+                                                    <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AAOQEOQZQWQdj1bGIeQoTdc1QvGr8WZaM_lQGe4S4Z03hebVq4Uyq_pj0jSwkvVS1d26Li5WAMpYwmAWXD7NpI4N45E3kQzUAA=w1920-h386" class="img-fluid py-1 dragvalue"><!-- ECON1U1L3_img_11.jpg -->
+                                                </div>
+                                                <span class="practice-result-label"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex justify-content-center my-4">
+                                <div class="col-6 mx-5 intr_11_title py-5">
+                                    <p class="px-1">Opportunity cost, has a very specific meaning: It is defined as the next best alternative, the thing you gave up to get the thing you choose.</p>
+                                </div>
+                                <div class="col-3 mx-5">
+                                    <div class="row">
+                                        <div class="col-12 intr_11_wrap_choice">
+                                            <div id="p1_q2" class="swap_drop position-relative" data-isdrag="" draggable="true">
+                                                <div class="intr_11_choice" data-ans="p1_q3" data-text="p1_q2">
+                                                    <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AAOQEOT8FhTS34OLYXVwi9n8CGzoOTkJumMhUHlsmDIOiKkVm7kAwciNgs79eQWHNyHcw4vgpMNmzICEPUM_Mmukes9ZmVuv=w1920-h386" class="img-fluid py-1 dragvalue"><!-- ECON1U1L3_img_7.jpg -->
+                                                </div>
+                                                <span class="practice-result-label"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex justify-content-center my-4">
+                                <div class="col-6 mx-5 intr_11_title py-5">
+                                    <p class="px-1">You usually identify the pros and cons associated with the decision.</p>
+                                </div>
+                                <div class="col-3 mx-5">
+                                    <div class="row">
+                                        <div class="col-12 intr_11_wrap_choice">
+                                            <div id="p1_q3" class="swap_drop position-relative" data-isdrag="" draggable="true">
+                                                <div class="intr_11_choice" data-ans="p1_q4" data-text="p1_q3">
+                                                    <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AAOQEOR4RrkNB8Gh5vUtPa5ijr_V82SAtVzpR1rV-2koOv9Tzzz0vWmmfU8lEZMHyWKWVrXZZAECNXMJwmTEo5r0yjJRi-1urQ=w1920-h386" class="img-fluid py-1 dragvalue"><!-- ECON1U1L3_img_8.jpg -->
+                                                </div>
+                                                <span class="practice-result-label"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex justify-content-center my-4">
+                                <div class="col-6 mx-5 intr_11_title py-5">
+                                    <p class="px-1">Economist's perspective, is a decision that maximizes the enjoyment and minimizes the costs to the decision-maker.</p>
+                                </div>
+                                <div class="col-3 mx-5">
+                                    <div class="row">
+                                        <div class="col-12 intr_11_wrap_choice">
+                                            <div id="p1_q4" class="swap_drop position-relative" data-isdrag="" draggable="true">
+                                                <div class="intr_11_choice" data-ans="p1_q5" data-text="p1_q4">
+                                                    <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AAOQEOSr98XGXMaSiwEOYYXXooxPcjbW-F-HSNrcaTqSwkiIuEIawcgaBqgwU91VAnyNDliJxUyIMjtxV43LhcPJkk4SElcU1w=w1920-h386" class="img-fluid py-1 dragvalue"><!-- ECON1U1L3_img_9.jpg -->
+                                                </div>
+                                                <span class="practice-result-label"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex justify-content-center my-4">
+                                <div class="col-6 mx-5 intr_11_title py-5">
+                                    <p class="px-1">The democratic process will work to provide for such an allocation of resources.</p>
+                                </div>
+                                <div class="col-3 mx-5">
+                                    <div class="row">
+                                        <div class="col-12 intr_11_wrap_choice">
+                                            <div id="p1_q5" class="swap_drop position-relative" data-isdrag="" draggable="true">
+                                                <div class="intr_11_choice" data-ans="p1_q1" data-text="p1_q5">
+                                                    <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AAOQEOSnSSajEEqquaMkhPVJ980r92XKhZtDaGCXOiKHvN_Pa0WV0Zha30VeorUGlrFDEfHONtLMDXBaKoFg3lmapGwchZCzwQ=w1920-h386" class="img-fluid py-1 dragvalue"><!-- ECON1U1L3_img_10.jpg -->
+                                                </div>
+                                                <span class="practice-result-label"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Assessment Quiz -->
+                <table style="width: 710px; height: auto; margin-left: auto; margin-right: auto; margin-top: 5em;" border="1" cellpadding="20">
+                    <tbody>
+                    <tr>
+                    <td style="background-color: white; width: 710px; ">
+                    <b><span style="font-family: arial,helvetica,sans-serif;">&nbsp;  Answer the following questions.</span> </b>
+                    <p><a:question index="1" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="2" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="3" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="4" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="5" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="6" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="7" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="8" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="9" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="10" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="11" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="12" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="13" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="14" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="15" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="16" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="17" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="18" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="19" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="20" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <!-- Assessment Quiz -->
+                
+            </div>
+        </div>
+    </body>
+    <script>
+        var audiolink = "https://m.fyioc.com/Spanish2/Lesson10/";
+        var audioFontSize = '50px';
+    </script>
+    <script src="../../../InteractiveResources/js/AudioPlay.js"></script>
+    <script src="https://m.fyioc.com/WhyNotScripts/js/VideoPlay.js"></script>
+    <script src="https://m.fyioc.com/WhyNotScripts/js/interactive2.js"></script>
+    <script>
+        // INTERACTIVE 11 START DRAG AND SWAP SCRIPT
+        const toDrag = document.querySelectorAll(".swap_drop")
+        const toDrop = document.querySelectorAll(".swap_drop")
+
+        toDrag.forEach((elem) => {
+            elem.addEventListener("dragstart", (event) => {
+                event.dataTransfer.setData("answer", elem.id)
+            })
+        })
+
+        toDrop.forEach((elem) => {
+            this.dragValidation(elem)
+        })
+
+        function dragValidation(elem) {
+            elem.addEventListener("dragover", (event) => {
+                event.preventDefault()
+            })
+            elem.addEventListener("drop", (event) => {
+                event.preventDefault()
+                const answer = event.dataTransfer.getData("answer")
+                const correctAnswer = event.currentTarget.getAttribute("data-ans")
+                const dataText = event.currentTarget.getAttribute("data-text")
+
+                let adj1 = event.currentTarget
+                let adj2 = document.getElementById(answer)
+
+                let getFromSwap = adj1.parentElement.querySelector('.intr_11_choice').getAttribute("data-text");
+                let getToSwap = adj2.parentElement.querySelector('.intr_11_choice').getAttribute("data-text");
+
+                let getFromSwapContent = adj1.parentElement.querySelector('.intr_11_choice').querySelector('.dragvalue');
+                let getToSwapContent = adj2.parentElement.querySelector('.intr_11_choice').querySelector('.dragvalue');
+
+                adj1.parentElement.querySelector('.intr_11_choice').appendChild(getToSwapContent);
+                adj2.parentElement.querySelector('.intr_11_choice').appendChild(getFromSwapContent);
+
+                adj1.parentElement.querySelector('.intr_11_choice').setAttribute("data-text", getToSwap);
+                adj2.parentElement.querySelector('.intr_11_choice').setAttribute("data-text", getFromSwap);
+
+                adj1.setAttribute("data-isdrag", "true");
+                adj2.setAttribute("data-isdrag", "true");
+
+                this.dragCheckMatch();
+            })
+        }
+
+        function dragCheckMatch(){
+            toDrag.forEach((elem) => {
+                let practice_result_label = document.getElementById(elem.id).parentElement.querySelector('.practice-result-label');
+                practice_result_label.style.position = 'absolute';
+                practice_result_label.style.top = 0;
+                practice_result_label.style.right = 0;
+                practice_result_label.style.padding = '0.5em';
+                if(elem.querySelector('.intr_11_choice').getAttribute("data-ans") == elem.querySelector('.intr_11_choice').getAttribute("data-text")){
+                    practice_result_label.innerHTML = '<span class="material-icons fs-1">verified</span>';
+                    practice_result_label.style.color = '#198754';
+                }else{
+                    if(elem.getAttribute("data-isdrag")){
+                        practice_result_label.innerHTML = '<span class="material-icons fs-1">cancel</span>';
+                        practice_result_label.style.color = '#dc3545';
+                    }
+                }
+            });
+        }
+        // INTERACTIVE 11 END
+    </script>
+</html>
