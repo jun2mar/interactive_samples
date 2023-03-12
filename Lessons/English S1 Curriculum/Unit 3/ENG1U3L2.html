@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 2</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round" rel="stylesheet">
+
+        <link href="https://m.fyioc.com/WhyNotScripts/css/VideoPlay.css" rel="stylesheet">
+        <link href="https://m.fyioc.com/WhyNotScripts/css/interactive2.css" rel="stylesheet">
+    </head>
+    <style>
+        .container{
+            max-width: 1080px;
+            /* box-shadow: 0px -3px 11px #504b4b; */
+        }
+        div:has(.container):last-child{
+            padding-bottom: 5em;
+        }
+        .fontArvo{
+            font-family: 'Arvo', sans-serif;
+        }
+        .section{
+            position: relative;
+        }
+        .section_one{
+            background: url('https://m.fyioc.com/WhyNotImages/ENG1U3L2_img_1.png') no-repeat;
+            background-size: cover;
+            background-position: left;
+            padding-top: 6rem;
+            padding-bottom: 10rem;
+        }
+        .info{
+            color: #128599;
+        }
+        .section_nine .cardBg{
+            background-color: #ecf8f6;
+        }
+        .intr_two li{
+            padding: 1em 0;
+        }
+        .intr_two_list .intr_two_box .intr_two_box_ans span {
+            background: #f3f3f3;
+        }
+    </style>
+    <body>
+        <div class="main">
+            <div style="background-color: #078198;">
+                <div class="container text-dark">
+                    <div class="row section section_one text-end" style="background-color: #ffffff;">
+                        <div class="col-11">
+                            <p class="display-1 fw-bold info fontArvo">ENGLISH</p>
+                            <p class="fs-2 fw-bold text-uppercase">TAKING A CLOSER LOOK <br />AT LANGUAGE: PART 3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="background-color: #dcb976;">
+                <div class="container text-dark">
+                    <div class="row section section_two d-flex justify-content-center" style="background-color: #078198;">
+                        <div class="col-11 py-5">
+                            <div class="row g-0 col-container text-start text-dark" style="background-color: #dcb976;">
+                                <div class="col-6 pe-1">
+                                    <div class="card" style="background-color: #ecf8f6;">
+                                        <div class="card-body text-center">
+                                            <h4 class="card-title fw-bold">What You Should Know</h4>
+                                        </div>
+                                        <div class="card-body cardBody">
+                                            <p>Before you begin, you should:</p>
+                                            <ul>
+                                                <li>Know how to identify tone.</li>
+                                                <li>Understand how to identify figurative language.</li>
+                                                <li>Recognize details.</li>
+                                                <li>Know how to determine the main idea.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 ps-1">
+                                    <div class="card" style="background-color: #ecf8f6;">
+                                        <div class="card-body text-center">
+                                            <h4 class="card-title fw-bold">Lesson Expectations</h4>
+                                        </div>
+                                        <div class="card-body cardBody">
+                                            <p>Before you begin, you should:</p>
+                                            <ul>
+                                                <li>Analyze the author's purpose.</li>
+                                                <li>Analyze and develop an interpretation of a literary work by describing an author's point of view.</li>
+                                                <li>Use organizational strategies and tools (i.e., chart).</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row section section_three d-flex justify-content-center" style="background-color: #ffffff;">
+                        <div class="col-11 py-5">
+                            <img src="https://m.fyioc.com/WhyNotImages/ENG1U3L2_img_2.jpg" class="img-fluid" alt="">
+                            <p class="fs-5 mt-5">Tone vs. Mood: Before you begin this lesson, <u>you should know</u> how to identify tone in writing. Let’s take a moment for a quick review. Tone is the author’s attitude towards a subject, and mood is the atmosphere created by the author.</p>
+                        </div>
+                    </div>
+                    <div class="row section section_four py-3 text-white text-center" style="background-color: #078198;">
+                        <div class="col-12">
+                            <p class="fs-2 fw-bold my-auto">POINT OF VIEW</p>
+                        </div>
+                    </div>
+                    <div class="row section section_five d-flex justify-content-center py-5 text-dark" style="background-color: #ececec;">
+                        <div class="col-11">
+                            <p class="fs-5">A different perspective can change the way we see things.</p>
+                            <p class="fs-5">Take a look at this video and learn about how humans perceive reality. Our reality is actually a translation formed by our mind.</p>
+                            <p class="fs-5">How do we know when we can trust our eyes? How do we know when we can trust the perspective we use? Think about how our perspective influences the way we read.</p>
+                            <div class="ratio ratio-16x9">
+                                <video class="video-fluid" loop controls>
+                                    <source src="https://m.fyioc.com/WhyNotVideos/Ess1u1l1v1.mp4" type="video/mp4" />
+                                </video>
+                                <div class="play_button">
+                                    <div id="play_vid">
+                                        <span class="material-icons-outlined">play_arrow</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row section section_six py-3 text-white text-center" style="background-color: #b89146;">
+                        <div class="col-12">
+                            <p class="fs-2 fw-bold my-auto">LESSON KEYWORDS</p>
+                        </div>
+                    </div>
+                    <div class="row section section_seven d-flex justify-content-center py-3 text-dark text-center" style="background-color: #ececec;">
+                        <div class="col-11">
+                            <p class="display-4 fw-bold fontArvo">POINT OF VIEW</p>
+                            <p class="fs-4">Is the perspective from which a story is told. <br />It can be first, second or third person.</p>
+                        </div>
+                    </div>
+                    <div class="row section section_eight py-3 text-white text-center" style="background-color: #078198;">
+                        <div class="col-12">
+                            <p class="fs-2 fw-bold my-auto">NARRATIVE POINT OF VIEW</p>
+                        </div>
+                    </div>
+                    <div class="row section section_nine d-flex justify-content-center py-5" style="background-color: #ffffff;">
+                        <div class="col-11">
+                            <p class="fs-5 text-center">What is Point of view? When discussing elements of literature, we can look at two aspects: the narrator's point of view and the author's point of view.</p>
+                            <img src="https://m.fyioc.com/WhyNotImages/ENG1U3L2_img_3.jpg" class="img-fluid my-5">
+                            <p class="fs-5 text-center mb-5">Take a moment to study Narrative Point of View a little closer using the flip cards below.</p>
+                            <div class="row p-4 my-4 cardBg">
+                                <div class="col-6"><img src="https://m.fyioc.com/WhyNotImages/ENG1U3L2_img_4.jpg" class="img-fluid"></div>
+                                <div class="col-6 my-auto">
+                                    <p class="fs-4 fw-bold">First-Person Narration</p>
+                                    <p class="fs-5">What can be shown is limited to the character's observation and thoughts, any skewed perceptions in the narrator, will be passed on to the reader.</p>
+                                </div>
+                            </div>
+                            <div class="row p-4 my-4 cardBg">
+                                <div class="col-6"><img src="https://m.fyioc.com/WhyNotImages/ENG1U3L2_img_5.jpg" class="img-fluid"></div>
+                                <div class="col-6 my-auto">
+                                    <p class="fs-4 fw-bold">Second-Person point of view</p>
+                                    <p class="fs-5">Point of View This point of view makes the reader part of the story, which may be awkward, thus this point of view is rarely used.</p>
+                                </div>
+                            </div>
+                            <div class="row p-4 my-4 cardBg">
+                                <div class="col-6"><img src="https://m.fyioc.com/WhyNotImages/ENG1U3L2_img_6.jpg" class="img-fluid"></div>
+                                <div class="col-6 my-auto">
+                                    <p class="fs-4 fw-bold">Third person point of View</p>
+                                    <p class="fs-5">The narrator does not take part in the story.</p>
+                                </div>
+                            </div>
+                            <div class="row p-4 my-4 cardBg">
+                                <div class="col-6"><img src="https://m.fyioc.com/WhyNotImages/ENG1U3L2_img_7.jpg" class="img-fluid"></div>
+                                <div class="col-6 my-auto">
+                                    <p class="fs-4 fw-bold">Third-Person Omniscient</p>
+                                    <p class="fs-5">The narrative voice can render information from anywhere, including the thoughts and feelings of any of the characters. This all-knowing perspective allows the narrator to roam freely in the story's setting and even beyond.</p>
+                                </div>
+                            </div>
+                            <div class="row p-4 my-4 cardBg">
+                                <div class="col-6"><img src="https://m.fyioc.com/WhyNotImages/ENG1U3L2_img_8.jpg" class="img-fluid"></div>
+                                <div class="col-6 my-auto">
+                                    <p class="fs-4 fw-bold">Third-Person Limited</p>
+                                    <p class="fs-5">Sometimes called third-person sympathetic, the narrative voice can relate what is in the minds of only a select few characters (often only one, the point-of-view character).</p>
+                                </div>
+                            </div>
+                            <div class="row p-4 my-4 cardBg">
+                                <div class="col-6"><img src="https://m.fyioc.com/WhyNotImages/ENG1U3L2_img_9.jpg" class="img-fluid"></div>
+                                <div class="col-6 my-auto">
+                                    <p class="fs-4 fw-bold">Third-Person Objective</p>
+                                    <p class="fs-5">The narrator renders explicit, observable details and does not have access to the internal thoughts of characters or background information about the setting or situation. A character's thoughts, for example, are inferred only by what is expressed openly, in actions or in words.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row section section_ten py-3 text-white text-center" style="background-color: #078198;">
+                        <div class="col-12">
+                            <p class="fs-2 fw-bold my-auto">IMAGES AND WORDS</p>
+                        </div>
+                    </div>
+                    <div class="row section section_eleven d-flex justify-content-center py-5 text-dark" style="background-color: #ececec;">
+                        <div class="col-11">
+                            <p class="fs-5">Read the poem "The Dirt Eaters" by Virgil Suarez. Concentrate on important words that create images or that make a strong statement. Make notes about your thoughts and interpretations. Remember, a writer is writing for a purpose. Read this poem with a critical eye.</p>
+                            <div class="card mx-5 shadow py-5">
+                                <div class="card-body px-5">
+                                    <h4 class="card-title fs-2">The Dirt Eaters</h4>
+                                    <p class="card-text fst-italic">Virgil Suárez</p>
+                                    <p class="card-text">Whenever we grew tired and bored of curb ball, of encircling the scorpions we found under rocks by the mother-in-law tongue within a fiery circle of kerosene and watching as they stung themselves to death, we ate dirt; soft, grainy, pretend chocolate dirt, in our fantasies sent to us by distant relatives in El Norte. Fango. We stood in a circle, wet the dirt under our bare feet, worked with our fingers to crumble the clogs with our nails, removed the undesired twigs, pebbles, and beetles. Dirt—how delicious. How filling.</p>
+                                    <p class="card-text">We ate our share of it back then. Beto, the youngest, warned us not to eat too much; it could make us sick, vomit, give us the shits, or even worse, worms.</p>
+                                    <p class="card-text fst-italic ms-5">We laughed. We ridiculed him. We chanted after him:</p>
+                                    <p class="card-text fst-italic ms-5">"¡Lo que no mata, engorda! <br />¡Lo que no mata, engorda!"</p>
+                                    <p class="card-text">What doesn’t kill you makes you fat, and stronger.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row section section_twelve py-3 text-white text-center" style="background-color: #078198;">
+                        <div class="col-12">
+                            <p class="fs-2 fw-bold my-auto">Activity #1</p>
+                            <p class="fs-2 fw-bold my-auto">"THE DIRT EATERS" <br />BY VIRGIL SUAREZ.</p>
+                        </div>
+                    </div>
+                    <div class="row section section_thirteen d-flex justify-content-center py-5 text-dark" style="background-color: #ffffff;">
+                        <div class="col-11">
+                            <p class="fs-5">Now let's examine the author's point of view.</p>
+                            <ul class="fs-5" style="list-style-type: square;">
+                                <li>What is the setting in the poem?</li>
+                                <li>Which words or phrases provide you with this information?</li>
+                                <li>Does the setting of the poem influence the author's point of view?</li>
+                            </ul>
+                            <p class="fs-5 mt-5">Take some notes to help analyze the poem. Then answer the questions about the author´s point of view.</p>
+                            <ol class="mt-4 intr_two">
+                                <li>
+                                    <span class="fs-5">How does the author feel about eating dirt during his childhood?</span>
+                                    <div class="intr_two_list my-2">
+                                        <div class="intr_two_box">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="fs-5 intr_two_box_ans" data-ans="">
+                                                        <span>A)</span> Disgusted
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="fs-5 intr_two_box_ans" data-ans="true">
+                                                        <span>B)</span> Excited
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="fs-5 intr_two_box_ans" data-ans="">
+                                                        <span>C)</span> Indifferent
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="fs-5">What is the significance of encircling the scorpions in the poem?</span>
+                                    <div class="intr_two_list my-2">
+                                        <div class="intr_two_box">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="fs-5 intr_two_box_ans" data-ans="">
+                                                        <span>A)</span> They symbolize childhood innocence.
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="fs-5 intr_two_box_ans" data-ans="">
+                                                        <span>B)</span> They represent the dangers of growing up.
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="fs-5 intr_two_box_ans" data-ans="true">
+                                                        <span>C)</span> They are just a way to pass the time. 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="fs-5">How does the author and his friends react to Beto's warning about eating too much dirt?</span>
+                                    <div class="intr_two_list my-2">
+                                        <div class="intr_two_box">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="fs-5 intr_two_box_ans" data-ans="">
+                                                        <span>A)</span> They take his advice seriously.
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="fs-5 intr_two_box_ans" data-ans="">
+                                                        <span>B)</span> They ignore it and continue eating dirt. 
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="fs-5 intr_two_box_ans" data-ans="true">
+                                                        <span>C)</span> They mock him.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="fs-5">How does the author's experience of eating dirt during his childhood connect to the overall theme of the poem?</span>
+                                    <div class="intr_two_list my-2">
+                                        <div class="intr_two_box">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="fs-5 intr_two_box_ans" data-ans="">
+                                                        <span>A)</span> It highlights the poverty and lack of resources in the author's community.
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="fs-5 intr_two_box_ans" data-ans="true">
+                                                        <span>B)</span> It symbolizes the resilience and resourcefulness of the author and his friends.
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="fs-5 intr_two_box_ans" data-ans="">
+                                                        <span>C)</span> It shows the author's longing for a better life.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="row section section_fourteen py-3 text-white text-center" style="background-color: #078198;">
+                        <div class="col-12">
+                            <p class="fs-2 fw-bold my-auto">AUTHOR'S POINT OF VIEW <br /> OF A DISTANT PAST</p>
+                        </div>
+                    </div>
+                    <div class="row section section_fifteen d-flex justify-content-center py-5 text-dark" style="background-color: #ffffff;">
+                        <div class="col-11">
+                            <p class="fs-5">Author's point of view does not only deal with how the story is told, but it also deals with the author's purpose. It deals with these types of questions:</p>
+                            <p class="fs-5 ms-5">
+                                Describe what is the author's opinion about...? <br />
+                                Explain what the author thinks of.... <br />
+                                Why did the author write this piece? <br />
+                                What point does the author make? <br />
+                                What do you think the author means when he or she writes...? What makes you think this? <br />
+                                What issues is the author shining light upon? How is the author accomplishing this? <br />
+                                What is the author's position? <br />
+                                Why does the author use the images, word choice, etc. to describe the subject? <br />
+                                How does the author use the word choice or point of view to achieve his/her purpose? <br />
+                            </p>
+                            <p class="fs-5">As you read, whether it may be fiction, nonfiction, or poetry, you should keep these questions in mind. Remember, a writer is writing for a purpose. A writer does not choose words arbitrarily. He or she chooses the right word or image to make a point, to provide the reader with his or her point of view and purpose.</p>
+                            <div class="card mx-5 shadow py-5 mt-5">
+                                <div class="card-body px-5">
+                                    <h4 class="card-title fs-2">Rain</h4>
+                                    <p class="card-text fs-5 fst-italic mb-4">Claribel Alegria</p>
+                                    <p class="card-text fs-5">
+                                        As the falling rain <br />
+                                        trickles among the stones <br />
+                                        memories come bubbling out. <br />
+                                        It’s as if the rain <br />
+                                        had pierced my temples. <br />
+                                        Streaming <br />
+                                        streaming chaotically <br />
+                                        come memories: <br />
+                                        the reedy voice <br />
+                                        of the servant <br />
+                                        telling me tales <br />
+                                        of ghosts. <br />
+                                        They sat beside me <br />
+                                        the ghosts <br />
+                                        and the bed creaked <br />
+                                        that purple-dark afternoon <br />
+                                        when I learned you were leaving forever, <br />
+                                        a gleaming pebble <br />
+                                        from constant rubbing <br />
+                                        becomes a comet. <br />
+                                        Rain is falling <br />
+                                        falling <br />
+                                        and memories keep flooding by <br />
+                                        they show me a senseless <br />
+                                        World <br />
+                                        a voracious <br />
+                                        World—abyss <br />
+                                        Ambush <br />
+                                        whirlwind <br />
+                                        Spur but I keep loving it because I do because of my five senses, because of my amazement every morning, because forever, I have loved it without knowing why. <br />
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row section section_sixteen py-3 text-white text-center" style="background-color: #078198;">
+                        <div class="col-12">
+                            <p class="fs-2 fw-bold my-auto">Activity #2</p>
+                            <p class="fs-2 fw-bold my-auto">"RAIN" BY CLARIBEL <br />ALEGRIA.</p>
+                        </div>
+                    </div>
+                    <div class="row section section_seventeen d-flex justify-content-center py-5 text-dark" style="background-color: #ffffff;">
+                        <div class="col-11">
+                            <p class="fs-5">Now let's examine the author's point of view.</p>
+                            <ul class="fs-5" style="list-style-type: square;">
+                                <li>What is the setting in the poem?</li>
+                                <li>Which words or phrases provide you with this information?</li>
+                                <li>Does the setting of the poem influence the author's point of view?</li>
+                            </ul>
+                            <p class="fs-5 mt-5">Take some notes to help analyze the poem. Then answer the questions about the author´s point of view.</p>
+                            <ol class="mt-4 intr_two">
+                                <li>
+                                    <span class="fs-5">How does the author feel about the falling rain?</span>
+                                    <div class="intr_two_list my-2">
+                                        <div class="intr_two_box">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="fs-5 intr_two_box_ans" data-ans="">
+                                                        <span>A)</span> Displeased
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="fs-5 intr_two_box_ans" data-ans="true">
+                                                        <span>B)</span> Nostalgic
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="fs-5 intr_two_box_ans" data-ans="">
+                                                        <span>C)</span> Indifferent
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="fs-5">What is the significance of the stones in the poem?</span>
+                                    <div class="intr_two_list my-2">
+                                        <div class="intr_two_box">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="fs-5 intr_two_box_ans" data-ans="true">
+                                                        <span>A)</span> They symbolize the author's memories.
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="fs-5 intr_two_box_ans" data-ans="">
+                                                        <span>B)</span> They represent the passage of time. 
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="fs-5 intr_two_box_ans" data-ans="">
+                                                        <span>C)</span> They have no significance.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="fs-5">How does the author feel about the memories that come to him during the rain? </span>
+                                    <div class="intr_two_list my-2">
+                                        <div class="intr_two_box">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="fs-5 intr_two_box_ans" data-ans="">
+                                                        <span>A)</span> They are painful.
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="fs-5 intr_two_box_ans" data-ans="true">
+                                                        <span>B)</span> They are chaotic but loved.
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="fs-5 intr_two_box_ans" data-ans="">
+                                                        <span>C)</span> They are welcomed.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="fs-5">How does the author feel about the world?</span>
+                                    <div class="intr_two_list my-2">
+                                        <div class="intr_two_box">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="fs-5 intr_two_box_ans" data-ans="">
+                                                        <span>A)</span> He hates it 
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="fs-5 intr_two_box_ans" data-ans="">
+                                                        <span>B)</span> He is indifferent to it.
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="fs-5 intr_two_box_ans" data-ans="true">
+                                                        <span>C)</span> He loves it despite its senselessness.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="fs-5">Why does the author love the world?</span>
+                                    <div class="intr_two_list my-2">
+                                        <div class="intr_two_box">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="fs-5 intr_two_box_ans" data-ans="">
+                                                        <span>A)</span> Because of his five senses.
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="fs-5 intr_two_box_ans" data-ans="">
+                                                        <span>B)</span> Because of his amazement.
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="fs-5 intr_two_box_ans" data-ans="true">
+                                                        <span>C)</span> Both A and B
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="row section section_eighteen py-3 text-white text-center" style="background-color: #078198;">
+                        <div class="col-12">
+                            <p class="fs-2 fw-bold my-auto">ASSIGNMENT:</p>
+                            <p class="fs-2 fw-bold my-auto">TAKING A CLOSER LOOK <br />AT LANGUAGE: PART 3</p>
+                        </div>
+                    </div>
+                    <div class="row section section_nineteen d-flex justify-content-center py-5 text-dark" style="background-color: #ffffff;">
+                        <div class="col-11">
+                            <p class="fs-5 fw-bold">Drag the correct answer from the right to picture:</p>
+                            <p class="fs-5">Now that you have studied this lesson, let's review what we have learned. For this activity, you will need to pull the description into the perspective of the corresponding author. Read carefully and analyze where each description belongs.</p>
+
+                            <style>
+                                /* INTERACTIVE 11 START */
+                                .intr_11_title{
+                                    height: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
+                                .intr_11_title button span{
+                                    font-size: 5rem;
+                                }
+                                .intr_11_center{
+                                    background: #aee3f1;
+                                }
+                                .intr_11_wrap_choice{
+                                    cursor: pointer;
+                                    position: relative;
+                                }
+                                .intr_11_choice::after{
+                                    position: absolute;
+                                    color: #575757;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    width: 100%;
+                                    font-size: .9rem;
+                                    font-weight: 500;
+                                    word-wrap: break-word;
+                                    inline-size: 90%;
+                                }
+                                .practice-result-label{
+                                    position: absolute;
+                                    right: 0;
+                                    top: 0;
+                                }
+                                .dragvalue{
+                                    height: 160px;
+                                }
+                                /* INTERACTIVE 11 END */
+
+                                tbody, td, tfoot, th, thead, tr {
+                                    border-color: #dcb976;
+                                    border-style: solid;
+                                    border-width: 10px;
+                                }
+                            </style>
+
+                            <table class="table table-bordered">
+                                    <tbody>
+                                        <!-- START -->
+                                        <tr>
+                                            <td width="60%"><p>1. The reader is limited to the observations and thoughts of the narrator.</p></td>
+                                            <td width="40%" rowspan="2" class="text-center p-3">
+                                                <div class="col-12 intr_11_wrap_choice">
+                                                    <div id="p1_q1" class="swap_drop" data-isdrag="" draggable="true">
+                                                        <div class="intr_11_choice" data-ans="p1_q2" data-text="p1_q1">
+                                                            <span class="dragvalue">
+                                                                <p>Second-Person Point of View</p>
+                                                                <img src="https://m.fyioc.com/WhyNotImages/ENG1U3L2_img_11.jpg" class="img-fluid py-1">
+                                                            </span>
+                                                        </div>
+                                                        <span class="practice-result-label"></span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><p>2. The way the narrator sees things might not be accurate and it can affect the reader's understanding of the story.</p></td>
+                                        </tr>
+                                        <!-- END -->
+
+                                        <!-- START -->
+                                        <tr>
+                                            <td width="60%"><p>3. Involves addressing the reader directly, making them a part of the story.</p></td>
+                                            <td width="40%" rowspan="2" class="text-center p-3">
+                                                <div class="col-12 intr_11_wrap_choice">
+                                                    <div id="p1_q2" class="swap_drop" data-isdrag="" draggable="true">
+                                                        <div class="intr_11_choice" data-ans="p1_q1" data-text="p1_q2">
+                                                            <span class="dragvalue">
+                                                                <p>First Person Narrator</p>
+                                                                <img src="https://m.fyioc.com/WhyNotImages/ENG1U3L2_img_10.jpg" class="img-fluid py-1">
+                                                            </span>
+                                                        </div>
+                                                        <span class="practice-result-label"></span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><p>4. This style is not commonly used as it can make the story feel awkward. </p></td>
+                                        </tr>
+                                        <!-- END -->
+
+                                        <!-- START -->
+                                        <tr>
+                                            <td width="60%"><p>5. The narrator is not a character in the story.</p></td>
+                                            <td width="40%" rowspan="2" class="text-center p-3">
+                                                <div class="col-12 intr_11_wrap_choice">
+                                                    <div id="p1_q3" class="swap_drop" data-isdrag="" draggable="true">
+                                                        <div class="intr_11_choice" data-ans="p1_q4" data-text="p1_q3">
+                                                            <span class="dragvalue">
+                                                                <p>Third-Person Limited</p>
+                                                                <img src="https://m.fyioc.com/WhyNotImages/ENG1U3L2_img_13.jpg" class="img-fluid py-1">
+                                                            </span>
+                                                        </div>
+                                                        <span class="practice-result-label"></span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><p>6. The narrator is not involved in the events or feelings of the characters. </p></td>
+                                        </tr>
+                                        <!-- END -->
+
+                                        <!-- START -->
+                                        <tr>
+                                            <td width="60%"><p>7. Narrator knows everything about the characters and story, including thoughts and feelings.</p></td>
+                                            <td width="40%" rowspan="2" class="text-center p-3">
+                                                <div class="col-12 intr_11_wrap_choice">
+                                                    <div id="p1_q4" class="swap_drop" data-isdrag="" draggable="true">
+                                                        <div class="intr_11_choice" data-ans="p1_q6" data-text="p1_q4">
+                                                            <span class="dragvalue">
+                                                                <p>Third-Person Point of View</p>
+                                                                <img src="https://m.fyioc.com/WhyNotImages/ENG1U3L2_img_12.jpg" class="img-fluid py-1">
+                                                            </span>
+                                                        </div>
+                                                        <span class="practice-result-label"></span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><p>8. Narrator can move freely throughout the story and setting.</p></td>
+                                        </tr>
+                                        <!-- END -->
+
+                                        <!-- START -->
+                                        <tr>
+                                            <td width="60%"><p>9. Narrator only shares thoughts and feelings of one character, often called point-of-view character.</p></td>
+                                            <td width="40%" rowspan="2" class="text-center p-3">
+                                                <div class="col-12 intr_11_wrap_choice">
+                                                    <div id="p1_q5" class="swap_drop" data-isdrag="" draggable="true">
+                                                        <div class="intr_11_choice" data-ans="p1_q3" data-text="p1_q5">
+                                                            <span class="dragvalue">
+                                                                <p>Third-Person Objective</p>
+                                                                <img src="https://m.fyioc.com/WhyNotImages/ENG1U3L2_img_15.jpg" class="img-fluid py-1">
+                                                            </span>
+                                                        </div>
+                                                        <span class="practice-result-label"></span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><p>10. Allows reader to understand and empathize with the point-of-view character.</p></td>
+                                        </tr>
+                                        <!-- END -->
+
+                                        <!-- START -->
+                                        <tr>
+                                            <td width="60%"><p>11. Narrator only shows observable events, not thoughts or background information.</p></td>
+                                            <td width="40%" rowspan="2" class="text-center p-3">
+                                                <div class="col-12 intr_11_wrap_choice">
+                                                    <div id="p1_q6" class="swap_drop" data-isdrag="" draggable="true">
+                                                        <div class="intr_11_choice" data-ans="p1_q5" data-text="p1_q6">
+                                                            <span class="dragvalue">
+                                                                <p>Third-Person Omniscient</p>
+                                                                <img src="https://m.fyioc.com/WhyNotImages/ENG1U3L2_img_14.jpg" class="img-fluid py-1">
+                                                            </span>
+                                                        </div>
+                                                        <span class="practice-result-label"></span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><p>12. Characters thoughts and feelings are inferred from actions or words.</p></td>
+                                        </tr>
+                                        <!-- END -->
+
+                                    </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Assessment Quiz -->
+                <table style="width: 710px; height: auto; margin-left: auto; margin-right: auto; margin-top: 5em;" border="1" cellpadding="20">
+                    <tbody>
+                    <tr>
+                    <td style="background-color: white; width: 710px; ">
+                    <b><span style="font-family: arial,helvetica,sans-serif;">&nbsp;  Answer the following questions.</span> </b>
+                    <p><a:question index="1" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="2" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="3" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="4" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="5" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="6" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="7" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="8" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="9" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="10" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="11" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="12" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="13" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="14" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="15" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="16" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="17" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="18" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="19" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="20" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <!-- Assessment Quiz -->
+                
+            </div>
+        </div>
+    </body>
+    <script src="https://m.fyioc.com/WhyNotScripts/js/VideoPlay.js"></script>
+    <script src="https://m.fyioc.com/WhyNotScripts/js/interactive2.js"></script>
+    <script>
+        // INTERACTIVE 11 START DRAG AND SWAP SCRIPT
+        const toDrag = document.querySelectorAll(".swap_drop")
+        const toDrop = document.querySelectorAll(".swap_drop")
+
+        toDrag.forEach((elem) => {
+            elem.addEventListener("dragstart", (event) => {
+                event.dataTransfer.setData("answer", elem.id)
+            })
+        })
+
+        toDrop.forEach((elem) => {
+            this.dragValidation(elem)
+        })
+
+        function dragValidation(elem) {
+            elem.addEventListener("dragover", (event) => {
+                event.preventDefault()
+            })
+            elem.addEventListener("drop", (event) => {
+                event.preventDefault()
+                const answer = event.dataTransfer.getData("answer")
+                const correctAnswer = event.currentTarget.getAttribute("data-ans")
+                const dataText = event.currentTarget.getAttribute("data-text")
+
+                let adj1 = event.currentTarget
+                let adj2 = document.getElementById(answer)
+
+                let getFromSwap = adj1.parentElement.querySelector('.intr_11_choice').getAttribute("data-text");
+                let getToSwap = adj2.parentElement.querySelector('.intr_11_choice').getAttribute("data-text");
+
+                let getFromSwapContent = adj1.parentElement.querySelector('.intr_11_choice').querySelector('.dragvalue');
+                let getToSwapContent = adj2.parentElement.querySelector('.intr_11_choice').querySelector('.dragvalue');
+
+                adj1.parentElement.querySelector('.intr_11_choice').appendChild(getToSwapContent);
+                adj2.parentElement.querySelector('.intr_11_choice').appendChild(getFromSwapContent);
+
+                adj1.parentElement.querySelector('.intr_11_choice').setAttribute("data-text", getToSwap);
+                adj2.parentElement.querySelector('.intr_11_choice').setAttribute("data-text", getFromSwap);
+
+                adj1.setAttribute("data-isdrag", "true");
+                adj2.setAttribute("data-isdrag", "true");
+
+                this.dragCheckMatch();
+            })
+        }
+
+        function dragCheckMatch(){
+            toDrag.forEach((elem) => {
+                if(elem.querySelector('.intr_11_choice').getAttribute("data-ans") == elem.querySelector('.intr_11_choice').getAttribute("data-text")){
+                    document.getElementById(elem.id).parentElement.querySelector('.practice-result-label').innerHTML = '<span class="material-icons fs-1">verified</span>';
+                    document.getElementById(elem.id).parentElement.querySelector('.practice-result-label').style.color = '#198754'
+                }else{
+                    if(elem.getAttribute("data-isdrag")){
+                        document.getElementById(elem.id).parentElement.querySelector('.practice-result-label').innerHTML = '<span class="material-icons fs-1">cancel</span>';
+                        document.getElementById(elem.id).parentElement.querySelector('.practice-result-label').style.color = '#dc3545'
+                    }
+                }
+            });
+        }
+        // INTERACTIVE 11 END
+    </script>
+</html>

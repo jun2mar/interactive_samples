@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+        <title>Lesson 1</title>
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"> -->
+
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> -->
+
+        <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round" rel="stylesheet">
+
+        <link href="https://m.fyioc.com/WhyNotScripts/css/VideoPlay.css" rel="stylesheet">
+        <link href="https://m.fyioc.com/WhyNotScripts/css/AudioPlay.css" rel="stylesheet">
+        <!-- <link href="https://m.fyioc.com/WhyNotScripts/css/interactive2.css" rel="stylesheet"> -->
+
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.css" integrity="sha512-xmGTNt20S0t62wHLmQec2DauG9T+owP9e6VU8GigI0anN7OXLip9i7IwEhelasml2osdxX71XcYm6BQunTQeQg==" crossorigin="anonymous" />
+        
+        
+    </head>
+    <style>
+        .container{
+            max-width: 1080px;
+            /* box-shadow: 0px -1px 5px #504b4b; */
+        }
+        div:has(.container):last-child{
+            padding-bottom: 5em;
+        }
+        .section{
+            position: relative;
+        }
+        .section_one{
+            background: url('https://m.fyioc.com/WhyNotImages/ENG1U1L1_img_1.jpg') no-repeat;
+            background-size: cover;
+            background-position: left;
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+        .section_two{
+            background: url('https://m.fyioc.com/WhyNotImages/ENG1U1L1_img_2.jpg') no-repeat;
+            background-size: cover;
+            background-position: left;
+            padding-top: 7.5rem;
+            padding-bottom: 7.5rem;
+        }
+        .section_three{
+            background: url('https://m.fyioc.com/WhyNotImages/ENG1U1L1_img_3.jpg') no-repeat;
+            background-size: cover;
+            background-position: left;
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+
+        /* BOOTSTRAP TAGS CSS START */
+        .bootstrap-tagsinput .tag {
+            background: #e3e3e3;
+            padding: 4px;
+            font-size: 14px;
+            color: black;
+        }
+
+        .bootstrap-tagsinput{
+            display: block;
+            margin-top: 1rem;
+            line-height: 30px;
+        }
+
+        .bootstrap-tagsinput .tag [data-role="remove"] {
+            display: none;
+        }
+        /* BOOTSTRAP TAGS CSS END */
+
+        /* INTERACTIVE 11 START */
+        .intr_11_title{
+            background: #cdb6a6;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .intr_11_title button span{ 
+            color: #a3a3a3;
+            font-size: 5rem;
+        }
+        .intr_11_center{
+            background: #aee3f1;
+        }
+        .intr_11_wrap_choice{
+            cursor: pointer;
+            background: #cdb6a6;
+            position: relative;
+        }
+        .intr_11_choice{
+            height: 100%;
+        }
+        .intr_11_choice::after{
+            position: absolute;
+            content: attr(data-text);
+            color: #575757;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            font-size: .9rem;
+            font-weight: 500;
+            word-wrap: break-word;
+            inline-size: 90%;
+        }
+        .practice-result-label{
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        /* INTERACTIVE 11 END */
+    </style>
+    <body>
+        <div class="main">
+            <div style="background-color: #cdb6a6;">
+                <div class="container text-dark">
+                    <div class="row section section_one">
+                        <div class="col-8">
+                            <div class="ms-5">
+                                <p class="display-4 fw-bold">Introduction to <br />Literature</p>
+                                <p class="ms-5 mt-5 fs-4 fw-bold text-uppercase">Lesson Expectations</p>
+                                <p class="ms-5 mt-5 fs-5">By the end of this lesson, you should <br />be able to:</p>
+                                <ul class="ms-5 fs-5">
+                                    <li>Respond to art and literature</li>
+                                    <li>Recognize an author's word choice</li>
+                                    <li>Form an interpretation</li>
+                                    <li>Support an idea with examples</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="background-color: #ece1d8;">
+                <div class="container text-dark">
+                    <div class="row section section_two d-flex justify-content-end">
+                        <div class="col-4 ms-5">
+                            <p class="fs-4 fw-bold">Lesson Keywords</p>
+                            <ul class="fs-5">
+                                <li>Diction</li>
+                                <li>Interpretation</li>
+                                <li>Juxtaposition</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row section section_three">
+                        <div class="col-8 ms-5">
+                            <p class="fs-4 fw-bold text-uppercase">What You Should Know</p>
+                            <p class="fs-5">Before you begin, you should:</p>
+                            <ul class="fs-5">
+                                <li>Understand how to write in clear sentences</li>
+                                <li>Demonstrate expertise in creating a well formatted paragraph</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="background-color: #5d5e61;">
+                <div class="container text-dark">
+                    <div class="row section section_four" style="background-color: #cdb6a6;">
+                        <div class="col-12">
+                            <p class="fs-1 fw-bold text-center mt-4">Looking Deeper</p>
+                            <p class="mx-5 fs-5 mt-4">When we look at art, we could very well say to ourselves,"Great drawing! Wow, that artist can paint!" Or, "Nice colorful image!" However, this is an initial reaction to something we see; we do not really give it much thought. Maybe we just need to look deeper.</p>
+                            
+                            <div class="p-5" style="border: black solid; background-color: white;">
+                                <div class="text-center">
+                                    <button class="text-center" style="background-color: #cdb6a6; border-radius: 50%;" class="btn text-dark" id="btnPlayTone" data-audio="Biografía"></button>
+                                </div>
+                                <p class="fs-5 mt-3">Let's take a closer look at this image. At first glance, you might see a group of children riding their bikes through a city street surrounded by colorful graffiti. But if you look more closely, you might notice the playful expressions on the children's faces and the sense of freedom and adventure in the scene. The use of bold, bright colors and the chaotic lines of the graffiti add depth and meaning to the image, creating a sense of energy and vibrancy. Do you feel like you are right there in the scene, experiencing the excitement alongside the children?</p>
+                            </div>
+
+                            <p class="mx-5 fs-5 mt-4">Literature is no different than art in this respect. When we read a story or a novel, we may think we're reading merely for the action or the drama. But do writers write just for pure entertainment?</p>
+                            <p class="mx-5 fs-5 mt-4">If we take a closer look at literature, we find that writers do more than just entertain. They reveal a sense of understanding or perhaps a longing to comprehend human nature. Writers as well as artists want to understand human nature, society, and how we live our lives. Haven't you read a story and thought, "Hey, I know exactly how that character feels."</p>
+                            <p class="mx-5 fs-5">Literature then can be seen as the exploration of the human condition. It is human nature to question, and literature allows us the opportunities to question freely.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="background-color: #cdb6a6;">
+                <div class="container text-dark">
+                    <div class="row section section_five" style="background-color: #ece1d8;">
+                        <div class="col-12">
+                            <p class="fs-2 fw-bold text-center mt-4">Responding to Art</p>
+                            <p class="mx-5 fs-5 mt-4">One way to begin to figure out an artist's meaning is to understand your personal reactions to the work. Take a few minutes to look at the following art piece:</p>
+                            <p class ="mx-5 fs-5 mt-4 text-center">
+                                <span class="fw-bold">Elina</span><br />
+                                <img src="https://m.fyioc.com/WhyNotImages/ENG1U1L1_img_4.jpg" width="50%">
+                            </p>
+                            <p class="mx-5 fs-5 mt-4">Answer the following questions according to the previous art piece.</p>
+                            
+                            <ol>
+                                <li>
+                                    How does this artwork make me feel and why does it make me feel this way?
+                                    <div class="row">
+                                        <div class="col-11">
+                                            <div class="py-3 fillSelectBtnsArr" indexnum="1" hasoutput="true" outputmaxvalue="3"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    How does this artwork make me feel and why does it make me feel this way?
+                                    <div class="row">
+                                        <div class="col-11">
+                                            <div class="py-3 fillSelectBtnsArr" indexnum="2" outputmaxvalue="2"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    What evidence led me to this conclusion?
+                                    <div class="row">
+                                        <div class="col-11">
+                                            <div class="py-3 fillSelectBtnsArr" indexnum="3" outputmaxvalue="1"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    Is she alone in the artwork?
+                                    <div class="row">
+                                        <div class="col-11">
+                                            <div class="py-3 fillSelectBtnsArr" indexnum="4" outputmaxvalue="1"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    Why my opinion about this drawing is different from others?
+                                    <div class="row">
+                                        <div class="col-11">
+                                            <div class="py-3 fillSelectBtnsArr" indexnum="5" outputmaxvalue="1"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="background-color: #ece1d8;">
+                <div class="container text-dark">
+                    <div class="row section section_six" style="background-color: #cdb6a6;">
+                        <div class="col-12">
+                            <p class="fs-2 fw-bold text-center mt-4">Responding to Words</p>
+                            <p class="fst-italic mx-5">"Every act of rebellion expresses a nostalgia for innocence and an appeal to the essence of being."</p>
+                            <p class="mt-3 mx-5">Now let's look at the following quote by author Albert Camus:</p>
+                            <p class="mt-3 mx-5">Take a few minutes to analyze what the author is trying to convey. Let's consider the same type of questions we asked about the art work.</p>
+
+                            <ol class="mt-4 mx-4">
+                                <li>
+                                    Do you think everyone feels the same way when they read this quote?
+                                    <div class="row">
+                                        <div class="col-11">
+                                            <div class="py-3 fillSelectBtnsArr" indexnum="6" outputmaxvalue="1"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    If you were to describe in your own words what the author means by "act of rebellion", would it be the same as what the author wanted to communicate?
+                                    <div class="row">
+                                        <div class="col-11">
+                                            <div class="py-3 fillSelectBtnsArr" indexnum="7" outputmaxvalue="1"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    Do you think that when the author says "nostalgia for innocence" he is referring to his childhood?
+                                    <div class="row">
+                                        <div class="col-11">
+                                            <div class="py-3 fillSelectBtnsArr" indexnum="8" outputmaxvalue="1"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    Is it easy for you to understand the quote "appeal to the essence of being"?
+                                    <div class="row">
+                                        <div class="col-11">
+                                            <div class="py-3 fillSelectBtnsArr" indexnum="9" outputmaxvalue="1"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+                            
+                            <p class="mt-3 mx-5">Read the quote again but consider these questions as you read.</p>
+                            <p class="fst-italic mx-5">"Every act of rebellion expresses a nostalgia for innocence and an appeal to the essence of being."</p>
+                            <p class="mt-3 mx-5">As you read, highlight the three most significant keywords that you feel give meaning to the quote and cause people to get different interpretations from the author's word choice. (The author's word choice provides clues to the most important ideas).</p>
+                            <style>
+                                .radioimg{
+                                    width: 100%;
+                                    height: 100px;
+                                    cursor: pointer;
+                                    border: #999999 solid 1px;
+                                }
+                                .imgbgchk:checked + label>img{
+                                    border: rgb(25, 135, 84) solid;
+                                    transform: scale(1.1);
+                                    transition: transform .5s;
+                                }
+                                .radiotitle{
+                                    background: white;
+                                    border: #999999 solid 1px;
+                                    height: 100px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
+                                .radioimgrow{
+                                    margin-top: .5rem;
+                                    margin-bottom: .5rem;
+                                    padding: 2rem 1rem 1rem 1rem;
+                                    background-color: #ece1d8;
+                                    border: #999999 solid 2px;
+                                }
+                            </style>
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-7 ">
+                                    <div class="row radioimgrow">
+                                        <div class="col-3" style="padding: 0 1.5rem 0 1.5rem;">
+                                            <p class="fw-bold radiotitle">Act</p>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="radio" name="radioimg_1" id="radioimg_id_1" class="d-none imgbgchk">
+                                            <label for="radioimg_id_1"><img class="radioimg" src="https://m.fyioc.com/WhyNotImages/ENG1U1L1_img_5.jpg"></label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="radio" name="radioimg_1" id="radioimg_id_2" class="d-none imgbgchk">
+                                            <label for="radioimg_id_2"><img class="radioimg" src="https://m.fyioc.com/WhyNotImages/ENG1U1L1_img_6.jpg"></label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="radio" name="radioimg_1" id="radioimg_id_3" class="d-none imgbgchk">
+                                            <label for="radioimg_id_3"><img class="radioimg" src="https://m.fyioc.com/WhyNotImages/ENG1U1L1_img_7.jpg"></label>
+                                        </div>
+                                    </div>
+                                    <div class="row radioimgrow">
+                                        <div class="col-3" style="padding: 0 1.5rem 0 1.5rem;">
+                                            <p class="fw-bold radiotitle">Rebellion</p>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="radio" name="radioimg_2" id="radioimg_id_4" class="d-none imgbgchk">
+                                            <label for="radioimg_id_4"><img class="radioimg" src="https://m.fyioc.com/WhyNotImages/ENG1U1L1_img_8.jpg"></label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="radio" name="radioimg_2" id="radioimg_id_5" class="d-none imgbgchk">
+                                            <label for="radioimg_id_5"><img class="radioimg" src="https://m.fyioc.com/WhyNotImages/ENG1U1L1_img_9.jpg"></label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="radio" name="radioimg_2" id="radioimg_id_6" class="d-none imgbgchk">
+                                            <label for="radioimg_id_6"><img class="radioimg" src="https://m.fyioc.com/WhyNotImages/ENG1U1L1_img_10.jpg"></label>
+                                        </div>
+                                    </div>
+                                    <div class="row radioimgrow">
+                                        <div class="col-3" style="padding: 0 1.5rem 0 1.5rem;">
+                                            <p class="fw-bold radiotitle">Nostalgia</p>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="radio" name="radioimg_3" id="radioimg_id_7" class="d-none imgbgchk">
+                                            <label for="radioimg_id_7"><img class="radioimg" src="https://m.fyioc.com/WhyNotImages/ENG1U1L1_img_11.jpg"></label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="radio" name="radioimg_3" id="radioimg_id_8" class="d-none imgbgchk">
+                                            <label for="radioimg_id_8"><img class="radioimg" src="https://m.fyioc.com/WhyNotImages/ENG1U1L1_img_12.jpg"></label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="radio" name="radioimg_3" id="radioimg_id_9" class="d-none imgbgchk">
+                                            <label for="radioimg_id_9"><img class="radioimg" src="https://m.fyioc.com/WhyNotImages/ENG1U1L1_img_13.jpg"></label>
+                                        </div>
+                                    </div>
+                                    <div class="row radioimgrow">
+                                        <div class="col-3" style="padding: 0 1.5rem 0 1.5rem;">
+                                            <p class="fw-bold radiotitle">Innocence</p>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="radio" name="radioimg_4" id="radioimg_id_10" class="d-none imgbgchk">
+                                            <label for="radioimg_id_10"><img class="radioimg" src="https://m.fyioc.com/WhyNotImages/ENG1U1L1_img_14.jpg"></label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="radio" name="radioimg_4" id="radioimg_id_11" class="d-none imgbgchk">
+                                            <label for="radioimg_id_11"><img class="radioimg" src="https://m.fyioc.com/WhyNotImages/ENG1U1L1_img_15.jpg"></label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="radio" name="radioimg_4" id="radioimg_id_12" class="d-none imgbgchk">
+                                            <label for="radioimg_id_12"><img class="radioimg" src="https://m.fyioc.com/WhyNotImages/ENG1U1L1_img_16.jpg"></label>
+                                        </div>
+                                    </div>
+                                    <div class="row radioimgrow">
+                                        <div class="col-3" style="padding: 0 1.5rem 0 1.5rem;">
+                                            <p class="fw-bold radiotitle">Appeal</p>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="radio" name="radioimg_5" id="radioimg_id_13" class="d-none imgbgchk">
+                                            <label for="radioimg_id_13"><img class="radioimg" src="https://m.fyioc.com/WhyNotImages/ENG1U1L1_img_17.jpg"></label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="radio" name="radioimg_5" id="radioimg_id_14" class="d-none imgbgchk">
+                                            <label for="radioimg_id_14"><img class="radioimg" src="https://m.fyioc.com/WhyNotImages/ENG1U1L1_img_18.jpg"></label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="radio" name="radioimg_5" id="radioimg_id_15" class="d-none imgbgchk">
+                                            <label for="radioimg_id_15"><img class="radioimg" src="https://m.fyioc.com/WhyNotImages/ENG1U1L1_img_19.jpg"></label>
+                                        </div>
+                                    </div>
+                                    <div class="row radioimgrow">
+                                        <div class="col-3" style="padding: 0 1.5rem 0 1.5rem;">
+                                            <p class="fw-bold radiotitle">Essence</p>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="radio" name="radioimg_6" id="radioimg_id_16" class="d-none imgbgchk">
+                                            <label for="radioimg_id_16"><img class="radioimg" src="https://m.fyioc.com/WhyNotImages/ENG1U1L1_img_20.jpg"></label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="radio" name="radioimg_6" id="radioimg_id_17" class="d-none imgbgchk">
+                                            <label for="radioimg_id_17"><img class="radioimg" src="https://m.fyioc.com/WhyNotImages/ENG1U1L1_img_21.jpg"></label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="radio" name="radioimg_6" id="radioimg_id_18" class="d-none imgbgchk">
+                                            <label for="radioimg_id_18"><img class="radioimg" src="https://m.fyioc.com/WhyNotImages/ENG1U1L1_img_22.jpg"></label>
+                                        </div>
+                                    </div>
+                                    <div class="row radioimgrow">
+                                        <div class="col-3" style="padding: 0 1.5rem 0 1.5rem;">
+                                            <p class="fw-bold radiotitle">Being</p>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="radio" name="radioimg_7" id="radioimg_id_19" class="d-none imgbgchk">
+                                            <label for="radioimg_id_19"><img class="radioimg" src="https://m.fyioc.com/WhyNotImages/ENG1U1L1_img_23.jpg"></label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="radio" name="radioimg_7" id="radioimg_id_20" class="d-none imgbgchk">
+                                            <label for="radioimg_id_20"><img class="radioimg" src="https://m.fyioc.com/WhyNotImages/ENG1U1L1_img_24.jpg"></label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="radio" name="radioimg_7" id="radioimg_id_21" class="d-none imgbgchk">
+                                            <label for="radioimg_id_21"><img class="radioimg" src="https://m.fyioc.com/WhyNotImages/ENG1U1L1_img_25.jpg"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="background-color: #cdb6a6;">
+                <div class="container text-dark">
+                    <div class="row section section_six" style="background-color: #ece1d8;">
+                        <div class="col-12">
+                            <p class="fs-2 fw-bold text-center mt-4">Interpretation</p>
+                            <p class="mt-3 mx-5">The more questions you ask, the more answers you will find. So when reading a story, use the questioning technique.</p>
+                            <p class="mt-3 mx-5">Think about the following questions</p>
+                            <ul class="mt-3 mx-5">
+                                <li>What is the main idea that the author is getting across?</li>
+                                <li>How can you explain that in your own words?</li>
+                                <li>What words or phrases from the quote best support your idea?</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="background-color: #ece1d8;">
+                <div class="container text-dark">
+                    <div class="row section section_six pb-3" style="background-color: #cdb6a6;">
+                        <div class="col-12">
+                            <p class="fs-2 fw-bold text-center mt-4">Putting the Ideas Together</p>
+                            <p class="mt-3 mx-5">Which of these statements do you think is closest to what Camus means in that quote?</p>
+                            
+                            <div class="mt-3 mx-5">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="radios1" id="radios_id_1">
+                                    <label class="form-check-label" for="radios_id_1">Rebellion is an essential part of being human.</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="radios1" id="radios_id_2">
+                                    <label class="form-check-label" for="radios_id_2">Innocence is an act of rebellion.</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="radios1" id="radios_id_3">
+                                    <label class="form-check-label" for="radios_id_3">Nostalgia is the essence of being.</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="radios1" id="radios_id_4">
+                                    <label class="form-check-label" for="radios_id_4">Deep down, every rebel really wants an innocent life.</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="background-color: #cdb6a6;">
+                <div class="container text-dark">
+                    <div class="row section section_six" style="background-color: #ece1d8;">
+                        <div class="col-12">
+                            <p class="fs-2 fw-bold text-center mt-4">Summary</p>
+                            <p class="mt-3 mx-5">In this lesson, you have covered:</p>
+                            <ul class="mt-3 mx-5">
+                                <li>The significance of the author's word choice</li>
+                                <li>Making your own conclusions about that word choice</li>
+                                <li>How to recognize juxtaposition</li>
+                                <li>How to formulate an opinion or argument with evidence</li>
+                                <li>How to compose your own interpretation by supporting your idea with examples</li>
+                            </ul>
+                            <p class="mt-3 mx-5">The next big step will come later on. We will explore questions like: What is the author saying about human nature, society, and how we live our lives?</p>
+                            <p class="mt-3 mx-5">As you complete your assignments for this course, understand that some assignments will require you to study routinely over an extended time frame. You will need time for research, reflection and revision. Other assignments will allow for a shorter time frame. You might finish these assignments in a single sitting or in a day. No matter the length of your assignment, always consider the task, purpose, and audience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="background-color: #ece1d8;">
+                <div class="container text-dark">
+                    <div class="row section section_six" style="background-color: #ffffff;">
+                        <div class="col-12">
+                            <p class="fs-2 fw-bold text-center mt-4">Assignment Directions:</p>
+                            <p class="mt-3 mx-5 text-center">Instructions: Match both columns where you select the answer you think is correct.</p>
+                            <div class="row d-flex justify-content-center my-4">
+                                <div class="col-3 border border-dark mx-5 intr_11_title py-5">
+                                    <p class="text-center text-dark fs-5 px-1">Literature</p>
+                                </div>
+                                <div class="col-3 border border-dark mx-5">
+                                    <div class="row" style="height: 100%;">
+                                        <div class="col-12 intr_11_wrap_choice" style="border-bottom: solid 2px black;">
+                                            <div id="p1_q1" class="swap_drop" data-isdrag="" draggable="true">
+                                                <div class="intr_11_choice" data-ans="c) Can be seen as the exploration of the human condition." data-text="a) Figuring out the meaning of a work. Can be seen as the exploration of the human condition"></div>
+                                                <span class="practice-result-label"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex justify-content-center my-4">
+                                <div class="col-3 border border-dark mx-5 intr_11_title py-5">
+                                    <p class="text-center text-dark fs-5 px-1">Juxtaposition</p>
+                                </div>
+                                <div class="col-3 border border-dark mx-5">
+                                    <div class="row" style="height: 100%;">
+                                        <div class="col-12 intr_11_wrap_choice" style="border-bottom: solid 2px black;">
+                                            <div id="p1_q2" class="swap_drop" data-isdrag="" draggable="true">
+                                                <div class="intr_11_choice" data-ans="b) Putting words or ideas side by side in a surprising way." data-text="c) Can be seen as the exploration of the human condition."></div>
+                                                <span class="practice-result-label"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex justify-content-center my-4">
+                                <div class="col-3 border border-dark mx-5 intr_11_title py-5">
+                                    <p class="text-center text-dark fs-5 px-1">Interpretation</p>
+                                </div>
+                                <div class="col-3 border border-dark mx-5">
+                                    <div class="row" style="height: 100%;">
+                                        <div class="col-12 intr_11_wrap_choice" style="border-bottom: solid 2px black;">
+                                            <div id="p1_q3" class="swap_drop" data-isdrag="" draggable="true">
+                                                <div class="intr_11_choice" data-ans="a) Figuring out the meaning of a work. Can be seen as the exploration of the human condition" data-text="b) Putting words or ideas side by side in a surprising way."></div>
+                                                <span class="practice-result-label"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex justify-content-center my-4">
+                                <div class="col-3 border border-dark mx-5 intr_11_title py-5">
+                                    <p class="text-center text-dark fs-5 px-1">Questioning technique</p>
+                                </div>
+                                <div class="col-3 border border-dark mx-5">
+                                    <div class="row" style="height: 100%;">
+                                        <div class="col-12 intr_11_wrap_choice" style="border-bottom: solid 2px black;">
+                                            <div id="p1_q4" class="swap_drop" data-isdrag="" draggable="true">
+                                                <div class="intr_11_choice" data-ans="e) The more questions you ask, the more answers you will find." data-text="d) Reveal a sense of understanding or perhaps a longing to comprehend human nature."></div>
+                                                <span class="practice-result-label"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex justify-content-center my-4">
+                                <div class="col-3 border border-dark mx-5 intr_11_title py-5">
+                                    <p class="text-center text-dark fs-5 px-1">Writers</p>
+                                </div>
+                                <div class="col-3 border border-dark mx-5">
+                                    <div class="row" style="height: 100%;">
+                                        <div class="col-12 intr_11_wrap_choice" style="border-bottom: solid 2px black;">
+                                            <div id="p1_q5" class="swap_drop" data-isdrag="" draggable="true">
+                                                <div class="intr_11_choice" data-ans="d) Reveal a sense of understanding or perhaps a longing to comprehend human nature." data-text="e) The more questions you ask, the more answers you will find."></div>
+                                                <span class="practice-result-label"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Assessment Quiz -->
+                <table style="width: 710px; height: auto; margin-left: auto; margin-right: auto; margin-top: 5em;" border="1" cellpadding="20">
+                    <tbody>
+                    <tr>
+                    <td style="background-color: white; width: 710px; ">
+                    <b><span style="font-family: arial,helvetica,sans-serif;">&nbsp;  Answer the following questions.</span> </b>
+                    <p><a:question index="1" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="2" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="3" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="4" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="5" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="6" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="7" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="8" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="9" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="10" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="11" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="12" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="13" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="14" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="15" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="16" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="17" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="18" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="19" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="20" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <!-- Assessment Quiz -->
+
+            </div>
+        </div>     
+    </body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://m.fyioc.com/WhyNotScripts/bootstrap-tagsinput0.8.0.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.min.js" integrity="sha512-9UR1ynHntZdqHnwXKTaOm1s6V9fExqejKvg5XMawEMToW4sSw+3jtLrYfZPijvnwnnE8Uol1O9BcAskoxgec+g==" crossorigin="anonymous"></script> -->
+    
+    <script>
+        var audiolink = "https://m.fyioc.com/Spanish2/Lesson10/";
+        var audioFontSize = '50px';
+    </script>
+    <script src="https://m.fyioc.com/WhyNotScripts/AudioPlay.js"></script>
+    <script src="https://m.fyioc.com/WhyNotScripts/js/VideoPlay.js"></script>
+    
+    <script>
+        // FILL SELECT BUTTON INTERACTIVES START
+        var fillSelectBtnsArr_1 = [ "Exasperation", "Liking", "Terror", "Hope", "Happiness", "Worry", "Attraction", "Loneliness", "Affection", "Dislike", "Enthusiasm", "Unhappiness", "Sadness", "Mortification", "Astonishment", "Love", "Surprise", "Annoyance", ];
+        var fillSelectBtnsArr_2 = [ "Fantasy", "Curiosity", "Calmness", "Groundbreaking", "Dynamism", "Extremism", "Inventiveness", "Inspiration", "Intensity", ];
+        var fillSelectBtnsArr_3 = [ "My current life", "How I feel right now", "My past", "My interests", "What I have experienced", "I don't know", ];
+        var fillSelectBtnsArr_4 = [ "Yes", "No" ];
+        var fillSelectBtnsArr_5 = [ "Due to  my experience", "Due to  my tastes", "Due to how I feel at this moment", ];
+
+        var fillSelectBtnsArr_6 = [ "Yes", "No" ];
+        var fillSelectBtnsArr_7 = [ "Yes", "No" ];
+        var fillSelectBtnsArr_8 = [ "Yes", "No" ];
+        var fillSelectBtnsArr_9 = [ "Yes", "No" ];
+
+        const containerLabel = "fillSelectBtnsArr";
+        const container = document.querySelectorAll("." + containerLabel);
+        container.forEach(container => {
+            let valContainer = container.getAttribute("indexnum");
+            let hasoutput = container.getAttribute("hasoutput");
+            
+            window[containerLabel + '_' + valContainer].forEach(element => {
+                let btn = document.createElement("button");
+                btn.setAttribute("class", "btn btn-outline-dark m-1 fillSelectBtns");
+                btn.setAttribute("indexnum", valContainer);
+                btn.innerHTML = element;
+                container.appendChild(btn);
+            });
+
+            if(hasoutput){
+                let input = document.createElement("input");
+                input.setAttribute("id", "fillSelectInputArr_" + valContainer);
+                container.appendChild(input);
+                window["#fillSelectInputArr_" + valContainer] = $("#fillSelectInputArr_" + valContainer);
+                window["#fillSelectInputArr_" + valContainer].tagsinput();
+            }
+        });
+        
+        const fillSelectBtns = document.querySelectorAll(".fillSelectBtns");
+        fillSelectBtns.forEach(element => {
+            let valBtnContainer = element.getAttribute("indexnum");
+            element.addEventListener("click", (event) => {
+                let valBtnContainer = event.target.getAttribute("indexnum");
+                let hasoutput = event.target.parentNode.getAttribute("hasoutput");
+                let outputmaxvalue = event.target.parentNode.getAttribute("outputmaxvalue");
+
+                if(outputmaxvalue){
+                    let countSelectedbtn = event.target.parentNode.querySelectorAll(".selectedbtn").length;
+                    
+                    event.target.classList.toggle("selectedbtn");
+                    if(event.target.classList.contains('selectedbtn')){
+                        if(parseInt(outputmaxvalue) > parseInt(countSelectedbtn)){
+                            event.target.classList.remove('btn-outline-dark');
+                            event.target.classList.add('btn-outline-success');
+
+                            if(hasoutput){
+                                window["#fillSelectInputArr_" + valBtnContainer].tagsinput('add', event.target.innerHTML);
+                            }
+                        }else{
+                            event.target.classList.toggle("selectedbtn");
+                        }
+                    }else{
+                        event.target.classList.add('btn-outline-dark');
+                        event.target.classList.remove('btn-outline-success');
+                        if(hasoutput){
+                            window["#fillSelectInputArr_" + valBtnContainer].tagsinput('remove', event.target.innerHTML);
+                        }
+                    }
+                }else{
+                    event.target.classList.toggle("selectedbtn");
+                    if(event.target.classList.contains('selectedbtn')){
+                        event.target.classList.remove('btn-outline-dark');
+                        event.target.classList.add('btn-outline-success');
+                    }else{
+                        event.target.classList.add('btn-outline-dark');
+                        event.target.classList.remove('btn-outline-success');
+                    }
+                }
+            });
+        });
+        // FILL SELECT BUTTON INTERACTIVES END
+
+        // INTERACTIVE 11 START DRAG AND SWAP SCRIPT
+        const toDrag = document.querySelectorAll(".swap_drop")
+        const toDrop = document.querySelectorAll(".swap_drop")
+
+        toDrag.forEach((elem) => {
+            elem.addEventListener("dragstart", (event) => {
+                event.dataTransfer.setData("answer", elem.id)
+            })
+        })
+
+        toDrop.forEach((elem) => {
+            this.dragValidation(elem)
+        })
+
+        function dragValidation(elem) {
+            elem.addEventListener("dragover", (event) => {
+                event.preventDefault()
+            })
+            elem.addEventListener("drop", (event) => {
+                event.preventDefault()
+                const answer = event.dataTransfer.getData("answer")
+                const correctAnswer = event.currentTarget.getAttribute("data-ans")
+                const dataText = event.currentTarget.getAttribute("data-text")
+
+                let adj1 = event.currentTarget
+                let adj2 = document.getElementById(answer)
+
+                let getFromSwap = adj1.parentElement.querySelector('.intr_11_choice').getAttribute("data-text")
+                let getToSwap = adj2.parentElement.querySelector('.intr_11_choice').getAttribute("data-text")
+
+                adj1.parentElement.querySelector('.intr_11_choice').setAttribute("data-text", getToSwap);
+                adj2.parentElement.querySelector('.intr_11_choice').setAttribute("data-text", getFromSwap);
+
+                adj1.setAttribute("data-isdrag", "true");
+                adj2.setAttribute("data-isdrag", "true");
+
+                this.dragCheckMatch();
+            })
+        }
+
+        function dragCheckMatch(){
+            toDrag.forEach((elem) => {
+                if(elem.querySelector('.intr_11_choice').getAttribute("data-ans") == elem.querySelector('.intr_11_choice').getAttribute("data-text")){
+                    document.getElementById(elem.id).parentElement.querySelector('.practice-result-label').innerHTML = '<span class="material-icons fs-1">verified</span>';
+                    document.getElementById(elem.id).parentElement.querySelector('.practice-result-label').style.color = '#198754'
+                }else{
+                    if(elem.getAttribute("data-isdrag")){
+                        document.getElementById(elem.id).parentElement.querySelector('.practice-result-label').innerHTML = '<span class="material-icons fs-1">cancel</span>';
+                        document.getElementById(elem.id).parentElement.querySelector('.practice-result-label').style.color = '#dc3545'
+                    }
+                }
+            });
+        }
+        // INTERACTIVE 11 END
+    </script>
+</html>

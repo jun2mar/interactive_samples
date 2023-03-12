@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 2</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round" rel="stylesheet">
+
+        <link href="https://m.fyioc.com/WhyNotScripts/css/VideoPlay.css" rel="stylesheet">
+        <link href="https://m.fyioc.com/WhyNotScripts/css/AudioPlay.css" rel="stylesheet">
+    </head>
+    <style>
+        :root{
+            --font-one: 'Montserrat', sans-serif;
+            --font-two: 'Arvo', serif;
+        }
+        .container{
+            max-width: 1080px;
+        }
+        div:has(.container):last-child{
+            padding-bottom: 5em;
+        }
+        .fontArvo{
+            font-family: 'Arvo', sans-serif;
+        }
+        .titleColor{
+            color: #48321d;
+        }
+        .textJustify{
+            text-align: justify;
+        }
+        .section{
+            position: relative;
+        }
+        .section_one{
+            font-family: var(--font-one);
+            background: url('ES1U2L1/ES1U2L1_img_1.jpg') no-repeat;
+            background-size: cover;
+            background-position: left;
+            padding-top: 10rem;
+            padding-bottom: 10rem;
+        }
+        .section_three{
+            font-family: var(--font-one);
+            background: url('ES1U2L1/ES1U2L1_img_3.jpg') no-repeat;
+            background-size: cover;
+            background-position: left;
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+        .dot {
+            margin-top: -5em;
+            height: 10px;
+            width: 10px;
+            background-color: #bc9d3f;
+            border-radius: 50%;
+            display: inline-block;
+            box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 75%);
+            -webkit-box-shadow: 2px 2px 5px 0px rgb(0 0 0 / 75%);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        }
+    </style>
+    <body>
+        <div class="main fs-5">
+            <div style="background-color: #404040;">
+                <div class="container text-dark">
+                    <div class="row section section_one" style="background-color: white;">
+                        <div class="col-11 text-center text-white fontArvo">
+                            <div class="ms-5">
+                                <p class="display-6 fw-bold">ENVIRONMENTAL SCIENCE</p>
+                                <p class="display-1 fw-bold">ROCK CYCLE</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="background-color: #878181;">
+                <div class="container text-dark">
+                    <div class="row section section_two py-5" style="background-color: white;">
+                        <div class="col-11 mx-5">
+                            <div class="row textJustify">
+                                <div class="col-6">
+                                    <p class="fs-3 fw-bold titleColor">The Hope Diamond</p>
+                                    <p>The Hope Diamond is one of the most prized jewels in the world. It once belonged to King Louis XIV of France, but the diamond was stolen in 1792 during the French Revolution. It was not seen again for more than 50 years. Mysteriously it ended up in the possession of a gem collector named Henry Hope. Legend says that the famous diamond is cursed because all who once held it have had serious bad luck from illnesses to imprisonment. Today, the Hope Diamond rests in the Smithsonian Museum in Washington, DC. Some gem experts place its value at over 200 million dollars!</p>
+                                </div>
+                                <div class="col-6 text-center">
+                                    <img src="ES1U2L1/ES1U2L1_img_2.jpg" class="img-fluid w-75">
+                                </div>
+                                <div class="col-12">
+                                    <p>The Hope Diamond is an extreme example of the valuable materials that are mined from the Earth. In this lesson you will learn about rocks and minerals, which are Earth materials that are used for a variety of purposes from jewelry to manufacturing.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row section section_three py-5" style="background-color: white;">
+                        <div class="col-6 mx-5 text-white">
+                            <div class="card" style="background-color: transparent;">
+                                <div class="card-body text-center" style="background-color: #414447;">
+                                    <h3 class="card-title fw-bold">What You Should Know</h3>
+                                </div>
+                                <div class="card-body text-dark fw-bold" style="background-color: #918e8e66;">
+                                    <p>Before you begin, you should:</p>
+                                    <ul>
+                                        <li>Understand the composition of Earth's layers: its crust, mantle and core.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row section section_four py-5" style="background-color: white;">
+                        <div class="col-11 mx-5 text-dark">
+                            <div class="row">
+                                <div class="col-6 text-center my-auto">
+                                    <img src="ES1U2L1/ES1U2L1_img_4.jpg" class="img-fluid">
+                                </div>
+                                <div class="col-6">
+                                    <p class="fs-3 fw-bold">Lesson Expectations</p>
+                                    <p>By the end of this lesson, you should be able to:</p>
+                                    <ul>
+                                        <li>Explain the difference between rocks and minerals.</li>
+                                        <li>List and give examples of the three main categories of rocks.</li>
+                                        <li>Explain the connection between the type of rock, and the environment in which it forms.</li>
+                                        <li>Describe the rock cycle, including weathering, erosion, and sedimentation.</li>
+                                        <li>Explain that rocks and minerals are natural resources and describe the terms depletion time and mineral reserve.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row section section_five py-5" style="background-color: #292929;">
+                        <style>
+                            .section_five .row .cardsticky{
+                                margin: 1em 0;
+                            }
+                        </style>
+                        <div class="col-11 mx-5 text-white">
+                            <div class="row d-flext justify-content-center text-center fontArvo">
+                                <div class="col-12">
+                                    <p class="fs-2 fw-bold">LESSON KEYWORDS</p>
+                                </div>
+                                <div class="col-3 cardsticky">
+                                    <div class="my-auto" style="background-color: #878181; transform: rotate(354deg); height: 20vh;">
+                                        <span class="dot"></span>
+                                        <p class="m-3 fs-4 fw-bold text-uppercase my-auto">Depletion Time</p>
+                                    </div>
+                                </div>
+                                <div class="col-3 cardsticky">
+                                    <div class="my-auto" style="background-color: #9b8a7a; transform: rotate(0deg); height: 20vh;">
+                                        <span class="dot"></span>
+                                        <p class="m-3 fs-4 fw-bold text-uppercase my-auto">Erosion</p>
+                                    </div>
+                                </div>
+                                <div class="col-3 cardsticky">
+                                    <div class="my-auto" style="background-color: #a29b9b; transform: rotate(5deg); height: 20vh;">
+                                        <span class="dot"></span>
+                                        <p class="m-3 fs-4 fw-bold text-uppercase my-auto">Igneous Rock</p>
+                                    </div>
+                                </div>
+                                <div class="col-4 cardsticky">
+                                    <div class="my-auto" style="background-color: #8d8d8d; transform: rotate(0deg); height: 20vh;">
+                                        <span class="dot"></span>
+                                        <p class="m-3 fs-4 fw-bold text-uppercase my-auto">Metamorphic Rock</p>
+                                    </div>
+                                </div>
+                                <div class="col-3 cardsticky">
+                                    <div class="my-auto" style="background-color: #878181; transform: rotate(354deg); height: 20vh;">
+                                        <span class="dot"></span>
+                                        <p class="m-3 fs-4 fw-bold text-uppercase my-auto">Mineral</p>
+                                    </div>
+                                </div>
+                                <div class="col-3 cardsticky">
+                                    <div class="my-auto" style="background-color: #878181; transform: rotate(5deg); height: 20vh;">
+                                        <span class="dot"></span>
+                                        <p class="m-3 fs-4 fw-bold text-uppercase my-auto">Rock</p>
+                                    </div>
+                                </div>
+                                <div class="col-3 cardsticky">
+                                    <div class="my-auto" style="background-color: #9b8a7a; transform: rotate(0deg); height: 20vh;">
+                                        <span class="dot"></span>
+                                        <p class="m-3 fs-4 fw-bold text-uppercase my-auto">Reserve</p>
+                                    </div>
+                                </div>
+                                <div class="col-3 cardsticky">
+                                    <div class="my-auto" style="background-color: #8d8d8d; transform: rotate(354deg); height: 20vh;">
+                                        <span class="dot"></span>
+                                        <p class="m-3 fs-4 fw-bold text-uppercase my-auto">Rock Cycle</p>
+                                    </div>
+                                </div>
+                                <div class="col-3 cardsticky">
+                                    <div class="my-auto" style="background-color: #9b8a7a; transform: rotate(0deg); height: 20vh;">
+                                        <span class="dot"></span>
+                                        <p class="m-3 fs-4 fw-bold text-uppercase my-auto">Sedimentary Rock</p>
+                                    </div>
+                                </div>
+                                <div class="col-4 cardsticky">
+                                    <div class="my-auto" style="background-color: #8d8d8d; transform: rotate(354deg); height: 20vh;">
+                                        <span class="dot"></span>
+                                        <p class="m-3 fs-4 fw-bold text-uppercase my-auto">Sedimentation</p>
+                                    </div>
+                                </div>
+                                <div class="col-3 cardsticky">
+                                    <div class="my-auto" style="background-color: #857567; transform: rotate(5deg); height: 20vh;">
+                                        <span class="dot"></span>
+                                        <p class="m-3 fs-4 fw-bold text-uppercase my-auto">Weathering</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row section section_six py-5" style="background-color: white;">
+                        <div class="col-11 mx-5 text-dark">
+                            <div class="row">
+                                <div class="col-6 text-center my-auto">
+                                    <div class="card">
+                                        <img class="card-img-top" src="holder.js/100x180/" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Title</h4>
+                                            <p class="card-text">Text</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Assessment Quiz -->
+                <table style="width: 710px; height: auto; margin-left: auto; margin-right: auto; margin-top: 5em;" border="1" cellpadding="20">
+                    <tbody>
+                    <tr>
+                    <td style="background-color: white; width: 710px; ">
+                    <b><span style="font-family: arial,helvetica,sans-serif;">&nbsp;  Answer the following questions.</span> </b>
+                    <p><a:question index="1" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="2" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="3" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="4" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="5" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="6" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="7" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="8" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="9" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="10" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="11" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="12" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="13" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="14" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="15" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="16" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="17" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="18" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="19" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="20" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <!-- Assessment Quiz -->
+                
+            </div>
+        </div>
+    </body>
+    <script>
+        var audiolink = "https://m.fyioc.com/Spanish2/Lesson10/";
+        var audioFontSize = '50px';
+    </script>
+    <script src="../../../InteractiveResources/js/AudioPlay.js"></script>
+    <script src="https://m.fyioc.com/WhyNotScripts/js/VideoPlay.js"></script>
+</html>

@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 2</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round" rel="stylesheet">
+
+        <link href="https://m.fyioc.com/WhyNotScripts/css/VideoPlay.css" rel="stylesheet">
+        <link href="https://m.fyioc.com/WhyNotScripts/css/interactive2.css" rel="stylesheet">
+    </head>
+    <style>
+        :root{
+            --font-one: 'Montserrat', sans-serif;
+            --font-two: 'Arvo', serif;
+        }
+        .container{
+            max-width: 1080px;
+        }
+        div:has(.container):last-child{
+            padding-bottom: 5em;
+        }
+        .fontArvo{
+            font-family: 'Arvo', sans-serif;
+        }
+        .section{
+            position: relative;
+        }
+        .section_one{
+            font-family: var(--font-one);
+            background: url('https://m.fyioc.com/WhyNotImages/ENG1U1L2_img_1.jpg') no-repeat; /* ENG1U1L2_img_1.jpg */
+            background-size: cover;
+            background-position: left;
+            padding-top: 6rem;
+            padding-bottom: 12rem;
+        }
+        .section_two{
+            font-family: var(--font-one);
+            background: url('https://m.fyioc.com/WhyNotImages/ENG1U1L2_img_2.jpg') no-repeat; /* ENG1U1L2_img_2.jpg */
+            background-size: cover;
+            background-position: left;
+            padding-top: 6rem;
+            padding-bottom: 12rem;
+        }
+        .arrowImg{
+            width: 15px;
+            margin-top: .4em;
+        }
+        .borderRoundTitle{
+            background-color: #528400;
+            border-radius: 1em;
+            color: white;
+        }
+        .borderRound{
+            background-color: #ffffff;
+            border-radius: 1em;
+        }
+        .borderRoundInner{
+            background-color: #ffffff;
+            border-left: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important;
+            border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important;
+            border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        .imgGallery{
+            width: 80%;
+        }
+    </style>
+    <body>
+        <div class="main fs-5">
+            <div style="background: rgb(82,132,0); background: linear-gradient(180deg, rgba(82,132,0,1) 6%, rgba(212,234,122,1) 58%);">
+                <div class="container">
+                    <div class="row section section_one d-flex justify-content-end fontArvo text-white text-center" style="background-color: white;">
+                        <div class="col-7">
+                            <p class="display-2 fw-bold">Grammar</p>
+                            <p class="fs-2">Count Nouns vs. <br />Non-Count Nouns</p>
+                        </div>
+                    </div>
+                    <div class="row section section_two py-5" style="background-color: white;">
+                        <div class="col-8 px-5">
+                            <p class="fs-4 fw-bold">Purpose</p>
+                            <p>Sometimes a collective is considered one entity and is used as a singular noun, while at other times it is considered plural. You must be able to recognize which it is in order to pair it with the correct form of the verb.</p>
+                            <p>"To be countable or not to be countable, that is the question..."</p>
+                            <p>In this lesson we will examine collective, count, and non-count nouns.</p>
+                        </div>
+                    </div>
+                    <style>
+                        div.section_three > div > div.row > div{
+                            border-top: var(--bs-gray-400) solid var(--bs-border-width); padding-top: 1em;
+                            border-top-style: dashed;
+                        }
+                    </style>
+                    <div class="row section section_three py-5" style="background-color: #ffffff;">
+                        <div class="col-11 mx-5 text-dark">
+                            <p class="fs-2 fw-bold text-center">Parts of Speech</p>
+                            <div class="fs-3 fw-bold text-center borderRoundTitle">Overview</div>
+                            <div class="row mx-3 d-flex justify-content-center" style="background-color: #ebf5c0;">
+                                <div class="col-12 mt-3" style="border-top: 0;">
+                                    <div class="container">
+                                        <div class="fs-4 fw-bold text-center border borderRound">
+                                            <img src="https://m.fyioc.com/WhyNotImages/ENG1U1L2_arrow.png" class="img-fluid arrowImg mx-3 float-start"> <!-- ENG1U1L2_arrow.png -->
+                                            Noun
+                                            <img src="https://m.fyioc.com/WhyNotImages/ENG1U1L2_arrow.png" class="img-fluid arrowImg mx-3 float-end"> <!-- ENG1U1L2_arrow.png -->
+                                        </div>
+                                        <div class="mx-3 px-3 pt-2 borderRoundInner">
+                                            <p>A word that refers to a person, place, thing, event, substance, or quality</p>
+                                            <p>'Doctor', 'shoes', and 'headphones' are all nouns.</p>
+                                            <p>An example of a countable noun is 'table', and an example of an uncountable noun is 'money'.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <div class="container">
+                                        <div class="fs-4 fw-bold text-center border borderRound">
+                                            <img src="https://m.fyioc.com/WhyNotImages/ENG1U1L2_arrow.png" class="img-fluid arrowImg mx-3 float-start"> <!-- ENG1U1L2_arrow.png -->
+                                            Pronouns
+                                            <img src="https://m.fyioc.com/WhyNotImages/ENG1U1L2_arrow.png" class="img-fluid arrowImg mx-3 float-end"> <!-- ENG1U1L2_arrow.png -->
+                                        </div>
+                                        <div class="mx-3 px-3 pt-2 borderRoundInner">
+                                            <p>A word that is used instead of a noun or a noun phrase</p>
+                                            <p>"She", "it", and "who" are all examples of pronouns.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <div class="container">
+                                        <div class="fs-4 fw-bold text-center border borderRound">
+                                            <img src="https://m.fyioc.com/WhyNotImages/ENG1U1L2_arrow.png" class="img-fluid arrowImg mx-3 float-start"> <!-- ENG1U1L2_arrow.png -->
+                                            Articles
+                                            <img src="https://m.fyioc.com/WhyNotImages/ENG1U1L2_arrow.png" class="img-fluid arrowImg mx-3 float-end"> <!-- ENG1U1L2_arrow.png -->
+                                        </div>
+                                        <div class="mx-3 px-3 pt-2 borderRoundInner">
+                                            <p>Any of the English words "a", "an", and "the", or words in other languages that do the same job as these.</p>
+                                            <p>When I say "I'm a dentist", I am using the indefinite article "a".</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <div class="container">
+                                        <div class="fs-4 fw-bold text-center border borderRound">
+                                            <img src="https://m.fyioc.com/WhyNotImages/ENG1U1L2_arrow.png" class="img-fluid arrowImg mx-3 float-start"> <!-- ENG1U1L2_arrow.png -->
+                                            Adjectives
+                                            <img src="https://m.fyioc.com/WhyNotImages/ENG1U1L2_arrow.png" class="img-fluid arrowImg mx-3 float-end"> <!-- ENG1U1L2_arrow.png -->
+                                        </div>
+                                        <div class="mx-3 px-3 pt-2 borderRoundInner">
+                                            <p>A word that describes a noun or pronoun</p>
+                                            <p>"Big", "boring", "purple", and "obvious" are all adjectives.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <div class="container">
+                                        <div class="fs-4 fw-bold text-center border borderRound">
+                                            <img src="https://m.fyioc.com/WhyNotImages/ENG1U1L2_arrow.png" class="img-fluid arrowImg mx-3 float-start"> <!-- ENG1U1L2_arrow.png -->
+                                            Adverbs
+                                            <img src="https://m.fyioc.com/WhyNotImages/ENG1U1L2_arrow.png" class="img-fluid arrowImg mx-3 float-end"> <!-- ENG1U1L2_arrow.png -->
+                                        </div>
+                                        <div class="mx-3 px-3 pt-2 borderRoundInner">
+                                            <p>A word that describes or gives more information about a verb, adjective, adverb, or phrase</p>
+                                            <p>In the phrase "she smiled cheerfully", the word "cheerfully" is an adverb.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <div class="container">
+                                        <div class="fs-4 fw-bold text-center border borderRound">
+                                            <img src="https://m.fyioc.com/WhyNotImages/ENG1U1L2_arrow.png" class="img-fluid arrowImg mx-3 float-start"> <!-- ENG1U1L2_arrow.png -->
+                                            Verbs
+                                            <img src="https://m.fyioc.com/WhyNotImages/ENG1U1L2_arrow.png" class="img-fluid arrowImg mx-3 float-end"> <!-- ENG1U1L2_arrow.png -->
+                                        </div>
+                                        <div class="mx-3 px-3 pt-2 borderRoundInner">
+                                            <p>A a word or phrase that describes an action, condition, or experience</p>
+                                            <p>The words "run", "keep", and "feel" are all verbs.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <div class="container">
+                                        <div class="fs-4 fw-bold text-center border borderRound">
+                                            <img src="https://m.fyioc.com/WhyNotImages/ENG1U1L2_arrow.png" class="img-fluid arrowImg mx-3 float-start"> <!-- ENG1U1L2_arrow.png -->
+                                            Conjunction
+                                            <img src="https://m.fyioc.com/WhyNotImages/ENG1U1L2_arrow.png" class="img-fluid arrowImg mx-3 float-end"> <!-- ENG1U1L2_arrow.png -->
+                                        </div>
+                                        <div class="mx-3 px-3 pt-2 borderRoundInner">
+                                            <p>A word such as 'and', 'but', 'while', or 'although' that connects words, phrases, and clauses in a sentence</p>
+                                            <p>The conjunction "although" joins the two clauses in the sentence "He left, although I begged him not to."</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <div class="container">
+                                        <div class="fs-4 fw-bold text-center border borderRound">
+                                            <img src="https://m.fyioc.com/WhyNotImages/ENG1U1L2_arrow.png" class="img-fluid arrowImg mx-3 float-start"> <!-- ENG1U1L2_arrow.png -->
+                                            Prepositions
+                                            <img src="https://m.fyioc.com/WhyNotImages/ENG1U1L2_arrow.png" class="img-fluid arrowImg mx-3 float-end"> <!-- ENG1U1L2_arrow.png -->
+                                        </div>
+                                        <div class="mx-3 px-3 pt-2 borderRoundInner">
+                                            <p>In grammar, a word that is used before a noun, a noun phrase, or a pronoun, connecting it to another word</p>
+                                            <p>In the sentences "We jumped in the lake", and "She drove slowly down the track", "in" and "down" are prepositions.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mt-3 mx-5">The previous definitions and examples were taken from https://dictionary.cambridge.org/</p>
+                        </div>
+                    </div>
+                    <div class="row section section_four py-5" style="background-color: #528400;">
+                        <div class="col-11 mx-5 text-white">
+                            <p class="fs-4 fw-bold text-center">Nouns (people, places, things, or ideas)<br /> often serve as the subject of a sentence.</p>
+                            <p class="fw-bold">Collective Nouns</p>
+                            <p>A noun is a word that refers to a person, place or thing. It can also refer to an abstract idea such as pain, intelligence, or love. Although nouns are relatively simple to understand, there are a few instances that pose problems to the writer.</p>
+                            <p>A collective noun is a word used to define a group of things like a herd of cows. Although a herd is considered one item, it is composed of more than one thing. That's where the trouble begins for a writer.</p>
+                            <p>Examples:</p>
+                            <ul class="fs-5">
+                                <li>The class is going on a field trip to see the capital building.</li>
+                                <li>The class must begin their assignments soon or they will receive a failing grade.</li>
+                            </ul>
+                            <p>In one instance the class is considered singular and in the other it is considered plural. Can you see the difference?</p>
+                            <p>In the first sentence, the class is acting as one because they are all going on the field trip. However, in the second sentence, although they must all begin their assignments, they are working individually on something different and maybe even at different times.</p>
+                            <div class="row bg-light text-dark text-center my-3" style="border-radius: 2em;">
+                                <div class="col-4 p-5 my-auto">Deer</div>
+                                <div class="col-4 p-5">
+                                    <img src="https://m.fyioc.com/WhyNotImages/ENG1U1L2_img_3.jpg" class="img-fluid imgGallery"> <!-- ENG1U1L2_img_3.jpg -->
+                                </div>
+                                <div class="col-4 p-5">
+                                    <img src="https://m.fyioc.com/WhyNotImages/ENG1U1L2_img_4.jpg" class="img-fluid imgGallery"> <!-- ENG1U1L2_img_4.jpg -->
+                                </div>
+                                <div class="col-4 p-5 my-auto">Fruit</div>
+                                <div class="col-4 p-5">
+                                    <img src="https://m.fyioc.com/WhyNotImages/ENG1U1L2_img_5.jpg" class="img-fluid imgGallery"> <!-- ENG1U1L2_img_5.jpg -->
+                                </div>
+                                <div class="col-4 p-5">
+                                    <img src="https://m.fyioc.com/WhyNotImages/ENG1U1L2_img_6.jpg" class="img-fluid imgGallery"> <!-- ENG1U1L2_img_6.jpg -->
+                                </div>
+                                <div class="col-4 p-5 my-auto">Dice</div>
+                                <div class="col-4 p-5">
+                                    <img src="https://m.fyioc.com/WhyNotImages/ENG1U1L2_img_7.jpg" class="img-fluid imgGallery"> <!-- ENG1U1L2_img_7.jpg -->
+                                </div>
+                                <div class="col-4 p-5">
+                                    <img src="https://m.fyioc.com/WhyNotImages/ENG1U1L2_img_8.jpg" class="img-fluid imgGallery"> <!-- ENG1U1L2_img_8.jpg -->
+                                </div>
+                                <div class="col-4 p-5 my-auto">Fish</div>
+                                <div class="col-4 p-5">
+                                    <img src="https://m.fyioc.com/WhyNotImages/ENG1U1L2_img_9.jpg" class="img-fluid imgGallery"> <!-- ENG1U1L2_img_9.jpg -->
+                                </div>
+                                <div class="col-4 p-5">
+                                    <img src="https://m.fyioc.com/WhyNotImages/ENG1U1L2_img_10.jpg" class="img-fluid imgGallery"> <!-- ENG1U1L2_img_10.jpg -->
+                                </div>
+                                <div class="col-4 p-5 my-auto">Staff</div>
+                                <div class="col-4 p-5">
+                                    <img src="https://m.fyioc.com/WhyNotImages/ENG1U1L2_img_11.jpg" class="img-fluid imgGallery"> <!-- ENG1U1L2_img_11.jpg -->
+                                </div>
+                                <div class="col-4 p-5">
+                                    <img src="https://m.fyioc.com/WhyNotImages/ENG1U1L2_img_12.jpg" class="img-fluid imgGallery"> <!-- ENG1U1L2_img_12.jpg -->
+                                </div>
+                            </div>
+                            <p>If collective nouns are troublesome, you can do one of two things to ensure correct usage. First, you might insert the word <strong style="color: #e1fd6d;">'members'</strong> or <strong style="color: #e1fd6d;">'players'</strong> in, for words like jury, committee, team. That way you can use a plural verb safely.</p>
+                            <ul class="fs-5"><li>Team members were disappointed at their loss.</li></ul>
+                            <p>Second, you can substitute an entirely different word such as birds instead of flock, or soldiers instead of army.</p>
+                            <ul class="fs-5"><li>The soldiers marched proudly past.</li></ul>
+                        </div>
+                    </div>
+                    <div class="row section section_five py-5" style="background-color: #ffffff;">
+                        <div class="col-11 mx-5 text-dark">
+                            <p class="fs-4 fw-bold text-center">Count Nouns vs. Non-count Nouns</p>
+                            <div class="row p-2 text-white" style="background-color: #528400;">
+                                <div class="col-6 text-center pb-3 fs-4 fw-bold" style="border-bottom: var(--bs-border-color) dashed 1px;">
+                                    Count Nouns
+                                </div>
+                                <div class="col-6 text-center pb-3 fs-4 fw-bold" style="border-bottom: var(--bs-border-color) dashed 1px;">
+                                    Non-Count Nouns
+                                </div>
+                                <div class="col-6 pt-3">
+                                    <p class="mx-3">Count nouns refer to things that can be counted as individual units or separate parts. They usually refer to what can be seen or heard. Some examples are:</p>
+                                    <ul class="fs-5 ms-5">
+                                        <li>Bottle</li>
+                                        <li>Finger</li>
+                                        <li>Table</li>
+                                        <li>Chair</li>
+                                        <li>Girl</li>
+                                        <li>Boy</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 pt-3">
+                                    <p class="mx-3">These nouns normally refer to something more abstract, such as a concept or a word that has a collective meaning. Non-count nouns cannot be separated. They are thought of as a whole unit. Some examples are:</p>
+                                    <ul class="fs-5 ms-5">
+                                        <li>Furniture</li>
+                                        <li>Anger</li>
+                                        <li>Education</li>
+                                        <li>Weather</li>
+                                        <li>Clothing</li>
+                                        <li>Grass</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="mt-3">Think of water. Water is liquid and cannot be divided into parts; it is a non-count noun. However, if you freeze it in ice cube trays, each cube can be counted, making it a count noun. Think of non-count nouns as the butter, a mass that cannot be separated. Think of the baked cake as the count nouns, which can be cut into individual pieces.</p>
+                        </div>
+                    </div>
+                    <div class="row section section_six py-5" style="background-color: #528400;">
+                        <div class="col-11 mx-5 text-dark">
+                            <p class="fs-2 fw-bold text-white text-center">Activity</p>
+                            <div class="row bg-white p-2" style="border-radius: 5px;">
+                                <div class="col-12">
+                                    <p>Drag the photos above to the column where it belongs</p>
+                                    <script>
+                                        var fchartData = [
+                                            { "item": "https://m.fyioc.com/WhyNotImages/ENG1U1L2_img_13.jpg", "default": false, "isbelongto": 'con1' }, // ENG1U1L2_img_13.jpg
+                                            { "item": "https://m.fyioc.com/WhyNotImages/ENG1U1L2_img_14.jpg", "default": false, "isbelongto": 'con2' }, // ENG1U1L2_img_14.jpg
+                                            { "item": "https://m.fyioc.com/WhyNotImages/ENG1U1L2_img_15.jpg", "default": false, "isbelongto": 'con2' }, // ENG1U1L2_img_15.jpg
+                                            { "item": "https://m.fyioc.com/WhyNotImages/ENG1U1L2_img_16.jpg", "default": false, "isbelongto": 'con1' }, // ENG1U1L2_img_16.jpg
+                                            { "item": "https://m.fyioc.com/WhyNotImages/ENG1U1L2_img_17.jpg", "default": false, "isbelongto": 'con2' }, // ENG1U1L2_img_17.jpg
+                                            { "item": "https://m.fyioc.com/WhyNotImages/ENG1U1L2_img_18.jpg", "default": false, "isbelongto": 'con1' }, // ENG1U1L2_img_18.jpg
+                                            { "item": "https://m.fyioc.com/WhyNotImages/ENG1U1L2_img_19.jpg", "default": false, "isbelongto": 'con2' }, // ENG1U1L2_img_19.jpg
+                                            { "item": "https://m.fyioc.com/WhyNotImages/ENG1U1L2_img_20.jpg", "default": false, "isbelongto": 'con1' }, // ENG1U1L2_img_20.jpg
+                                            { "item": "https://m.fyioc.com/WhyNotImages/ENG1U1L2_img_21.jpg", "default": false, "isbelongto": 'con2' }, // ENG1U1L2_img_21.jpg
+                                            { "item": "https://m.fyioc.com/WhyNotImages/ENG1U1L2_img_22.jpg", "default": false, "isbelongto": 'con1' }, // ENG1U1L2_img_22.jpg
+                                        ];
+                                        
+                                    </script>
+                                    <div class="chartDataContainer text-center"></div>
+                                    <table class="table table-bordered mt-5">
+                                        <thead>
+                                            <tr>
+                                                <th width="50%" class="fs-5 fw-bold text-center">Countable Nouns</th>
+                                                <th width="50%" class="fs-5 fw-bold text-center">Uncountable Nouns</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="chartDataContainerAnswer text-center" data-con="con1" style="height: 50vh;"></td>
+                                                <td class="chartDataContainerAnswer text-center" data-con="con2" style="height: 50vh;"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <p class="text-white mt-3">Now that we know what count and non-count nouns are, let's learn how to use them correctly when we are writing.</p>
+                        </div>
+                    </div>
+                    <div class="row section section_seven py-5" style="background-color: #ebf5c0;">
+                        <div class="col-11 mx-5 text-dark">
+                            <p class="fs-2 fw-bold text-center">The Rules</p>
+                            <p>The plural of count nouns is acquired by adding an "s" on the end of each word.</p>
+                            <p>For example:</p>
+                            <ul>
+                                <li>I ate one apple on Monday.</li>
+                                <li>I ate two apples on Wednesday.</li>
+                                <li class="mt-3">I read this book two years ago.</li>
+                                <li>I bought those books at a garage sale.</li>
+                            </ul>
+                            <p class="fs-2 fw-bold text-center">Why Do I Need to Know</p>
+                            <p>Here are a few examples.</p>
+                            <p>The real problem for writers when using count and non-count nouns is using the correct modifiers, such as:</p>
+                            <ul>
+                                <li>Amount/number</li>
+                                <li>Little/few</li>
+                                <li>Less/fewer</li>
+                                <li>Much/many</li>
+                            </ul>
+                            <p>For example, in the following sentence, which of the choices is correct?</p>
+                            <p>I am going to try to eat (less/fewer) calories so I will lose weight.</p>
+                            <p><strong style="color: #528400">Step 1:</strong> To decide which is correct, you have to look at the noun being modified and decide whether it is a count noun or a non-count noun. In this case, the noun is calories. Can you count calories? Sure, you can.</p>
+                            <p><strong style="color: #528400">Step 2:</strong> The next step is to decide which modifier is correct. You can divide certain modifiers into count and non-count modifiers, too. Words like amount, little, less, and much have more to do with how much, while number, few, fewer, and many have to do with how many.</p>
+                            <p><strong style="color: #528400">Conclusion:</strong> The answer above, then, is fewer calories.</p>
+                            <p>Consider the following:</p>
+                            <ul>
+                                <li>She was (less/fewer) than 60 years old.</li>
+                            </ul>
+                            <p>In this case, years refers to a period of time rather than individual years, so the answer is less.</p>
+                        </div>
+                    </div>
+                    <div class="row section section_eight py-5" style="background-color: #ffffff;">
+                        <div class="col-11 mx-5 text-dark">
+                            <p class="fs-2 fw-bold text-center">Activity</p>
+                            <p>Please select the appropriate modifiers according to the nouns in the following table.</p>
+                            <style>
+                                .intr_two_list .intr_two_box .intr_two_box_ans {
+                                    display: inline-block;
+                                    font-size: inherit;
+                                    margin-left: -8px
+                                }
+                                .intr_two_box_ans.correct span, .intr_two_box_ans.incorrect span{
+                                    background: transparent !important;
+                                }
+                                .intr_two_box_ans.correct span{
+                                    color: var(--bs-success) !important;
+                                }
+                            </style>
+                            <table class="table mt-5">
+                                <thead>
+                                    <tr>
+                                        <th width="50%" class="fs-5 fw-bold text-center">Non-Count</th>
+                                        <th width="50%" class="fs-5 fw-bold text-center">Count</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>The amount of work I have to do in a semester sometimes seems like too 
+                                            <span class="intr_two_list">
+                                                <span class="intr_two_box">
+                                                    <span class="intr_two_box_ans" data-ans="true"><span>much</span></span>/
+                                                    <span class="intr_two_box_ans" data-ans=""><span>many</span></span>
+                                                </span>
+                                            </span>
+                                        </td>
+                                        <td>The number of hours I spend working in a semester sometimes seems like too 
+                                            <span class="intr_two_list">
+                                                <span class="intr_two_box">
+                                                    <span class="intr_two_box_ans" data-ans="true"><span>many</span></span>/
+                                                    <span class="intr_two_box_ans" data-ans=""><span>much</span></span>
+                                                </span>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>The idea offered 
+                                            <span class="intr_two_list">
+                                                <span class="intr_two_box">
+                                                    <span class="intr_two_box_ans" data-ans="true"><span>little</span></span>/
+                                                    <span class="intr_two_box_ans" data-ans=""><span>few</span></span>
+                                                </span>
+                                            </span>
+                                        recourse</td>
+                                        <td>The idea offered 
+                                            <span class="intr_two_list">
+                                                <span class="intr_two_box">
+                                                    <span class="intr_two_box_ans" data-ans="true"><span>few</span></span>/
+                                                    <span class="intr_two_box_ans" data-ans=""><span>many</span></span>
+                                                </span>
+                                            </span>
+                                        options.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sometimes I think Jim has too 
+                                            <span class="intr_two_list">
+                                                <span class="intr_two_box">
+                                                    <span class="intr_two_box_ans" data-ans="true"><span>much</span></span>/
+                                                    <span class="intr_two_box_ans" data-ans=""><span>many</span></span>
+                                                </span>
+                                            </span>
+                                        time on his hands.</td>
+                                        <td>Sometimes I think Jim has too 
+                                            <span class="intr_two_list">
+                                                <span class="intr_two_box">
+                                                    <span class="intr_two_box_ans" data-ans="true"><span>many</span></span>/
+                                                    <span class="intr_two_box_ans" data-ans=""><span>much</span></span>
+                                                </span>
+                                            </span>
+                                        free hours on his hands.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row section section_nine py-5" style="background-color: #ebf5c0;">
+                        <div class="col-11 mx-5 text-dark">
+                            <p class="fs-4 fw-bold text-center">Nouns vs. Noun Phrases</p>
+                            <p>While a noun is the single person, place, thing, or idea, a noun phrase consists of the noun and any other words modifying it. <br />
+                            For example, consider the following sentence: My older brother wants to become a chef. <br />
+                            "Brother" is a noun and serves as the sentence’s subject. "My older brother" is the entire noun phrase. "My" and "older" modify the noun "brother".</p>
+                            <p class="fs-4 fw-bold text-center mt-5">Noun Clauses </p>
+                            <p>If a noun can be a single word or phrase, why can’t it be an entire clause? <br />
+                            For example, consider the following sentence: This shirt is too big. <br />
+                            "Shirt" is a noun and serves as the subject of a sentence.</p>
+                            <p class="mt-3">Now, look at this sentence: <br />
+                            What I bought at the store is too big. <br />
+                            "What I bought at the store" is a noun clause because the entire clause serves as a noun, the subject of the sentence. "I" is the subject of the noun clause and "bought" is the verb. </p>
+                        </div>
+                    </div>
+                    <div class="row section section_ten py-5" style="background-color: #ffffff;">
+                        <div class="col-11 mx-5 text-dark">
+                            <p class="fs-4 fw-bold text-center">Assignment grammar: Count vs. Non-Count Nouns</p>
+                            <p>Read the following text and drag the countable and uncountable nouns to the correct column.</p>
+                            
+                            <div class="chartDataContainer">
+                                <p>Yesterday we visited this new restaurant, my friends said they have the best <span class="chartDataBtn fw-bold" draggable="true" isbelongto="con1">burgers</span> in town, and the fries are out of this world, we sat at a round <span class="chartDataBtn fw-bold" draggable="true" isbelongto="con1">table</span>, there were my parents, my brother and sister and my best <span class="chartDataBtn fw-bold" draggable="true" isbelongto="con1">friend</span>, Jacob, we all ordered burgers, even my <span class="chartDataBtn fw-bold" draggable="true" isbelongto="con1">sister</span> who is a vegetarian ordered "the impossible burger which is made with <span class="chartDataBtn fw-bold" draggable="true" isbelongto="con2">soy</span> instead of <span class="chartDataBtn fw-bold" draggable="true" isbelongto="con2">meat</span>, mine had <span class="chartDataBtn fw-bold" draggable="true" isbelongto="con2">fries</span>, but Jacob ordered <span class="chartDataBtn fw-bold" draggable="true" isbelongto="con1">onion rings</span>, we all ordered <span class="chartDataBtn fw-bold" draggable="true" isbelongto="con2">soda</span>, except my brother, who wanted <span class="chartDataBtn fw-bold" draggable="true" isbelongto="con2">water</span> because he doesn't like it, the night was amazing, and the burgers are the best I have ever had.</p>
+                            </div>
+                            <table class="table table-bordered mt-5" style="background-color: #ebf5c0;">
+                                <thead>
+                                    <tr>
+                                        <th width="50%" class="fs-5 fw-bold text-center">Countable</th>
+                                        <th width="50%" class="fs-5 fw-bold text-center">Non-countable</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="chartDataContainerAnswer text-center" data-con="con1" style="height: 50vh;"></td>
+                                        <td class="chartDataContainerAnswer text-center" data-con="con2" style="height: 50vh;"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <!-- Assessment Quiz -->
+                <table style="width: 710px; height: auto; margin-left: auto; margin-right: auto; margin-top: 5em;" border="1" cellpadding="20">
+                    <tbody>
+                    <tr>
+                    <td style="background-color: white; width: 710px; ">
+                    <b><span style="font-family: arial,helvetica,sans-serif;">&nbsp;  Answer the following questions.</span> </b>
+                    <p><a:question index="1" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="2" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="3" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="4" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="5" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="6" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="7" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="8" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="9" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="10" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="11" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="12" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="13" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="14" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="15" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="16" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="17" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="18" /></p> 
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="19" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    <p><a:question index="20" /></p>
+                    <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                    </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <!-- Assessment Quiz -->
+
+            </div>
+        </div>
+    </body>
+    <script src="https://m.fyioc.com/WhyNotScripts/js/VideoPlay.js"></script>
+    <script src="https://m.fyioc.com/WhyNotScripts/js/interactive2.js"></script>
+    <script>
+        loadChartData('chartDataContainer', 'chartDataBtn', 'chartDataContainerAnswer');
+        async function loadChartData(class1, class2, class3){
+            const chartDataContainer = document.querySelector("." + class1);
+
+            await fchartData.forEach(element => {
+                let small = document.createElement("img");
+                small.setAttribute("class", "img-fluid m-2 " + class2);
+                small.setAttribute("draggable", "true");
+                small.setAttribute("isbelongto", element.isbelongto);
+                small.style.width = '13%';
+                
+                small.src = element.item;
+                chartDataContainer.appendChild(small);
+            });
+
+            const fchartBtns = document.querySelectorAll("." + class2);
+            const chartDataContainerAnswer = document.querySelectorAll("." + class3);
+
+            let drag;
+            await fchartBtns.forEach( button => {
+                button.addEventListener("dragstart", (event) => {
+                    drag = event.target;
+                }, false);
+            })
+
+            await chartDataContainerAnswer.forEach( elem => {
+                elem.addEventListener("dragover", (event) => {
+                    event.preventDefault()
+                })
+                elem.addEventListener("drop", (event) => {
+                    let data = elem.getAttribute('data-con');
+                    let dragData = drag.getAttribute('isbelongto');
+
+                    
+                    let draggedElem = drag.cloneNode(true);
+                    
+                    if(draggedElem.tagName != "SPAN"){
+                        draggedElem.style.width = '20%';
+                    }
+                    draggedElem.setAttribute("draggable", "false");
+
+                    if(data == dragData){
+                        drag.setAttribute("draggable", "false");
+                        drag.style.opacity = 0.5;
+                        elem.append(draggedElem);
+                        if(draggedElem.tagName == "SPAN"){
+                            elem.append(document.createElement("br"));
+                        }
+                    }else{
+                        draggedElem.setAttribute("class", "btn btn-outline-danger chartDataBtn m-1");
+                        elem.append(draggedElem);
+                        
+                        setTimeout(function() {
+                            draggedElem.remove();
+                        }, 2000);
+                    }
+                })
+            })
+        }
+    </script>
+</html>
