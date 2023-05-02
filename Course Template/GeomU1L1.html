@@ -100,7 +100,7 @@ body {
 #section20 {
     background-color: #2B2B2B;
     padding: 50px;
-    height:220px;
+    height:200px;
 }
 #top_setion1 {
     background: url('https://m.fyioc.com/WhyNotImages/GeomU1L1_header.png') no-repeat;
@@ -214,6 +214,9 @@ input.is-invalid~.form-check-label{
 .class-contain{
     margin-left: 100px;
 }
+.sect-title-11{
+    margin-top:40px;
+}
 /* For Desktop View */
 @media screen and (min-width: 1024px) {
     #top_setion1 {
@@ -250,13 +253,23 @@ and (max-device-width: 1058px) {
     .for-mobile{
         display: none;
     }
-
+ .sect-title-11{
+        margin-left: 40px;
+        margin-top:20px;
+    }
     
 }
  
 /* For Mobile Portrait View */
 @media screen and (max-device-width: 480px)
 and (orientation: portrait) {
+    .row-quiz{
+    width: auto !important;
+}
+.sect-title-11{
+        margin-left: 40px;
+        /* margin-top:-80px; */
+    }
     .txt-title{
     font-size: 1.5rem;
     }
@@ -293,7 +306,7 @@ and (orientation: portrait) {
          margin-bottom: 10px;
     }
     .icon-bg-light{
-       position: relative;
+       
        width:65px;
        margin:auto;
        margin-bottom: 10px;
@@ -1455,13 +1468,13 @@ and (-webkit-min-device-pixel-ratio: 3) {
             <div class="col-lg-10 col-12 offset-lg-1">
                 <div id="top_setion10">
                     <div class="row">
-                     <div class="col-xl-1 col-lg-1 col-md-2 col-sm-1">
-                        <div class="icon-bg-light">
-                            <img src="https://m.fyioc.com/WhyNotImages/GeomU1L1_QuizIcon.png" class="video-icon">
+                     <div class="col-xl-1 col-lg-1 col-md-2 col-sm-1 row-quiz" >
+                        <div class="icon-bg-light" style="width:90px">
+                            <img src="https://m.fyioc.com/WhyNotImages/GeomU1L1_QuizIcon.png" class="video-icon" style="width:60px">
                         </div>
                        </div>
                        <div class="col-xl-10 col-md-10 col-sm-12">
-                        <p class="sect-txt-title-light sect-title-11 mt-5">
+                        <p class="sect-txt-title-light sect-title-11">
                             QUIZ
                         </p>
                         
