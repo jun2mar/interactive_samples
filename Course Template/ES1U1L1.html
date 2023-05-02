@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 1</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round" rel="stylesheet">
+
+        <link href="https://m.fyioc.com/WhyNotScripts/css/VideoPlay.css" rel="stylesheet">
+        <link href="https://m.fyioc.com/WhyNotScripts/css/AudioPlay.css" rel="stylesheet">
+        <link href="https://m.fyioc.com/WhyNotScripts/css/interactive2.css" rel="stylesheet">
+    </head>
+    <style>
+        :root{
+            --font-one: 'Montserrat', sans-serif;
+            --font-two: 'Arvo', serif;
+        }
+        .container{
+            max-width: 1080px;
+        }
+        div:has(.container):last-child{
+            padding-bottom: 5em;
+        }
+        .fontArvo{
+            font-family: 'Arvo', sans-serif;
+        }
+        .titleColor{
+            color: #155c86;
+        }
+        .textJustify{
+            text-align: justify;
+        }
+        .section{
+            position: relative;
+        }
+        .section_one{
+            font-family: var(--font-one);
+            /* background: url('https://m.fyioc.com/WhyNotImages/R_fourHandsHoldingPlants.jpg') no-repeat; */
+            
+            background: url('https://m.fyioc.com/WhyNotImages/ES1U1L1_img_1.png') no-repeat;
+            background-size: cover;
+            padding-top: 8rem;
+            padding-bottom: 12rem;
+        }
+        .section_two{
+            font-family: var(--font-one);
+            background: url('https://m.fyioc.com/WhyNotImages/ES1U1L1_img_2.png') no-repeat;
+            background-size: cover;
+            background-position: 100% 50%;
+        }
+        .section_three.splitbackground {
+            background: rgb(255,255,255);
+            background: -moz-linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(216, 233, 191,1) 50%);
+            background: -webkit-linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(216, 233, 191,1) 50%);
+            background: linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(216, 233, 191,1) 50%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#8300fe",GradientType=1);
+        }
+        .section_four{
+            font-family: var(--font-one);
+            background: url('https://m.fyioc.com/WhyNotImages/ES1U1L1_img_3.png') no-repeat;
+            background-size: cover;
+            background-position: 100% 50%;
+        }
+        .section_six{
+            font-family: var(--font-one);
+            background: url('https://m.fyioc.com/WhyNotImages/ES1U1L1_img_5.png') no-repeat;
+            background-size: cover;
+            background-position: 100% 50%;
+        }
+        .section_seven{
+            font-family: var(--font-one);
+            background: url('https://m.fyioc.com/WhyNotImages/ES1U1L1_img_5.png') no-repeat;
+            background-size: cover;
+            background-position: 100% 50%;
+        }
+        .section_nine{
+            font-family: var(--font-one);
+            background: url('https://m.fyioc.com/WhyNotImages/ES1U1L1_img_13.png') no-repeat;
+            background-size: cover;
+            background-position: 100% 50%;
+        }
+        .section_twelve{
+            font-family: var(--font-one);
+            background: url('https://m.fyioc.com/WhyNotImages/ES1U1L1_img_14.png') no-repeat;
+            background-size: cover;
+            background-position: 100% 50%;
+        }
+        .section_thirteen{
+            font-family: var(--font-one);
+            background: url('https://m.fyioc.com/WhyNotImages/ES1U1L1_img_14.png') no-repeat;
+            background-size: cover;
+            background-position: 100% 90%;
+        }
+        .section_twentyone{
+            font-family: var(--font-one);
+            background: url('https://m.fyioc.com/WhyNotImages/ES1U1L1_img_15.png') no-repeat;
+            background-size: cover;
+        }
+        .section_twentythree{
+            font-family: var(--font-one);
+            background: url('https://m.fyioc.com/WhyNotImages/ES1U1L1_img_16.png') no-repeat;
+            background-size: cover;
+        }
+        .section_twentyfive{
+            font-family: var(--font-one);
+            background: url('https://m.fyioc.com/WhyNotImages/ES1U1L1_img_17.png') no-repeat;
+            background-size: cover;
+        }
+        
+        .divider{
+            background-color: #4c7112;
+            position: absolute;
+            top: 160px;
+            left: 0;
+            right: 0;
+            height: 10px;
+        }
+        ul li{
+            margin: 1em 0;
+        }
+        tbody, td, tfoot, th, thead, tr {
+            border-width: 5px !important;
+        }
+        .intr_two_list .intr_two_box .intr_two_box_ans {
+            font-size: inherit;
+        }
+        .section_twentythree img{
+            width: 150px;
+        }
+        .section_twentythree tr td{
+            vertical-align: middle;
+        }
+        
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+            .section_one{
+                background-position: 55%;
+                box-shadow: inset 0 0 0 2000px #4b711363;
+            }
+            /* .section_three.splitbackground, .section_three .divider {
+                all: unset;
+            } */
+            .section_three .col1{
+                background: rgb(255,255,255);
+            }
+            .section_three{
+                position: relative;
+            }
+            /* .section_three .col2{
+                background: rgb(216, 233, 191,1);
+            } */
+            .section_four{
+                background-position: 50%;
+                box-shadow: inset 0 0 0 2000px #4b7113c7;
+            }
+            .section_twentythree img{
+                width: 250px;
+            }
+            .section_three.splitbackground {
+                background: rgb(255,255,255);
+                background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 35%, rgba(216, 233, 191,1) 50%);
+                background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 35%, rgba(216, 233, 191,1) 50%);
+                background: linear-gradient(180deg, rgba(255,255,255,1) 35%, rgba(216, 233, 191,1) 50%);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#8300fe",GradientType=1);
+            }
+        } 
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            .section_one{
+                background-position: 100%;
+            }
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            
+        }
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {
+            
+        }
+
+    </style>
+    <body>
+        <div class="main fs-5">
+            <div style="background-color: #336317;">
+                <div class="container">
+                    <div class="row section section_one d-flex justify-content-center">
+                        <div class="col-11 text-white">
+                            <div class="row">
+                                <div class="col-12 my-auto">
+                                    <p class="fs-3">Welcome to</p>
+                                    <p class="display-2 fw-bold">Environmental <br />Science</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section_two">
+                <div class="container">
+                    <div class="row py-5 text-white">
+                        <div class="col-12">
+                            <p class="fs-3 fw-bold text-center">Introduction</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-7 my-auto">
+                            <p>Welcome to today's lesson on environmental science! In this course, we will explore the complex relationship between human beings and the natural environment. Environmental science is a multidisciplinary field that combines knowledge from biology, chemistry, geology, and physics to understand the interactions between living and nonliving components of our planet.</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-5 my-auto">
+                            <div class="ratio ratio-16x9">
+                                <video class="video-fluid" loop controls>
+                                    <source src="https://m.fyioc.com/WhyNotVideos/EnvSciU1L1V1ai Final.mp4" type="video/mp4" />
+                                </video>
+                                <div class="play_button">
+                                    <div id="play_vid">
+                                        <span class="material-icons-outlined">play_arrow</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <p>Throughout this course, we will cover a wide range of topics, including climate change, biodiversity, pollution, natural resources, and sustainability. We will examine how human activities have impacted the environment and explore solutions for mitigating these impacts.</p>
+                            <p>By the end of this course, you will have a deep understanding of the environmental issues facing our planet today and the tools and strategies necessary to make informed decisions about how to preserve and protect our natural world. So let's get started on this exciting journey to better understand our environment!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section_three splitbackground">
+                <div class="container">
+                    <!-- <div class="divider d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center border-bottom"></div> -->
+                    <div class="row g-0 py-5">
+                        <div class="col-12 col-md-6 col1">
+                            <div class="card bg-transparent border-0">
+                                <div class="card-body">
+                                    <p class="fs-3 fw-bold">What You <br />Should Know</p>
+                                </div>
+                                <div class="division py-1" style="background-color: #4c7112;"></div>
+                                <div class="card-body">
+                                    <p>Before you begin, you should:</p>
+                                    <ul>
+                                        <li>Have some understanding of environmental features of places all over the world</li>
+                                        <li>Understand information from world maps</li>
+                                        <li>Have a firm understanding of the locations of Earth's continents and oceans.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col2">
+                            <div class="card bg-transparent border-0">
+                                <div class="card-body">
+                                    <p class="fs-3 fw-bold">Lesson <br />Expectations</p>
+                                </div>
+                                <div class="division py-1" style="background-color: #4c7112;"></div>
+                                <div class="card-body">
+                                    <p>By the end of this lesson, you should be able to:</p>
+                                    <ul>
+                                        <li>Define environmental science and describe the field of environmental science studies</li>
+                                        <li>Identify the other fields of study that contribute to environmental science</li>
+                                        <li>Identify ways that humans depend on the environment</li>
+                                        <li>Give examples of renewable and non-renewable resources</li>
+                                        <li>List the five general causes of environmental degradation</li>
+                                        <li>Explain what is meant by sustainability.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section_four">
+                <div class="container">
+                    <div class="row g-0 d-flex justify-content-end text-white py-5">
+                        <div class="col-12 col-md-9 col-lg-6 col2">
+                            <div class="card bg-transparent border-0">
+                                <div class="card-body">
+                                    <p class="fs-3 fw-bold">Lesson keywords</p>
+                                </div>
+                                <div class="division py-1" style="background-color: #4c7112;"></div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <ul><li>Environmental</li></ul>
+                                        </div>
+                                        <div class="col-6">
+                                            <p>The natural world that sorrounds us, including all living and non-living things.</p>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul><li>Environmental Science</li></ul>
+                                        </div>
+                                        <div class="col-6">
+                                            <p>The study of the natural environment and how humans interact with it. </p>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul><li>Natural Resources</li></ul>
+                                        </div>
+                                        <div class="col-6">
+                                            <p>Materials or substance that occur in nature and are used by humans for economic or other purposes.</p>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul><li>Sustainability</li></ul>
+                                        </div>
+                                        <div class="col-6">
+                                            <p>The ability to meet the needs of the present generation without compromising the ability of future generations to meet their own needs.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section_five" style="background-color: #4c7112;">
+                <div class="container">
+                    <div class="row py-4 text-white">
+                        <div class="col-3 col-md-2 text-center">
+                            <img src="https://m.fyioc.com/WhyNotImages/ES1U1L1_img_4.png" class="img-fluid rounded p-3 w-75" style="background-color: #88b14b;" alt="">
+                        </div>
+                        <div class="col-9 col-md-10 my-auto">
+                            <p class="fs-4 fw-bold">Scientific Principles <br />and aspects of human culture</p>
+                            <p>As you study Environmental Science, you will be focusing on how both science and the human population affect our planet:</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section_six" style="background-color: #7ead4b;">
+                <div class="container">
+                    <div class="row py-5 text-white">
+                        <div class="col-12">
+                            <p class="fs-3 fw-bold">
+                                <img src="https://m.fyioc.com/WhyNotImages/ES1U1L1_img_4.png" class="img-fluid rounded p-2" style="background-color: #48672b; width: 45px;" alt="">
+                                Scientific Principles:
+                            </p>
+                            <ul>
+                                <li>Why do <strong>earthquakes</strong> and <strong>volcanoes</strong> happen?</li>
+                                <li>What factors control <strong>Earth's weather</strong> and <strong>climate</strong>?</li>
+                                <li>Why do polar bears live in <strong>cold regions</strong> and jackrabbits live in <strong>hot deserts</strong>?</li>
+                                <li>What kinds of things live in the <strong>oceans</strong>?</li>
+                                <li>How large is our supply of things like <strong>oil</strong> and <strong>gold</strong> inside the Earth?</li>
+                                <li>What is Earth's <strong>atmosphere</strong> like?</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="division py-1 bg-white"></div>
+
+            <div class="section section_seven" style="background-color: #7ead4b;">
+                <div class="container">
+                    <div class="row py-5 text-white">
+                        <div class="col-12">
+                            <p class="fs-3 fw-bold">
+                                <img src="https://m.fyioc.com/WhyNotImages/ES1U1L1_img_4.png" class="img-fluid rounded p-2" style="background-color: #48672b; width: 45px;" alt="">
+                                Aspects of Human Culture:
+                            </p>
+                            <ul>
+                                <li>How does the <strong>human population</strong> affect the planet?</li>
+                                <li>How do <strong>human population numbers</strong> compare throughout the world?</li>
+                                <li>How do <strong>people</strong> contribute to environmental problems?</li>
+                                <li>What role does money play in discussions of our <strong>environmental responsibilities</strong>?</li>
+                                <li>How do <strong>people's personal cultural</strong> and <strong>religious</strong> beliefs affect their attitudes toward the environment.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section_eight" style="background-color: #48672b;">
+                <div class="container">
+                    <div class="row py-4 text-white">
+                        <div class="col-3 col-md-2 text-center my-auto">
+                            <img src="https://m.fyioc.com/WhyNotImages/ES1U1L1_img_6.png" class="img-fluid rounded p-3 w-75" style="background-color: #88b14b;" alt="">
+                        </div>
+                        <div class="col-9 col-md-10">
+                            <p class="fs-4 fw-bold text-uppercase">Activity 1</p>
+                            <p><strong>Instruction:</strong> Drag and Drop each word to the appropriate column below.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section_nine" style="background-color: #7a9f44;">
+                <div class="container">
+                    <div class="row py-5 text-white">
+                        <div class="col-12">
+                            <script>
+                                var fchartData = [
+                                    { "item": "Environmental science", "default": false, "isbelongto": 'con1' },
+                                    { "item": "Earthquakes", "default": false, "isbelongto": 'con1' },
+                                    { "item": "Volcanoes", "default": false, "isbelongto": 'con1' },
+                                    { "item": "Earth's weather", "default": false, "isbelongto": 'con1' },
+                                    { "item": "Climate", "default": false, "isbelongto": 'con1' },
+                                    { "item": "Atmosphere", "default": false, "isbelongto": 'con1' },
+                                    { "item": "Gold", "default": false, "isbelongto": 'con1' },
+                                    { "item": "Oil", "default": false, "isbelongto": 'con1' },
+                                    { "item": "Oceans", "default": false, "isbelongto": 'con1' },
+                                    { "item": "Cold Regions", "default": false, "isbelongto": 'con1' },
+                                    { "item": "Human population", "default": false, "isbelongto": 'con2' },
+                                    { "item": "Human population numbers", "default": false, "isbelongto": 'con2' },
+                                    { "item": "People", "default": false, "isbelongto": 'con2' },
+                                    // { "item": "Environmental responsibilities", "default": false, "isbelongto": 'con2' },
+                                    { "item": "People's personal culture", "default": false, "isbelongto": 'con2' },
+                                    { "item": "Religious", "default": false, "isbelongto": 'con2' },
+                                ];
+                            </script>
+                            <div class="row chartDataContainer text-center"></div>
+                            <table class="table table-bordered mt-5">
+                                <thead>
+                                    <tr>
+                                        <th width="50%" class="fs-5 fw-bold text-center text-white">Scientific Principles</th>
+                                        <th width="50%" class="fs-5 fw-bold text-center text-white">Aspects of Human Culture</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="chartDataContainerAnswer text-center" data-con="con1" style="height: 50vh;"></td>
+                                        <td class="chartDataContainerAnswer text-center" data-con="con2" style="height: 50vh;"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section_ten" style="background-color: #48672b;">
+                <div class="container">
+                    <div class="row py-4 text-white">
+                        <div class="col-3 col-md-2 text-center">
+                            <img src="https://m.fyioc.com/WhyNotImages/ES1U1L1_img_4.png" class="img-fluid rounded p-3 w-75" style="background-color: #88b14b;" alt="">
+                        </div>
+                        <div class="col-9 col-md-10 my-auto">
+                            <p class="fs-4 fw-bold text-uppercase">The Environment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section_eleven" style="background-color: #88b14b;">
+                <div class="container">
+                    <div class="row py-5 text-white">
+                        <div class="col-12 col-md-6">
+                            <p>It makes sense that environmental science is about the environment. But first we should make sure that we clearly define environment. An organism's environment is defined as all the conditions and materials that surround the organism. </p>
+                            <p>The environment includes both living and nonliving components. We derive all the materials necessary for life, recreation and luxury from our environment. We could say that our Earth environment provides us with a vital life support system, made of four basic components—air, water, soil and rocks—and living things</p>
+                        </div>
+                        <div class="col-12 col-md-6 text-center">
+                            <img src="https://m.fyioc.com/WhyNotImages/ES1U1L1_img_7.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="division py-1 bg-white"></div>
+            
+            <div class="section section_twelve" style="background-color: #88b14b;">
+                <div class="container">
+                    <div class="row py-5 text-white">
+                        <div class="col-12">
+                            <p class="fs-3 fw-bold">
+                                <img src="https://m.fyioc.com/WhyNotImages/ES1U1L1_img_8.png" class="img-fluid rounded p-2" style="background-color: #48672b; width: 45px;" alt="">
+                                Environmental Science and other fields of study. 
+                            </p>
+                            <p class="fw-bold">Introduction to environmental sciences.</p>
+                            <p>The video describes the concept of environmental sciences and the other fields or research.</p>
+                            <div class="ratio ratio-16x9">
+                                <video class="video-fluid" loop controls>
+                                    <source src="https://m.fyioc.com/WhyNotVideos/Ess1u1l1v1.mp4" type="video/mp4" />
+                                </video>
+                                <div class="play_button">
+                                    <div id="play_vid">
+                                        <span class="material-icons-outlined">play_arrow</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="division py-1 bg-white"></div>
+
+            <div class="section section_thirteen" style="background-color: #88b14b;">
+                <div class="container">
+                    <div class="row py-5 text-white">
+                        <div class="col-12">
+                            <p class="fs-3 fw-bold">
+                                <img src="https://m.fyioc.com/WhyNotImages/ES1U1L1_img_8.png" class="img-fluid rounded p-2" style="background-color: #48672b; width: 45px;" alt="">
+                                Environmental Science, impact and resources.
+                            </p>
+                            <p class="fw-bold">Environmental resources and the impact of society.</p>
+                            <p>The video describes renewables and non-renewables resources and the impact of society on climate change.</p>
+                            <div class="ratio ratio-16x9">
+                                <video class="video-fluid" loop controls>
+                                    <source src="https://m.fyioc.com/WhyNotVideos/Ess1u1l1v2.mp4" type="video/mp4" />
+                                </video>
+                                <div class="play_button">
+                                    <div id="play_vid">
+                                        <span class="material-icons-outlined">play_arrow</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section_fourteen" style="background-color: #48672b;">
+                <div class="container">
+                    <div class="row py-4 text-white">
+                        <div class="col-3 col-md-2 text-center">
+                            <img src="https://m.fyioc.com/WhyNotImages/ES1U1L1_img_4.png" class="img-fluid rounded p-3 w-75" style="background-color: #88b14b;" alt="">
+                        </div>
+                        <div class="col-9 col-md-10 my-auto">
+                            <p class="fs-4 fw-bold text-uppercase">Our Dependence on the Environment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section_fifteen" style="background-color: #88b14b;">
+                <div class="container">
+                    <div class="row py-4 text-white">
+                        <div class="col-12 col-md-6 col-lg-7 my-auto">
+                            <p>Look at these two maps. They show how two important Earth materials are distributed throughout the world. What do you notice? It's clear that some parts of the world have more of these materials than others. These materials are examples of a natural resource, which is any material that we obtain from the Earth to meet our wants and needs. </p>
+                            <p>Resources such as sunlight, fresh air, soil, plants, animals, and water are renewed by natural processes and are called renewable resources. For example, animals are a renewable resource because they can reproduce to make new animals of the same kind. Other resources like oil and coal are called non-renewable resources because they take millions of years to form and will not be replenished by natural processes during human life spans. Once we run out of non-renewable resources, they will essentially be gone forever.</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-5 text-center">
+                            <img src="https://m.fyioc.com/WhyNotImages/ES1U1L1_img_18.png" class="img-fluid rounded p-3" style="background-color: #88b14b;" alt="">
+                            <img src="https://m.fyioc.com/WhyNotImages/ES1U1L1_img_19.png" class="img-fluid rounded p-3" style="background-color: #88b14b;" alt="">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="section section_sixteen" style="background-color: #48672b;">
+                <div class="container">
+                    <div class="row py-4 text-white">
+                        <div class="col-3 col-md-2 text-center">
+                            <img src="https://m.fyioc.com/WhyNotImages/ES1U1L1_img_9.png" class="img-fluid rounded p-3 w-75" style="background-color: #88b14b;" alt="">
+                        </div>
+                        <div class="col-9 col-md-10 my-auto">
+                            <p class="fs-4 fw-bold text-uppercase">Practice</p>
+                            <p>Choose the correct answer according to the last lecture</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section_seventeen" style="background-color: #88b14b;">
+                <div class="container">
+                    <div class="row py-4 text-white">
+                        <div class="col-12">
+                            <ol class="mt-4">
+                                <li>
+                                    <p class="fs-5">Renewable resources are those that are renewed by natural processes.</p>
+                                    <div class="intr_two_list my-2">
+                                        <div class="intr_two_box">
+                                            <div class="row">
+                                                <div class="col-12 col-md-4">
+                                                    <div class="intr_two_box_ans" data-ans="true">
+                                                        <span>A</span> TRUE
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 col-md-4">
+                                                    <div class="intr_two_box_ans" data-ans="">
+                                                        <span>B</span> FALSE
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="fs-5">Other resources are called Non-renewable resources because they take millions of years to form and will not be replenished by natural processes during human life spans. For example, the animals.</p>
+                                    <div class="intr_two_list my-2">
+                                        <div class="intr_two_box">
+                                            <div class="row">
+                                                <div class="col-12 col-md-4">
+                                                    <div class="intr_two_box_ans" data-ans="">
+                                                        <span>A</span> TRUE
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 col-md-4">
+                                                    <div class="intr_two_box_ans" data-ans="true">
+                                                        <span>B</span> FALSE
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="fs-5">Once we run out of renewable resources, they will essentially be gone forever.</p>
+                                    <div class="intr_two_list my-2">
+                                        <div class="intr_two_box">
+                                            <div class="row">
+                                                <div class="col-12 col-md-4">
+                                                    <div class="intr_two_box_ans" data-ans="">
+                                                        <span>A</span> TRUE
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 col-md-4">
+                                                    <div class="intr_two_box_ans" data-ans="true">
+                                                        <span>B</span> FALSE
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section_eightteen" style="background-color: #48672b;">
+                <div class="container">
+                    <div class="row py-4 text-white">
+                        <div class="col-3 col-md-2 text-center">
+                            <img src="https://m.fyioc.com/WhyNotImages/ES1U1L1_img_4.png" class="img-fluid rounded p-3 w-75" style="background-color: #88b14b;" alt="">
+                        </div>
+                        <div class="col-9 col-md-10 my-auto">
+                            <p class="fs-4 fw-bold text-uppercase">Sustainability</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section_nineteen" style="background-color: #88b14b;">
+                <div class="container">
+                    <div class="row py-5 text-white">
+                        <div class="col-12 col-md-6 col-lg-7 my-auto">
+                            <p>Compare these two pictures. Water is considered a renewable resource. But what about the water in the second image? Yes, water is renewable, but it can still be made unsuitable for use by pollution or wasted by over-use. </p>
+                            <p>A key idea of environmental science is that of sustainability. Sustainability means using Earth's natural capital in a way that ensures it will always be there for us and be suitable for use. Living sustainably does NOT mean that we can never use Earth's resources, because that would be impossible. It just means using them in a way that ensures renewable resources stay clean and healthy and have time to renew themselves, and that non-renewable resources are not wasted.</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-5 text-center">
+                            <img src="https://m.fyioc.com/WhyNotImages/ES1U1L1_img_20.png" class="img-fluid rounded p-3" style="background-color: #88b14b;" alt="">
+                            <img src="https://m.fyioc.com/WhyNotImages/ES1U1L1_img_21.png" class="img-fluid rounded p-3" style="background-color: #88b14b;" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section_twenty" style="background-color: #48672b;">
+                <div class="container">
+                    <div class="row py-4 text-white">
+                        <div class="col-3 col-md-2 text-center">
+                            <img src="https://m.fyioc.com/WhyNotImages/ES1U1L1_img_4.png" class="img-fluid rounded p-3 w-75" style="background-color: #88b14b;" alt="">
+                        </div>
+                        <div class="col-9 col-md-10 my-auto">
+                            <p class="fs-4 fw-bold text-uppercase">Sustainability, EPA <br />(Environmental Protection Agency)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section_twentyone" style="background-color: #88b14b;">
+                <div class="container">
+                    <div class="row py-5 text-white">
+                        <div class="col-12">
+                            <p>Environmentalists, economists, and scientists are at odds about the term sustainability. We can think of sustainability as the ability to use without using up or destroying. However, according to the United States Environmental Protection Agency (EPA), sustainability means that humans and nature can live in harmony. </p>
+                            <p>Some economists think that the only sustainable development would be no development. Some government contractors believe that paying much more money for products that keep our environmental balance is the best way to ensure sustainable development. However, some builders and architects have pointed out the inconsistency involved in shipping certified LEED materials to building sites hundreds of miles away. One can only look at sustainability through a large lens. </p>
+                            <p>What is acceptable sustainability? What is acceptable development? Do the terms mean different things to individuals in large cities than they do to those in the rural sprawl of sub-Saharan Africa? What might a cattle rancher in Montana view as acceptable? Should a new garbage dump, water treatment plant, shopping mall, and boat manufacturing plant all have equal constraints for building and development? What materials should be allowed? What types of heating, cooling, electrical, and other utility type controls should be established?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section_twentytwo" style="background-color: #48672b;">
+                <div class="container">
+                    <div class="row py-4 text-white">
+                        <div class="col-3 col-md-2 text-center">
+                            <img src="https://m.fyioc.com/WhyNotImages/ES1U1L1_img_4.png" class="img-fluid rounded p-3 w-75" style="background-color: #88b14b;" alt="">
+                        </div>
+                        <div class="col-9 col-md-10 my-auto">
+                            <p class="fs-4 fw-bold text-uppercase">Sustainability, Environmental <br />Protection Agency</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section_twentythree" style="background-color: #88b14b;">
+                <div class="container">
+                    <div class="row py-5 text-white">
+                        <div class="col-12">
+                            <table class="table bg-white">
+                                <thead>
+                                    <tr>
+                                        <th width="50%" class="fs-4 text-center">Learn About Sustainability.</th>
+                                        <th width="50%" class="fs-4 text-center">How Can I Help with sustainability?</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <p class="fs-5"><strong>What is Sustainability?</strong> <br /><br />Sustainability is to create and maintain the conditions under which humans and nature can exist in productive harmony to support present and future generations.</p>
+                                        </td>
+                                        <td>
+                                            <p class="fs-5"><strong>Greener living.</strong> <br /><br />Our actions impact the environment. Each thing we do can help or hurt our planet in many ways. EPA has tools to help you learn and understand the issues and help you reduce your environmental footprint.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="fs-5"><strong>Why Is Sustainability Important?</strong> <br /><br />The National Environmental Policy Act of 1969 committed the United States to sustainability, declaring it a national policy "To create and maintain conditions under which humans and nature can exist in productive harmony, that permit fulfilling the social, economic and other requirements of present and future generations."</p>
+                                        </td>
+                                        <td>
+                                            <p class="fs-5"><strong>Living Sustainably</strong></p>
+                                            <ul class="fs-5">
+                                                <li>Smart Growth</li>
+                                                <li>Green Streets, jobs and Towns Program</li>
+                                                <li>Greener Lawn and Garden Care</li>
+                                                <li>Green Sport</li>
+                                                <li>Watersense: Reduce</li>
+                                                <li>Healthy School Environments</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="fs-5"><strong>How Does EPA Promote sustainability?</strong> <br /><br />EPA has a variety of methods, tools guidances and programs that support the application of sustainability within decision-making.</p>
+                                        </td>
+                                        <td>
+                                            <p class="fs-5"><strong>Being Green on the Road:</strong></p>
+                                            <ul class="fs-5">
+                                                <li>Green Vehicle</li>
+                                                <li>Fuel economy</li>
+                                                <li>Clean Diesel</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <p class="fs-5"><strong>Cleaner Energy Choices</strong></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <p class="fs-5"><strong>Throw away less</strong></p>
+                                            <ul class="fs-5">
+                                                <li>Reduce, Reuse, Recycle</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section_twentyfour" style="background-color: #48672b;">
+                <div class="container">
+                    <div class="row py-4 text-white">
+                        <div class="col-3 col-md-2 text-center">
+                            <img src="https://m.fyioc.com/WhyNotImages/ES1U1L1_img_6.png" class="img-fluid rounded p-3 w-75" style="background-color: #88b14b;" alt="">
+                        </div>
+                        <div class="col-9 col-md-10 my-auto">
+                            <p class="fs-4 fw-bold text-uppercase">Activity 1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section_twentyfive" style="background-color: #88b14b;">
+                <div class="container">
+                    <div class="row py-5 text-white">
+                        <div class="col-12">
+                            <p>By now you should begin to understand how much humans depend on Earth's life support systems and how much vital natural capital the Earth provides. You have learned that we cannot separate aspects of human culture from our study of the environment—things like opinions on economic development and personal world views have large impacts on the ways that humans interact with their environment. You have also seen that people have varying viewpoints, or world views, on how the Earth's resources should be used and managed. There are five general causes of environmental problems: human population growth, unsustainable resource use, poverty or affluence, not including environmental costs in market costs, and simply not knowing enough about nature.</p>
+                            <p class="fw-bold">Drag the correct answer from the right picture:</p>
+                            <table class="table table-striped table-inverse table-responsive">
+                                <tbody>
+                                    <tr>
+                                        <td><p class="text-center text-white fw-bold">Poverty or affluence</p></td>
+                                        <td>
+                                            <div id="p1_q1" class="swap_drop position-relative" data-isdrag="" draggable="true">
+                                                <div class="intr_11_choice text-center" data-ans="p1_q5" data-text="p1_q1">
+                                                    <img src="https://m.fyioc.com/WhyNotImages/womanRecycleBag.jpg" class="img-fluid py-1 dragvalue">
+                                                </div>
+                                                <span class="practice-result-label"></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="text-center text-white fw-bold">Human population growth</p></td>
+                                        <td>
+                                            <div id="p1_q2" class="swap_drop position-relative" data-isdrag="" draggable="true">
+                                                <div class="intr_11_choice text-center" data-ans="p1_q4" data-text="p1_q2">
+                                                    <img src="https://m.fyioc.com/WhyNotImages/globeGraphicDownArrow.jpg" class="img-fluid py-1 dragvalue">
+                                                </div>
+                                                <span class="practice-result-label"></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="text-center text-white fw-bold">Not including environmental cost in market costs</p></td>
+                                        <td>
+                                            <div id="p1_q3" class="swap_drop position-relative" data-isdrag="" draggable="true">
+                                                <div class="intr_11_choice text-center" data-ans="p1_q2" data-text="p1_q3">
+                                                    <img src="https://m.fyioc.com/WhyNotImages/burningField.jpg" class="img-fluid py-1 dragvalue">
+                                                </div>
+                                                <span class="practice-result-label"></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="text-center text-white fw-bold">Not knowing enough about nature</p></td>
+                                        <td>
+                                            <div id="p1_q4" class="swap_drop position-relative" data-isdrag="" draggable="true">
+                                                <div class="intr_11_choice text-center" data-ans="p1_q1" data-text="p1_q4">
+                                                    <img src="https://m.fyioc.com/WhyNotImages/crowdedCrosswalk.jpg" class="img-fluid py-1 dragvalue">
+                                                </div>
+                                                <span class="practice-result-label"></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="text-center text-white fw-bold">Unsustainable resource use</p></td>
+                                        <td>
+                                            <div id="p1_q5" class="swap_drop position-relative" data-isdrag="" draggable="true">
+                                                <div class="intr_11_choice text-center" data-ans="p1_q3" data-text="p1_q5">
+                                                    <img src="https://m.fyioc.com/WhyNotImages/poorRichGraphic.jpg" class="img-fluid py-1 dragvalue">
+                                                </div>
+                                                <span class="practice-result-label"></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section_twentysix" style="background-color: #48672b;">
+                <div class="container">
+                    <div class="row py-4 text-white">
+                        <div class="col-3 col-md-2 text-center">
+                            <img src="https://m.fyioc.com/WhyNotImages/ES1U1L1_img_11.png" class="img-fluid rounded p-3 w-75" style="background-color: #88b14b;" alt="">
+                        </div>
+                        <div class="col-9 col-md-10 my-auto">
+                            <p class="fs-4 fw-bold text-uppercase">Assignment</p>
+                            <p>Introduction to Environmental Science</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section_twentyseven" style="background-color: #88b14b;">
+                <div class="container">
+                    <div class="row py-4 text-white">
+                        <div class="col-12">
+                            <style>
+                                .section_twentyseven .intr_two_list .intr_two_box .intr_two_box_ans span {
+                                    width: 100%;
+                                    height: 50px;
+                                    border-radius: 0;
+                                    background-color: #fff;
+                                    font-size: medium;
+                                }
+                            </style>
+                            <ol class="mt-4">
+                                <li>
+                                    <p class="fs-5">One of the scientific principles is:____________.</p>
+                                    <div class="intr_two_list my-2">
+                                        <div class="intr_two_box">
+                                            <div class="row">
+                                                <div class="col-12 col-md-4">
+                                                    <div class="intr_two_box_ans" data-ans="true">
+                                                        <span>Earthquakes</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <div class="intr_two_box_ans" data-ans="">
+                                                        <span>People</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 col-md-4">
+                                                    <div class="intr_two_box_ans" data-ans="">
+                                                        <span>Religious</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="fs-5">One of the aspects of human culture is:_____________.</p>
+                                    <div class="intr_two_list my-2">
+                                        <div class="intr_two_box">
+                                            <div class="row">
+                                                <div class="col-12 col-md-4">
+                                                    <div class="intr_two_box_ans" data-ans="true">
+                                                        <span>Environmental Responsibilities</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <div class="intr_two_box_ans" data-ans="">
+                                                        <span>Volcanoes</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 col-md-4">
+                                                    <div class="intr_two_box_ans" data-ans="">
+                                                        <span>Atmosphere</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="fs-5">A___________ is usually tentative, an assumption or suggestion made strictly for the objective of being tested.</p>
+                                    <div class="intr_two_list my-2">
+                                        <div class="intr_two_box">
+                                            <div class="row">
+                                                <div class="col-12 col-md-4">
+                                                    <div class="intr_two_box_ans" data-ans="true">
+                                                        <span>Hypothesis</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <div class="intr_two_box_ans" data-ans="">
+                                                        <span>Theory</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 col-md-4">
+                                                    <div class="intr_two_box_ans" data-ans="">
+                                                        <span>Environment</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="fs-5">A___________ in contrast, is a principle that has been formed as an attempt to explain things that have already been substantiated by data.</p>
+                                    <div class="intr_two_list my-2">
+                                        <div class="intr_two_box">
+                                            <div class="row">
+                                                <div class="col-12 col-md-4">
+                                                    <div class="intr_two_box_ans" data-ans="true">
+                                                        <span>Theory</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <div class="intr_two_box_ans" data-ans="">
+                                                        <span>Hypothesis</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 col-md-4">
+                                                    <div class="intr_two_box_ans" data-ans="">
+                                                        <span>Science</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="fs-5">What is “EPA”____________.</p>
+                                    <div class="intr_two_list my-2">
+                                        <div class="intr_two_box">
+                                            <div class="row">
+                                                <div class="col-12 col-md-4">
+                                                    <div class="intr_two_box_ans" data-ans="">
+                                                        <span>Environment Protection Agency</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <div class="intr_two_box_ans" data-ans="true">
+                                                        <span>Environmental Protection Agency</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 col-md-4">
+                                                    <div class="intr_two_box_ans" data-ans="">
+                                                        <span>Environment Principles Agency</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section_twentyeight" style="background-color: #48672b;">
+                <div class="container">
+                    <div class="row py-4 text-white">
+                        <div class="col-3 col-md-2 text-center">
+                            <img src="https://m.fyioc.com/WhyNotImages/ES1U1L1_img_12.png" class="img-fluid rounded p-3 w-75" style="background-color: #88b14b;" alt="">
+                        </div>
+                        <div class="col-9 col-md-10 my-auto">
+                            <p class="fs-4 fw-bold text-uppercase">Quiz</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        var audiolink = "https://m.fyioc.com/Spanish2/Lesson10/";
+        var audioFontSize = '50px';
+    </script>
+    <script src="https://m.fyioc.com/WhyNotScripts/js/AudioPlay.js"></script>
+    <script src="https://m.fyioc.com/WhyNotScripts/js/VideoPlay.js"></script>
+    <script src="https://m.fyioc.com/WhyNotScripts/js/interactive2.js"></script>
+    <script>
+        loadChartData();
+        async function loadChartData(){
+            const chartDataContainer = document.querySelector(".chartDataContainer");
+
+            await fchartData.forEach(element => {
+                let columns = document.createElement("div");
+                columns.setAttribute("class", "col-6 col-md-4 d-grid gap-2");
+
+                let small = document.createElement("button");
+                small.setAttribute("class", "btn btn-light btn-blocked chartDataBtn m-1");
+                small.setAttribute("draggable", "true");
+                small.setAttribute("isbelongto", element.isbelongto);
+                // small.style.width = '30%';
+                // small.style.height = '50px';
+                small.innerHTML = element.item;
+                columns.appendChild(small);
+                
+                chartDataContainer.appendChild(columns);
+            });
+
+            const fchartBtns = document.querySelectorAll(".chartDataBtn");
+            const chartDataContainerAnswer = document.querySelectorAll(".chartDataContainerAnswer");
+
+            let drag;
+            await fchartBtns.forEach( button => {
+                button.addEventListener("dragstart", (event) => {
+                    drag = event.target;
+                }, false);
+            })
+
+            await chartDataContainerAnswer.forEach( elem => {
+                elem.addEventListener("dragover", (event) => {
+                    event.preventDefault()
+                })
+                elem.addEventListener("drop", (event) => {
+                    let data = elem.getAttribute('data-con');
+                    let dragData = drag.getAttribute('isbelongto');
+
+                    
+                    let draggedElem = drag.cloneNode(true);
+                    draggedElem.style.width = '80%';
+                    draggedElem.setAttribute("draggable", "false");
+
+                    if(data == dragData){
+                        drag.setAttribute("disabled", "true");
+                        elem.append(draggedElem);
+                    }else{
+                        draggedElem.setAttribute("class", "btn btn-outline-danger chartDataBtn m-1");
+                        elem.append(draggedElem);
+                        
+                        setTimeout(function() {
+                            draggedElem.remove();
+                        }, 2000);
+                    }
+                })
+            })
+        }
+        
+        // INTERACTIVE 11 START DRAG AND SWAP SCRIPT
+        const toDrag = document.querySelectorAll(".swap_drop")
+        const toDrop = document.querySelectorAll(".swap_drop")
+
+        toDrag.forEach((elem) => {
+            elem.addEventListener("dragstart", (event) => {
+                event.dataTransfer.setData("answer", elem.id)
+            })
+        })
+
+        toDrop.forEach((elem) => {
+            this.dragValidation(elem)
+        })
+
+        function dragValidation(elem) {
+            elem.addEventListener("dragover", (event) => {
+                event.preventDefault()
+            })
+            elem.addEventListener("drop", (event) => {
+                event.preventDefault()
+                const answer = event.dataTransfer.getData("answer")
+                const correctAnswer = event.currentTarget.getAttribute("data-ans")
+                const dataText = event.currentTarget.getAttribute("data-text")
+
+                let adj1 = event.currentTarget
+                let adj2 = document.getElementById(answer)
+
+                let getFromSwap = adj1.parentElement.querySelector('.intr_11_choice').getAttribute("data-text");
+                let getToSwap = adj2.parentElement.querySelector('.intr_11_choice').getAttribute("data-text");
+
+                let getFromSwapContent = adj1.parentElement.querySelector('.intr_11_choice').querySelector('.dragvalue');
+                let getToSwapContent = adj2.parentElement.querySelector('.intr_11_choice').querySelector('.dragvalue');
+
+                adj1.parentElement.querySelector('.intr_11_choice').appendChild(getToSwapContent);
+                adj2.parentElement.querySelector('.intr_11_choice').appendChild(getFromSwapContent);
+
+                adj1.parentElement.querySelector('.intr_11_choice').setAttribute("data-text", getToSwap);
+                adj2.parentElement.querySelector('.intr_11_choice').setAttribute("data-text", getFromSwap);
+
+                adj1.setAttribute("data-isdrag", "true");
+                adj2.setAttribute("data-isdrag", "true");
+
+                this.dragCheckMatch();
+            })
+        }
+
+        function dragCheckMatch(){
+            toDrag.forEach((elem) => {
+                if(elem.querySelector('.intr_11_choice').getAttribute("data-ans") == elem.querySelector('.intr_11_choice').getAttribute("data-text")){
+                    document.getElementById(elem.id).parentElement.querySelector('.practice-result-label').innerHTML = '<span class="material-icons fs-1 position-absolute" style="right: 0; top: 1px;">verified</span>';
+                    document.getElementById(elem.id).parentElement.querySelector('.practice-result-label').style.color = '#198754'
+                }else{
+                    if(elem.getAttribute("data-isdrag")){
+                        document.getElementById(elem.id).parentElement.querySelector('.practice-result-label').innerHTML = '<span class="material-icons fs-1 position-absolute" style="right: 0; top: 1px;">cancel</span>';
+                        document.getElementById(elem.id).parentElement.querySelector('.practice-result-label').style.color = '#dc3545'
+                    }
+                }
+            });
+        }
+        // INTERACTIVE 11 END
+    </script>
+</html>
