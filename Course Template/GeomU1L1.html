@@ -1,0 +1,1633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Geometry U1 L1</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link
+    href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Montserrat:wght@400;500;600;700;900&display=swap"
+    rel="stylesheet">
+<link 
+    href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round" rel="stylesheet">
+<link href="https://m.fyioc.com/WhyNotScripts/css/VideoPlay.css" rel="stylesheet">
+<style type="text/css">
+:root{
+    --font-one: 'Montserrat', sans-serif;
+    --font-two: 'Arvo', serif;
+}
+body {
+    font-family: var(--font-one);
+    font-size: 16px;
+    font-weight: 400;
+    background: #D1D1D1;
+    background-size: cover;
+}   
+
+/* top_content */
+#setion1 {
+    background-color: #D7D8DA;
+}
+#setion2 {
+    background: url('https://m.fyioc.com/WhyNotImages/GeomU1L1_Image1.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding:50px;
+}
+
+#setion3 {
+    background-color: #fff;
+}
+#setion4 {
+    background: url('https://m.fyioc.com/WhyNotImages/GeomU1L1_bggradiant.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding:100px 0px 100px 0px;
+}
+#setion5 {
+    background-color: #D1D1D1;
+    padding: 50px;
+}
+#setion6 {
+    background-color: #2B2B2B;
+    padding: 50px;
+}
+#setion7 {
+    background: url('https://m.fyioc.com/WhyNotImages/GeomU1L1_Bgwhite.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding:50px 0px 50px 0px;
+}
+#setion8 {
+    background-color: #2B2B2B;
+    padding: 50px;
+}
+#setion9 {
+    background: url('https://m.fyioc.com/WhyNotImages/GeomU1L1_Bgwhite.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding:50px 0px 50px 0px;
+}
+#setion10 {
+    background-color: #2B2B2B;
+    padding: 50px;
+}
+#setion11 {
+    background-color: #D1D1D1;
+    padding: 50px;
+}
+#setion12{
+    background-color: #D1D1D1;
+}
+#setion13{
+    background-color: #D1D1D1;
+    padding: 50px;
+}
+#setion14 {
+    background-color: #2B2B2B;
+    padding: 50px;
+}
+#setion15 {
+    background: url('https://m.fyioc.com/WhyNotImages/GeomU1L1_Bggray.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding:100px 0px 100px 0px;
+}
+#section20 {
+    background-color: #2B2B2B;
+    padding: 50px;
+    height:220px;
+}
+#top_setion1 {
+    background: url('https://m.fyioc.com/WhyNotImages/GeomU1L1_header.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding:280px 0px 280px 80px;   
+}
+.txt-title{
+    font-size: 3rem;
+    font-family: var(--font-one);
+    font-weight: 600;
+    line-height: initial;
+}
+.text-bold{
+    font-size: 4.5rem;
+    font-weight:700;
+}
+.sect-txt-title{
+    font-size: 3rem;
+    color:#fff;
+    text-align: center;
+    font-weight: 700;
+}
+.sect-txt-title-dark{
+    font-size: 2rem;
+    color:#000;
+    text-align: left;
+    font-weight: 700;
+}
+.sect-txt-title-light{
+    font-size: 1.5rem;
+    color:#fff;
+    text-align: left;
+    font-weight: 700;
+}
+.txt-content{
+    font-size: 1.2rem;
+    color:#fff;
+    font-weight: 500;
+}
+.txt-content-dark-title{
+    font-size: 1.2rem;
+    color:#000;
+    font-weight: 600;
+}
+.txt-content-dark-content{
+    font-size: 1.2rem;
+    color:#000;
+    font-weight: 500;
+}
+
+.bg-dark-gray{
+    background-color: #E9E9E9;
+}
+.icon-bg{
+    background-color: #2B2B2B;
+    padding:15px;
+    border-radius: 19px;
+    position: absolute;
+}
+.icon-bg-light{
+    background-color: #D1D1D1;
+    position: absolute;
+    padding:15px;
+    border-radius: 19px;
+}
+.video-icon{
+    width:60px;
+    margin: auto;
+    text-align: center;
+}
+
+.sec5-title-content{
+    margin-top:10px;
+    margin-left: 10px;
+}
+.sect-title-1 ,.sect-title-3 , .sect-title-4 {
+    margin-left:30px;
+    margin-top:10px;
+}
+.sect-title-2, .sect-title-5 , .sect-title-6 , .sect-title-7 ,  .sect-title-8 , .sect-title-9 , .sect-title-10, .sect-title-11{
+    margin-left:30px;
+}
+
+ button[data-qs_count]{
+        border-radius: 0px 50rem 50rem 0px !important;
+        font-weight: 600;
+        text-transform: uppercase;
+}
+button[data-qs_count].glow-on-hover-success{
+    background: #6bc855!important;
+}
+button[data-qs_count].glow-on-hover-wrong{
+    background: var(--bs-danger)!important;
+}
+span.error_mes{
+    top: -16px;
+    font-size: 11px;
+    left: 19px;
+    z-index: 2;
+}
+input.is-invalid~.form-check-label{
+        text-decoration: line-through;
+    }
+.bg-black{
+    background-color: #2B2B2B;
+}
+ .for-mobile{
+    display: none;
+}
+/* For Desktop View */
+@media screen and (min-width: 1024px) {
+    #top_setion1 {
+        padding:280px 0px 280px 80px;   
+    }
+    .sect-title-2,.sect-title-4 , .sect-title-5 , .sect-title-6 , .sect-title-7 , .sect-title-8 , .sect-title-9 , .sect-title-10 , .sect-title-11{
+        margin-left:55px;
+    }
+    .sect-title-1{
+        margin-left:105px;
+    }
+    .for-mobile{
+        display: none;
+    }
+}
+ 
+/* For Tablet View */
+@media screen and (min-device-width: 768px)
+and (max-device-width: 1058px) {
+   #top_setion1 {
+        padding:180px 0px 180px  50px;   
+    }
+  .sect-title-1{
+    margin-left: 110px;
+  }
+  .sect-title-3{
+    margin-left: 60px;
+    margin-top: 0px;
+  }
+  .sect-title-4 , .sect-title-6{
+    margin-left: 60px;
+    margin-top: 0px;
+  }
+    .for-mobile{
+        display: none;
+    }
+
+    
+}
+ 
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px)
+and (orientation: portrait) {
+    .txt-title{
+    font-size: 1.5rem;
+    }
+    .text-bold{
+        font-size: 2.5rem;
+    }
+    .sect-txt-title{
+        font-size: 2rem;
+    }
+    #top_setion1 {
+        padding:100px 0px 100px  20px;   
+    }
+    #setion2 ,#setion3 , #setion5 ,#setion6,#setion7 ,#setion8 , #setion9 ,#section20 {
+        padding:20px;
+    }
+    #setion4 {
+        padding:20px 20px 40px 20px;
+    }
+    .title-wordbank{
+        text-align: center;
+    }
+ 
+    .video-icon{
+        width:35px;
+        margin: auto;
+    }
+    .icon-bg{
+       width:65px;
+       margin:auto;
+       position: relative;
+         margin-bottom: 10px;
+    }
+    .icon-bg-light{
+       position: relative;
+       width:65px;
+       margin:auto;
+       margin-bottom: 10px;
+    }
+    .sect-txt-title-dark{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .sect-txt-title-light{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .sect-title-1 , .sect-title-2 ,.sect-title-3 ,.sect-title-4 , .sect-title-5 , .sect-title-6 , .sect-title-7 , .sect-title-8 , .sect-title-9 , .sect-title-10, .sect-title-11{
+        margin-left: 0px;
+        margin-top: 20px;
+        text-align: center;
+    }
+  
+    .desktop-tablet{
+        display: none;
+    }
+    .for-mobile{
+    display: block;
+}
+}
+ 
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px)
+and (orientation: landscape) {
+    .desktop-tablet{
+        display: none;
+    }
+    
+}
+ 
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 640px) {
+     #top_setion1 {
+        padding:120px 0px 120px  30px;   
+    }
+
+     .txt-title{
+    font-size: 1.8rem;
+    }
+    .text-bold{
+        font-size: 2.5rem;
+    }
+      .desktop-tablet{
+        display: none;
+    }
+    
+}
+ 
+/* For iPhone 4 Portrait or Landscape View */
+@media screen and (min-device-width: 320px)
+and (-webkit-min-device-pixel-ratio: 3) {
+ #top_setion1 {
+        padding:100px 0px 100px  30px;   
+    }
+    .txt-title{
+    font-size: 2rem;
+    }
+    .text-bold{
+        font-size: 3rem;
+    }
+    .desktop-tablet{
+        display: none;
+    }
+
+    
+    
+    
+}
+ 
+/* For iPhone 5 Portrait or Landscape View */
+@media (device-height: 568px) and (device-width: 320px)
+and (-webkit-min-device-pixel-ratio: 3) {
+  .desktop-tablet{
+        display: none;
+    }
+  
+}
+ 
+/* For iPhone 6 and 6 plus Portrait or Landscape View */
+@media (min-device-height: 667px) and (min-device-width: 375px)
+and (-webkit-min-device-pixel-ratio: 3) {
+  .desktop-tablet{
+        display: none;
+    }
+
+    
+}
+    </style>
+</head>
+
+<body>
+<div class="lesson_3" style="overflow-x: auto;">
+    <!-- section 1 -->
+    <section id="setion1">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top_setion1">
+                    <div class="row">
+                       <div class="col-xl-6 col-md-8  col-sm-12">
+                        <span class="txt-title">
+                            Foundations of <span class="text-bold">Geometry</span>
+                        </span>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="setion2">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top_setion2">
+                    <div class="row">
+                        <div class="col-xl-12 col-md-12 col-sm-12">
+                            <p class="sect-txt-title">
+                                Geometry - The Basics
+                            </p>
+                        </div>
+                        <div class="col-xl-6 col-md-12 col-sm-12">
+                            <p class="txt-content">
+                               Rather than give you a list of all the basic geometric terms and their symbols, we are going to watch five video segments, within a larger video file, that will go over each of the terms. Please make a list of these terms and symbols in your own notebook as you watch the clips.
+                            </p>
+                            <p class="txt-content">
+                                Pay close attention to the manner in which each item is written – just as there is a difference between the two names Jon and John there are differences in the way you write symbols in geometry.
+                            </p>
+                        </div>
+                        <div class="col-xl-6 col-md-12 col-sm-12">
+                            <div class="ratio ratio-16x9 mt-5">
+                                <video class="video-fluid" loop controls>
+                                    <source src="https://m.fyioc.com/WhyNotVideos/GEOM1L1V1.mp4" type="video/mp4" />
+                                </video>
+                                <div class="play_button">
+                                    <div id="play_vid">
+                                        <span class="material-icons-outlined">play_arrow</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 3 -->
+    <section id="setion3">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top_setion3">
+                    <div class="row">
+                       <div class="col-xl-6 col-md-6 col-sm-12">
+                            <div class="row">
+                                <div class="col-xl-10 col-lg-8 col-md-12 col-sm-12">
+                                    <p class="sect-txt-title-dark mt-5 sec-3-title">What You <br> Should Know</p>
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 p-0 m-0">
+                                   <hr style="width: 100%;height:8px;background-color:#000;opacity: 1;">
+                                </div>
+                                <div class="col-xl-11 col-lg-11 col-md-11 col-sm-12">
+                                  <p class="txt-content-dark-title mb-5">
+                                    Before you begin, you <br> should know:
+                                  </p>
+                                  <ul style="margin-left: -20px;">
+                                    <li class="txt-content-dark-content mb-3">
+                                        The difference between upper and lowercase letters.
+                                    </li>
+                                    <li class="txt-content-dark-content mb-3">
+                                        The difference between cursive and non-cursive letters.
+                                    </li>
+                                    <li class="txt-content-dark-content mb-5">
+                                        The basic concept of the coordinate plane from Algebra I.
+
+                                    </li>
+                                    <li class="txt-content-dark-content mb-5">
+                                        How to solve multi-step equations with variables on both sides.
+
+                                    </li>
+                                  </ul>
+                                </div>
+                            </div>
+                       </div>
+                       <div class="col-xl-6 col-md-6 col-sm-12 bg-dark-gray">
+                            <div class="row">
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                                    <p class="sect-txt-title-dark mt-5">Lesson Expectation</p>
+                                </div>
+                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 p-0 m-0">
+                                   <hr style="width: 100%;height:8px;background-color:#000;opacity: 1;">
+                                </div>
+                                 <div class="col-xl-11 col-lg-11 col-md-11 col-sm-12">
+                                  <p class="txt-content-dark-title mb-5">
+                                    By the end of this lesson, you <br> should be able to:
+                                  </p>
+                                  <ul style="margin-left: -20px;">
+                                    <li class="txt-content-dark-content mb-3">
+                                        Name/Draw any geometric figure/shape and know how to write it down using mathematical symbols and notation.
+                                    </li>
+                                    <li class="txt-content-dark-content mb-3">
+                                        Find x values when given congruent angles or segments.
+                                    </li>
+                                    <li class="txt-content-dark-content mb-5">
+                                        Construct congruent segments, congruent angles, and angle bisectors.
+                                    </li>
+                                  </ul>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 4 -->
+    <section id="setion4">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top_setion4">
+                    <div class="row">
+                       <div class="col-xl-6 col-lg-8 col-md-8 col-sm-12 offset-xl-6 offset-lg-5 offset-md-4">
+                            <p class="sect-txt-title-dark">Lesson keywords</p>
+                            <hr style="width: 100%;height:8px;background-color:#000;opacity: 1;">
+
+                            <ul style="margin-left:-10px">
+                                <li class="txt-content-dark-content mb-3">
+                                    <b>Point</b>  - A location in space.
+                                </li>
+                                <li class="txt-content-dark-content mb-3">
+                                    <b>Point</b> - Connecting two points.
+                                </li>
+                                <li class="txt-content-dark-content mb-3">
+                                    <b>Plane</b> - A flat surface made up of a minimum of three points.
+                                </li>
+                            </ul>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- section 5 -->
+    <section id="setion5">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top_setion5">
+                    <div class="row">
+                       <div class="col-xl-1 col-lg-12 col-md-12 col-sm-1">
+                        <div class="icon-bg">
+                            <img src="https://m.fyioc.com/WhyNotImages/GeomU1L1_VideoIcon.png" class="video-icon">
+                        </div>
+                       </div>
+                       <div class="col-xl-10 col-lg-12 col-md-12 col-sm-10">
+                        <p class="sect-txt-title-dark sect-title-1">
+                            Basic Geometric Terms
+                        </p>
+                       </div>
+                       <div class="col-xl-10 col-md-10 col-sm-10">
+                            <p class="txt-content-dark-content mt-4">
+                                <b>Watch this video.</b>
+                            </p>
+                       </div>
+                       <div class="col-xl-12 col-md-12 col-sm-12">
+                            <div class="ratio ratio-16x9">
+                                <video class="video-fluid" loop controls>
+                                    <source src="https://m.fyioc.com/WhyNotVideos/GEOM1L1V1.mp4" type="video/mp4" />
+                                </video>
+                                <div class="play_button">
+                                    <div id="play_vid">
+                                        <span class="material-icons-outlined">play_arrow</span>
+                                    </div>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 6 -->
+    <section id="setion6">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top_setion6">
+                    <div class="row">
+                     <div class="col-xl-1 col-lg-1 col-md-2 col-sm-1">
+                        <div class="icon-bg-light">
+                            <img src="https://m.fyioc.com/WhyNotImages/GeomU1L1_LaptopAIcon.png" class="video-icon">
+                        </div>
+                       </div>
+                       <div class="col-xl-10 col-md-10 col-sm-5">
+                        <p class="sect-txt-title-light sect-title-2">
+                            ACTIVITY 1 <br> Geometry Match Up 
+                        </p>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- section 7 -->
+    <section id="setion7">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top_setion7">
+                    <div class="row">
+                       <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-5">
+                            <p class="txt-content-dark-content text-center">
+                                Drag and drop the image on the right to match the term on the left.
+                            </p>
+                       </div>
+                       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                            <p class="txt-content-dark-content mt-5">
+                                1. Segment
+                            </p>
+                            <div class="input-group">
+                                <input type="text" class="form-control form-control-sm" id="quiz-answer1" data-ans="C">
+                                <button class="btn text-white bg-black ps-2 pe-2" data-error_counter="3" data-qs_count="1" id="quiz-answer1btn" onclick="checkInputs(this)" type="button">Check</button>
+                                <span id="quiz-answer-text1" class="hidden position-absolute error_mes bg-danger ps-1 pe-1 text-white"></span>
+                            </div>
+                       </div>
+                       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                            <img src="https://m.fyioc.com/WhyNotImages/GeomS1U1L1Act1Img1.png" style="width:250px;padding: 20px;margin:auto;display: block;">
+                       </div>
+                       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                            <p class="txt-content-dark-content mt-5">
+                               2. Line
+                            </p>
+                            <div class="input-group">
+                                <input type="text" class="form-control form-control-sm" id="quiz-answer2" data-ans="A">
+                                <button class="btn text-white bg-black ps-2 pe-2" data-error_counter="3" data-qs_count="2" id="quiz-answer2btn" onclick="checkInputs(this)" type="button">Check</button>
+                                <span id="quiz-answer-text2" class="hidden position-absolute error_mes bg-danger ps-1 pe-1 text-white"></span>
+                            </div>
+                       </div>
+                       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                            <img src="https://m.fyioc.com/WhyNotImages/GeomS1U1L1Act1Img2.png" style="width:250px;padding: 20px;margin:auto;display: block;">
+                       </div>
+                       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                            <p class="txt-content-dark-content mt-5">
+                               3. Plane
+                            </p>
+                            <div class="input-group">
+                                <input type="text" class="form-control form-control-sm" id="quiz-answer3" data-ans="D">
+                                <button class="btn text-white bg-black ps-2 pe-2" data-error_counter="3" data-qs_count="3" id="quiz-answer3btn" onclick="checkInputs(this)" type="button">Check</button>
+                                <span id="quiz-answer-text3" class="hidden position-absolute error_mes bg-danger ps-1 pe-1 text-white"></span>
+                            </div>
+                       </div>
+                       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                            <img src="https://m.fyioc.com/WhyNotImages/GeomS1U1L1Act1Img3.png" style="width:250px;padding: 20px;margin:auto;display: block;">
+                       </div>
+                       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                            <p class="txt-content-dark-content  mt-5">
+                               4. Points
+                            </p>
+                            <div class="input-group">
+                                <input type="text" class="form-control form-control-sm" id="quiz-answer4" data-ans="B">
+                                <button class="btn text-white bg-black ps-2 pe-2" data-error_counter="3" data-qs_count="4" id="quiz-answer4btn" onclick="checkInputs(this)" type="button">Check</button>
+                                <span id="quiz-answer-text4" class="hidden position-absolute error_mes bg-danger ps-1 pe-1 text-white"></span>
+                            </div>
+                       </div>
+                       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                            <img src="https://m.fyioc.com/WhyNotImages/GeomS1U1L1Act1Img4.png" style="width:250px;padding: 20px;margin:auto;display: block;">
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 m-0 p-0">
+                <hr style="width: 100%;height:8px;background-color:#000;opacity: 1;">
+            </div>
+        </div>
+        <div class="container mt-2">
+            <div class="col-lg-10 col-12 offset-lg-1">
+             <div class="row">
+                <div class="col-xl-1 col-md-1 col-sm-1">
+                <div class="icon-bg">
+                    <img src="https://m.fyioc.com/WhyNotImages/GeomU1L1_VideoIcon.png" class="video-icon">
+                </div>
+                </div>
+                <div class="col-xl-10 col-md-10 col-sm-10">
+                <p class="sect-txt-title-dark sect-title-3">
+                    Number Line and Coordinate Plane
+                </p>
+                </div>
+                <div class="col-xl-10 col-md-10 col-sm-10">
+                    <p class="txt-content-dark-content mt-4">
+                        <b>Watch this video.</b>
+                    </p>
+                </div>
+                <div class="col-xl-12 col-md-12 col-sm-12">
+                    <div class="ratio ratio-16x9">
+                        <video class="video-fluid" loop controls>
+                            <source src="https://m.fyioc.com/WhyNotVideos/GEOM1L1V2.mp4" type="video/mp4" />
+                        </video>
+                        <div class="play_button">
+                            <div id="play_vid">
+                                <span class="material-icons-outlined">play_arrow</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+     <!-- section 8 -->
+    <section id="setion8">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top_setion8">
+                    <div class="row">
+                     <div class="col-xl-1 col-lg-1 col-md-1 col-sm-6">
+                        <div class="icon-bg-light">
+                            <img src="https://m.fyioc.com/WhyNotImages/GeomU1L1_ReadBookIcon.png" class="video-icon">
+                        </div>
+                       </div>
+                       <div class="col-xl-10 col-md-10 col-sm-5">
+                        <p class="sect-txt-title-light sect-title-4">
+                            FOUNDATIONS OF GEOMETRY <br> Vocabulary 
+                        </p>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- section 9 -->
+    <section id="setion9">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top_setion9">
+                    <div class="row">
+                        <div class="col-xl-12 col-md-12 col-sm-12">
+                            <p class="sect-txt-title-dark text-center">
+                                Foundations of Geometry <br> <span class="txt-content-dark-content"> <b>Vocabulary</b></span>
+                            </p>
+                        </div>
+                        <div class="col-xl-12 col-md-12 col-sm-12">
+                            <p class="txt-content-dark-content">
+                               <b> Let's continue with the following terms: </b>
+                            </p>
+                            <p class="txt-content-dark-content">
+                              1. <b>Midpoint:</b> halfway between two points (a part in the middle).
+                            </p>
+                            <p class="txt-content-dark-content" style="margin-left: 20px;">
+                              A. On a <b>number line</b>
+                            </p>
+                            <p class="txt-content-dark-content" style="margin-left: 20px;">
+                               If we want to find the midpoint between a segment AB on a number line, we just count how many units there are from point A to point B.
+                            </p>
+                        </div>
+                        <div class="col-xl-6 col-md-6 col-sm-4 text-center" style="margin:auto">
+                            <img src="https://m.fyioc.com/WhyNotImages/GeomS1U1L1FoundImage.png" style="width:100%">
+                        </div>
+                        <div class="col-xl-12 col-md-12 col-sm-12 mt-3">
+                            <p class="txt-content-dark-content" style="margin-left: 20px;"> 
+                                We can actually subtract the two values and find the absolute value.
+                            </p>
+                        </div>
+                        <div class="col-xl-12 col-md-12 col-sm-12 text-center">
+                            <p class="txt-content-dark-content" style="margin-left: 20px;"> 
+                                 <b>/(-5)-(5)/ = /-10/</b>
+                            </p>
+                        </div>
+                        <div class="col-xl-12 col-md-12 col-sm-12 mt-1">
+                            <p class="txt-content-dark-content" style="margin-left: 20px;"> 
+                               And the absolute value of -10 is 10, that gives us the distance between point A and point B To find the midpoint we have to divide that result by 2.
+                            </p>
+                        </div>
+                        <div class="col-xl-12 col-md-12 col-sm-12 text-center">
+                            <p class="txt-content-dark-content" style="margin-left: 20px;"> 
+                                <b> -5+5=0</b> 
+                                <br>
+                                On this occasion, the midpoint is 0.
+                            </p>
+                        </div>
+                        <div class="col-xl-12 col-md-12 col-sm-12 mt-1">
+                            <p class="txt-content-dark-content" style="margin-left: 20px;"> 
+                               B.	 On a <b>coordinate plane</b>  
+                            </p>
+                        </div>
+                        <div class="col-xl-12 col-md-12 col-sm-12 mt-1">
+                            <p class="txt-content-dark-content" style="margin-left: 20px;"> 
+                              If we want to find the midpoint on a coordinate plane, we have to look at the order pairs of numbers, and consider the following formula.
+                            </p>
+                        </div>
+                         <div class="col-xl-4 col-md-4 col-sm-4 text-center" style="margin:auto" >
+                            MP = <img src="https://m.fyioc.com/WhyNotImages/GeomS1U1L1FoundImageformula.png" style="width:50%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- section 10 -->
+    <section id="setion10">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top_setion10">
+                    <div class="row">
+                     <div class="col-xl-1 col-lg-1 col-md-2 col-sm-1">
+                        <div class="icon-bg-light">
+                            <img src="https://m.fyioc.com/WhyNotImages/GeomU1L1_LaptopAIcon.png" class="video-icon">
+                        </div>
+                       </div>
+                       <div class="col-xl-10 col-md-10 col-sm-5">
+                        <p class="sect-txt-title-light sect-title-5">
+                            ACTIVITY 2 <br> Complete the following exercise. 
+                        </p>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 11 -->
+    <section id="setion11">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top_setion11">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12">
+                             <p class="txt-content-dark-content"> 
+                              Find the midpoint of the following points of the Cartesian plane.
+                            </p>
+                             <p class="txt-content-dark-content"> 
+                                A (2,1)
+                             </p>
+                             <p class="txt-content-dark-content"> 
+                                B (6,4)
+                             </p>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                             <p class="txt-content-dark-content"> 
+                                Select the correct answer.
+                             </p>
+                            <div class="form-check">
+                                <input class="form-check-input txt-content-dark-content" type="checkbox" data-value="no" id="practice2">
+                                <label class="form-check-label txt-content-dark-content" for="practice2">A. MP = (4.5,2)</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input txt-content-dark-content" type="checkbox" data-value="no" id="practice2">
+                                <label class="form-check-label txt-content-dark-content" for="practice2">B. MP = (3,2.5)</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input txt-content-dark-content" type="checkbox" data-value="yes" id="practice2">
+                                <label class="form-check-label txt-content-dark-content" for="practice2">C. MP = (4,2.5)</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input txt-content-dark-content" type="checkbox" data-value="no" id="practice2">
+                                <label class="form-check-label txt-content-dark-content" for="practice2">D. MP = (2.5,3)</label>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <img src="https://m.fyioc.com/WhyNotImages/GeomS1U1L1Act2Img1.png" style="width:70%;padding: 20px;margin:auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 12 -->
+    <section id="setion12">
+        <div class="container-fluid">
+            <div class="col-lg-12 col-12">
+                <div id="top_setion12">
+                    <div class="row">
+                       <div class="col-xl-12 col-md-12  col-sm-12 p-0 m-0">
+                            <hr style="width: 100%;height:8px;background-color:#000;opacity: 1;">
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 12 -->
+    <section id="setion13">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top_setion13">
+                    <div class="row">
+                <div class="col-xl-1 col-md-1 col-sm-1">
+                <div class="icon-bg">
+                    <img src="https://m.fyioc.com/WhyNotImages/GeomU1L1_VideoIcon.png" class="video-icon">
+                </div>
+                </div>
+                <div class="col-xl-10 col-md-10 col-sm-10">
+                <p class="sect-txt-title-dark sect-title-6">
+                    Geometry Vocabulary: segment bisector, ray, angle and vertex.
+                </p>
+                </div>
+                <div class="col-xl-10 col-md-10 col-sm-10">
+                    <p class="txt-content-dark-content mt-4">
+                        <b>Watch this video.</b>
+                    </p>
+                </div>
+                <div class="col-xl-12 col-md-12 col-sm-12">
+                    <div class="ratio ratio-16x9">
+                        <video class="video-fluid" loop controls>
+                            <source src="https://m.fyioc.com/WhyNotVideos/GEOM1L1V3.mp4" type="video/mp4" />
+                        </video>
+                        <div class="play_button">
+                            <div id="play_vid">
+                                <span class="material-icons-outlined">play_arrow</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- section 12 -->
+    <section id="setion14">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top_setion10">
+                    <div class="row">
+                     <div class="col-xl-1 col-lg-1 col-md-2 col-sm-1">
+                        <div class="icon-bg-light">
+                            <img src="https://m.fyioc.com/WhyNotImages/GeomU1L1_LaptopAIcon.png" class="video-icon">
+                        </div>
+                       </div>
+                       <div class="col-xl-10 col-md-10 col-sm-5">
+                        <p class="sect-txt-title-light sect-title-7">
+                            ACTIVITY 3 <br> Types of Angle. 
+                        </p>
+                        <p class="txt-content sect-title-7 ">
+                            Read the description of each type of angle and match it to the figure.
+                        </p>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- section 15 -->
+    <section id="setion15">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top_setion15">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <p class="txt-dark-content">
+                                1. <b>Right:</b> measures 90 degrees.
+                            </p>
+                            <div class="input-group">
+                                <input type="text" class="form-control form-control-sm" id="quiz-answer5" data-ans="B">
+                                <button class="btn text-white bg-black ps-2 pe-2" data-error_counter="3" data-qs_count="5" id="quiz-answer5btn" onclick="checkInputs(this)" type="button">Check</button>
+                                <span id="quiz-answer-text5" class="hidden position-absolute error_mes bg-danger ps-1 pe-1 text-white"></span>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                             <b>A.</b> <img src="https://m.fyioc.com/WhyNotImages/GeomS1U1L1Act3Img1.png" style="width:70%;padding: 20px;margin:auto">
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <p class="txt-dark-content">
+                               2. <b>Acute:</b> measure less than 90 degrees.
+                            </p>
+                            <div class="input-group">
+                                <input type="text" class="form-control form-control-sm" id="quiz-answer6" data-ans="C">
+                                <button class="btn text-white bg-black ps-2 pe-2" data-error_counter="3" data-qs_count="6" id="quiz-answer6btn" onclick="checkInputs(this)" type="button">Check</button>
+                                <span id="quiz-answer-text6" class="hidden position-absolute error_mes bg-danger ps-1 pe-1 text-white"></span>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                             <b>B.</b> <img src="https://m.fyioc.com/WhyNotImages/GeomS1U1L1Act3Img2.png" style="width:70%;padding: 20px;margin:auto">
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <p class="txt-dark-content">
+                               3. <b>Obtuse:</b> measure between 90 and 180&#176;
+                            </p>
+                            <div class="input-group">
+                                <input type="text" class="form-control form-control-sm" id="quiz-answer7" data-ans="D">
+                                <button class="btn text-white bg-black ps-2 pe-2" data-error_counter="3" data-qs_count="7" id="quiz-answer7btn" onclick="checkInputs(this)" type="button">Check</button>
+                                <span id="quiz-answer-text7" class="hidden position-absolute error_mes bg-danger ps-1 pe-1 text-white"></span>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                             <b>C.</b> <img src="https://m.fyioc.com/WhyNotImages/GeomS1U1L1Act3Img3.png" style="width:70%;padding: 20px;margin:auto">
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <p class="txt-dark-content">
+                               4. <b>Straight:</b> measure 180 degrees.
+                            </p>
+                            <div class="input-group">
+                                <input type="text" class="form-control form-control-sm" id="quiz-answer8" data-ans="A">
+                                <button class="btn text-white bg-black ps-2 pe-2" data-error_counter="3" data-qs_count="8" id="quiz-answer8btn" onclick="checkInputs(this)" type="button">Check</button>
+                                <span id="quiz-answer-text8" class="hidden position-absolute error_mes bg-danger ps-1 pe-1 text-white"></span>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                             <b>D.</b> <img src="https://m.fyioc.com/WhyNotImages/GeomS1U1L1Act3Img4.png" style="width:70%;padding: 20px;margin:auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- section 16 -->
+    <section id="setion14">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top_setion10">
+                    <div class="row">
+                     <div class="col-xl-1 col-lg-1 col-md-2 col-sm-1">
+                        <div class="icon-bg-light">
+                            <img src="https://m.fyioc.com/WhyNotImages/GeomU1L1_LaptopAIcon.png" class="video-icon">
+                        </div>
+                       </div>
+                       <div class="col-xl-10 col-md-10 col-sm-5">
+                        <p class="sect-txt-title-light sect-title-8">
+                            ACTIVITY 4<br> Angle Relationships 
+                        </p>
+                        <p class="txt-content sect-title-8">
+                            Read the description of each type of angle and match it to the figure.
+                        </p>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- section 15 -->
+    <section id="setion9">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top_setion15">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <p class="txt-dark-content">
+                                1. <b>Adjacent:</b> angles that are next to each other and have a common ray.
+                            </p>
+                             <div class="input-group">
+                                <input type="text" class="form-control form-control-sm" id="quiz-answer9" data-ans="E">
+                                <button class="btn text-white bg-black ps-2 pe-2" data-error_counter="3" data-qs_count="9" id="quiz-answer9btn" onclick="checkInputs(this)" type="button">Check</button>
+                                <span id="quiz-answer-text9" class="hidden position-absolute error_mes bg-danger ps-1 pe-1 text-white"></span>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <b>A.</b> <img src="https://m.fyioc.com/WhyNotImages/GeomS1U1L1Act4Img1.png" style="width:70%;padding: 20px;margin:auto">
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <p class="txt-dark-content">
+                               2. <b>Vertical:</b> angles are formed when two lines intersect each other. Also vertical angles are equal and have the same measure.
+                            </p>
+                            <div class="input-group">
+                                <input type="text" class="form-control form-control-sm" id="quiz-answer10" data-ans="D">
+                                <button class="btn text-white bg-black ps-2 pe-2" data-error_counter="3" data-qs_count="10" id="quiz-answer10btn" onclick="checkInputs(this)" type="button">Check</button>
+                                <span id="quiz-answer-text10" class="hidden position-absolute error_mes bg-danger ps-1 pe-1 text-white"></span>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <b>B.</b> <img src="https://m.fyioc.com/WhyNotImages/GeomS1U1L1Act4Img2.png" style="width:70%;padding: 20px;margin:auto">
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <p class="txt-dark-content">
+                              3. <b>Linear pair:</b> two angles that formed a straight angle.
+                            </p>
+                            <div class="input-group">
+                                <input type="text" class="form-control form-control-sm" id="quiz-answer11" data-ans="B">
+                                <button class="btn text-white bg-black ps-2 pe-2" data-error_counter="3" data-qs_count="11" id="quiz-answer11btn" onclick="checkInputs(this)" type="button">Check</button>
+                                <span id="quiz-answer-text11" class="hidden position-absolute error_mes bg-danger ps-1 pe-1 text-white"></span>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <b>C.</b> <img src="https://m.fyioc.com/WhyNotImages/GeomS1U1L1Act4Img3.png" style="width:70%;padding: 20px;margin:auto">
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <p class="txt-dark-content">
+                              4. <b>Complementary:</b> angles are those that add up to 90°
+                            </p>
+                            <div class="input-group">
+                                <input type="text" class="form-control form-control-sm" id="quiz-answer12" data-ans="C">
+                                <button class="btn text-white bg-black ps-2 pe-2" data-error_counter="3" data-qs_count="12" id="quiz-answer12btn" onclick="checkInputs(this)" type="button">Check</button>
+                                <span id="quiz-answer-text12" class="hidden position-absolute error_mes bg-danger ps-1 pe-1 text-white"></span>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                             <b>D.</b> <img src="https://m.fyioc.com/WhyNotImages/GeomS1U1L1Act4Img4.png" style="width:70%;padding: 20px;margin:auto">
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <p class="txt-dark-content">
+                              5. <b>Supplementary:</b> angles are those that add up 180°
+                            </p>
+                            <div class="input-group">
+                                <input type="text" class="form-control form-control-sm" id="quiz-answer13" data-ans="A">
+                                <button class="btn text-white bg-black ps-2 pe-2" data-error_counter="3" data-qs_count="13" id="quiz-answer13btn" onclick="checkInputs(this)" type="button">Check</button>
+                                <span id="quiz-answer-text13" class="hidden position-absolute error_mes bg-danger ps-1 pe-1 text-white"></span>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                             <b>E.</b> <img src="https://m.fyioc.com/WhyNotImages/GeomS1U1L1Act4Img5.png" style="width:70%;padding: 20px;margin:auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+      <!-- section 17 -->
+    <section id="setion14">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top_setion10">
+                    <div class="row">
+                     <div class="col-xl-1 col-lg-1 col-md-2 col-sm-1">
+                        <div class="icon-bg-light">
+                            <img src="https://m.fyioc.com/WhyNotImages/GeomU1L1_LaptopAIcon.png" class="video-icon">
+                        </div>
+                       </div>
+                       <div class="col-xl-10 col-md-10 col-sm-5">
+                        <p class="sect-txt-title-light sect-title-9">
+                            ACTIVITY 5<br> Answer the following questions:
+                        </p>
+                       
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- section 15 -->
+    <section id="setion9">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top_setion15">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <p class="txt-dark-content">
+                                <b>1. Look at the Cartesian plane and identify the points. Name the coordinates of point B:</b>
+                            </p>
+                            <p class="txt-dark-content">
+                               <b>Name the coordinates of point B:</b>
+                            </p>
+                             <div class="form-check">
+                                <input class="form-check-input txt-dark-content" type="checkbox" data-value="no" id="practice3">
+                                <label class="form-check-label txt-dark-content" for="practice3"><b>a. (1,2)</b></label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input txt-dark-content" type="checkbox" data-value="yes" id="practice3">
+                                <label class="form-check-label txt-dark-content" for="practice3"><b>b. (3,1)</b></label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input txt-dark-content" type="checkbox" data-value="no" id="practice3">
+                                <label class="form-check-label txt-dark-content" for="practice3"><b>c. (4,3)</b></label>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                             <img src="https://m.fyioc.com/WhyNotImages/GeomS1U1L1Assgn1Img1.png" style="width:70%;padding: 20px;margin:auto">
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <p class="txt-dark-content">
+                                <b>2. Look at the figure and identify the type of angle: </b>
+                            </p>
+                            <div class="form-check">
+                                <input class="form-check-input txt-dark-content" type="checkbox" data-value="yes" id="practice3">
+                                <label class="form-check-label txt-dark-content" for="practice3"><b>a. acute</b></label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input txt-dark-content" type="checkbox" data-value="no" id="practice3">
+                                <label class="form-check-label txt-dark-content" for="practice3"><b>b. obtuse</b></label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input txt-dark-content" type="checkbox" data-value="no" id="practice3">
+                                <label class="form-check-label txt-dark-content" for="practice3"><b>c. right</b></label>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                             <img src="https://m.fyioc.com/WhyNotImages/GeomS1U1L1Assgn1Img2.png" style="width:70%;padding: 20px;margin:auto">
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <p class="txt-dark-content">
+                                <b>3. Look at the figure and identify the type of angle relationship:</b>
+                            </p>
+                           <div class="form-check">
+                                    <input class="form-check-input txt-dark-content" type="checkbox" data-value="no" id="practice3">
+                                    <label class="form-check-label txt-dark-content" for="practice3"><b>a. Supplementary</b></label>
+                                </div>
+                               <div class="form-check">
+                                    <input class="form-check-input txt-dark-content" type="checkbox" data-value="no" id="practice3">
+                                    <label class="form-check-label txt-dark-content" for="practice3"><b>b. Adjacent</b></label>
+                                </div>
+                               <div class="form-check">
+                                    <input class="form-check-input txt-dark-content" type="checkbox" data-value="yes" id="practice3">
+                                    <label class="form-check-label txt-dark-content" for="practice3"><b>c. Vertical</b></label>
+                                </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <img src="https://m.fyioc.com/WhyNotImages/GeomS1U1L1Assgn1Img3.png" style="width:70%;padding: 20px;margin:auto">
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+          <!-- section 16 -->
+    <section id="setion14">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top_setion10">
+                    <div class="row">
+                     <div class="col-xl-1 col-lg-1 col-md-2 col-sm-1">
+                        <div class="icon-bg-light">
+                            <img src="https://m.fyioc.com/WhyNotImages/GeomU1L1_WritingIcon.png" class="video-icon">
+                        </div>
+                       </div>
+                       <div class="col-xl-10 col-md-10 col-sm-5">
+                        <p class="sect-txt-title-light sect-title-10">
+                            ASSIGNMENT 2<br> Assignment Directions: study the following diagram. 
+                        </p>
+                        <p class="txt-content sect-title-10">
+                            Choose the word that best completes the statements below
+                        </p>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+          <!-- section 16 -->
+    <section id="setion9">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top_setion10">
+                    <div class="row">
+                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <p class="txt-dark-content title-wordbank" style="font-size: 2rem;" ><b>Word Bank</b></p>
+                     </div>
+                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+                        <ul style="list-style: none;">
+                            <li class="txt-dark-content"><b>Linear pair</b></li>
+                            <li class="txt-dark-content"><b>Vertical angles</b></li>
+                            <li class="txt-dark-content"><b>Segment</b></li>
+                            <li class="txt-dark-content"><b>Ray</b></li>
+                            <li class="txt-dark-content"><b>Adjacent angles</b></li>
+                        </ul>
+                     </div>
+                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+                        <ul style="list-style: none;">
+                            <li class="txt-dark-content"><b>Collinear</b></li>
+                            <li class="txt-dark-content"><b>Angle</b></li>
+                            <li class="txt-dark-content"><b>Vertex</b></li>
+                            <li class="txt-dark-content"><b>Ray</b></li>
+                            <li class="txt-dark-content"><b>Line</b></li>
+                        </ul>
+                     </div>
+                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                        <img src="https://m.fyioc.com/WhyNotImages/GeomS1U1L1Assgn2Img1.png" style="width:100%;">
+                     </div>
+                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mt-5">
+                        <div class="desktop-tablet">
+                            <p class="txt-dark-content input-group">
+                            <b>Points E, F, and G lie on the same plane Y and are </b>  
+                            <input type="text" class="form-control form-control-sm" id="quiz-answer14" data-ans="coplanar" style="margin-left: 20px;">
+                            <button class="btn  text-white bg-black ps-2 pe-2" data-error_counter="3" data-qs_count="14" id="quiz-answer14btn" onclick="checkInputs(this)" type="button">Check</button>
+                            <span id="quiz-answer-text14" class="hidden position-absolute error_mes bg-danger ps-1 pe-1 text-white"></span> 
+                            </p>
+                            <p class="txt-dark-content input-group" style="width:100%">
+                            . <b>These points also form a(n) </b>
+                            <input type="text" class="form-control form-control-sm" id="quiz-answer15" data-ans="angle" style="margin-left: 20px;">
+                            <button class="btn  text-white bg-black ps-2 pe-2" data-error_counter="3" data-qs_count="15" id="quiz-answer15btn" onclick="checkInputs(this)" type="button" style="margin-right: 20px;">Check</button>
+                            <span id="quiz-answer-text15" class="hidden position-absolute error_mes bg-danger ps-1 pe-1 text-white"></span>  <b>, made up of</b>
+                            </p>
+
+                            <p class="txt-dark-content input-group" style="width:100%">
+                            <input type="text" class="form-control form-control-sm" id="quiz-answer16" data-ans="ray" style="margin-left: 20px;">
+                            <button class="btn  text-white bg-black ps-2 pe-2" data-error_counter="3" data-qs_count="16" id="quiz-answer16btn" onclick="checkInputs(this)" type="button" style="margin-right: 20px;">Check</button>
+                            <span id="quiz-answer-text16" class="hidden position-absolute error_mes bg-danger ps-1 pe-1 text-white"></span>  <b>FE and FG , and whose</b>  <input type="text" class="form-control form-control-sm" id="quiz-answer17" data-ans="vertex" style="margin-left: 20px;">
+                            <button class="btn  text-white bg-black ps-2 pe-2" data-error_counter="3" data-qs_count="17" id="quiz-answer17btn" onclick="checkInputs(this)" type="button" style="margin-right: 20px;">Check</button>
+                            <span id="quiz-answer-text17" class="hidden position-absolute error_mes bg-danger ps-1 pe-1 text-white"></span>
+                            </p>
+                            <p class="txt-dark-content input-group" style="width:100%">
+                            <b>is  at point F.   Points D, B, and C are </b>
+                            <input type="text" class="form-control form-control-sm" id="quiz-answer18" data-ans="collinear" style="margin-left: 20px;">
+                            <button class="btn  text-white bg-black ps-2 pe-2" data-error_counter="3" data-qs_count="18" id="quiz-answer18btn" onclick="checkInputs(this)" type="button" style="margin-right: 20px;">Check</button>
+                            <span id="quiz-answer-text18" class="hidden position-absolute error_mes bg-danger ps-1 pe-1 text-white"></span> . 
+                            </p>
+                            <p class="txt-dark-content input-group" style="width:100%">
+                            <b>They are on different planes. </b>
+                            <input type="text" class="form-control form-control-sm" id="quiz-answer19" data-ans="Segment" style="margin-left: 20px;">
+                            <button class="btn  text-white bg-black ps-2 pe-2" data-error_counter="3" data-qs_count="19" id="quiz-answer19btn" onclick="checkInputs(this)" type="button" style="margin-right: 20px;">Check</button>
+                            <span id="quiz-answer-text19" class="hidden position-absolute error_mes bg-danger ps-1 pe-1 text-white"></span> <b>. DB is part of </b>
+                            </p>
+
+                            <p class="txt-dark-content input-group" style="width:100%">
+                            <input type="text" class="form-control form-control-sm" id="quiz-answer20" data-ans="line" style="margin-left: 20px;">
+                            <button class="btn  text-white bg-black ps-2 pe-2" data-error_counter="3" data-qs_count="20" id="quiz-answer20btn" onclick="checkInputs(this)" type="button" style="margin-right: 20px;">Check</button>
+                            <span id="quiz-answer-text20" class="hidden position-absolute error_mes bg-danger ps-1 pe-1 text-white"></span> <b>JC. Angles ABC and CBH are</b>
+                            </p>
+
+                            <p class="txt-dark-content input-group" style="width:100%">
+                            <input type="text" class="form-control form-control-sm" id="quiz-answer21" data-ans="adjacent angles" style="margin-left: 20px;">
+                            <button class="btn  text-white bg-black ps-2 pe-2" data-error_counter="3" data-qs_count="21" id="quiz-answer21btn" onclick="checkInputs(this)" type="button" style="margin-right: 20px;">Check</button>
+                            <span id="quiz-answer-text21" class="hidden position-absolute error_mes bg-danger ps-1 pe-1 text-white"></span>  <b>and form a </b>
+                            <input type="text" class="form-control form-control-sm" id="quiz-answer22" data-ans="linear pair" style="margin-left: 20px;">
+                            <button class="btn  text-white bg-black ps-2 pe-2" data-error_counter="3" data-qs_count="22" id="quiz-answer22btn" onclick="checkInputs(this)" type="button" style="margin-right: 20px;">Check</button>
+                            <span id="quiz-answer-text22" class="hidden position-absolute error_mes bg-danger ps-1 pe-1 text-white"></span>
+                            </p>
+                            <p class="txt-dark-content input-group" style="width:100%">
+                            . <b>Angles ABC and DBH are </b>
+                            <input type="text" class="form-control form-control-sm" id="quiz-answer23" data-ans="vertical angles" style="margin-left: 20px;">
+                            <button class="btn  text-white bg-black ps-2 pe-2" data-error_counter="3" data-qs_count="23" id="quiz-answer23btn" onclick="checkInputs(this)" type="button" style="margin-right: 20px;">Check</button>
+                            <span id="quiz-answer-text23" class="hidden position-absolute error_mes bg-danger ps-1 pe-1 text-white"></span> <b>and have equal measures.  Planes X and Y are parallel planes.  These basic terms are the foundation of geometry.</b>
+                            </p>
+                        </div>
+
+                        <div class="for-mobile">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                     <p class="txt-dark-content input-group">
+                                        <b>Points E, F, and G lie on the same plane Y and are </b> 
+                                    </p>
+                                </div>
+                                <div class="col-sm-12" style="display:flex;margin-top:-10px">
+                                    <input type="text" class="form-control form-control-sm" id="quiz-answer24" data-ans="coplanar">
+                                    <button class="btn  text-white bg-black ps-2 p-2" data-error_counter="3" data-qs_count="24" id="quiz-answer24btn" onclick="checkInputs(this)" type="button">Check</button>
+                                    <span id="quiz-answer-text24" class="hidden position-absolute error_mes bg-danger ps-1 pe-1 text-white"></span>    
+                                </div>
+                                <div class="col-sm-12 mt-2">
+                                    <p class="txt-dark-content input-group" style="width:100%">
+                            .           <b>These points also form a(n) </b>
+                                    </p>
+                                </div>
+                                <div class="col-sm-12" style="display:flex;margin-top:-10px">
+                                    <input type="text" class="form-control form-control-sm" id="quiz-answer25" data-ans="angle" >
+                                    <button class="btn  text-white bg-black ps-2 pe-2" data-error_counter="3" data-qs_count="25" id="quiz-answer25btn" onclick="checkInputs(this)" type="button">Check</button>
+                                    <span id="quiz-answer-text25" class="hidden position-absolute error_mes bg-danger ps-1 pe-1 text-white"></span> 
+                                </div>
+                                 <div class="col-sm-12 mt-2">
+                                    <p class="txt-dark-content input-group" style="width:100%">
+                            .           <b>, made up of</b>
+                                    </p>
+                                </div>
+                                 <div class="col-sm-12" style="display:flex;margin-top:-10px">
+                                     <input type="text" class="form-control form-control-sm" id="quiz-answer26" data-ans="ray" >
+                                    <button class="btn  text-white bg-black ps-2 pe-2" data-error_counter="3" data-qs_count="26" id="quiz-answer26btn" onclick="checkInputs(this)" type="button">Check</button>
+                                    <span id="quiz-answer-text26" class="hidden position-absolute error_mes bg-danger ps-1 pe-1 text-white"></span>
+                                </div>
+                                <div class="col-sm-12 mt-2">
+                                    <p class="txt-dark-content input-group" style="width:100%">
+                            .           <b> FE and FG , and whose </b>
+                                    </p>
+                                </div>
+                                <div class="col-sm-12" style="display:flex;margin-top:-10px">
+                                     <input type="text" class="form-control form-control-sm" id="quiz-answer27" data-ans="vertex" >
+                                    <button class="btn  text-white bg-black ps-2 pe-2" data-error_counter="3" data-qs_count="27" id="quiz-answer27btn" onclick="checkInputs(this)" type="button">Check</button>
+                                    <span id="quiz-answer-text17" class="hidden position-absolute error_mes bg-danger ps-1 pe-1 text-white"></span>
+                                </div>
+                                <div class="col-sm-12 mt-2">
+                                    <p class="txt-dark-content input-group" style="width:100%">
+                            .           <b>is  at point F.   Points D, B, and C are  </b>
+                                    </p>
+                                </div>
+                                <div class="col-sm-12" style="display:flex;margin-top:-10px">
+                                     <input type="text" class="form-control form-control-sm" id="quiz-answer28" data-ans="collinear">
+                                    <button class="btn  text-white bg-black ps-2 pe-2" data-error_counter="3" data-qs_count="28" id="quiz-answer28btn" onclick="checkInputs(this)" type="button">Check</button>
+                                    <span id="quiz-answer-text28" class="hidden position-absolute error_mes bg-danger ps-1 pe-1 text-white"></span>
+                                </div>
+                                <div class="col-sm-12 mt-2">
+                                    <p class="txt-dark-content input-group" style="width:100%">
+                            .           <b>They are on different planes. </b>
+                                    </p>
+                                </div>
+                                <div class="col-sm-12" style="display:flex;margin-top:-10px">
+                                     <input type="text" class="form-control form-control-sm" id="quiz-answer29" data-ans="Segment" >
+                                    <button class="btn  text-white bg-black ps-2 pe-2" data-error_counter="3" data-qs_count="29" id="quiz-answer29btn" onclick="checkInputs(this)" type="button">Check</button>
+                                    <span id="quiz-answer-text29" class="hidden position-absolute error_mes bg-danger ps-1 pe-1 text-white"></span>
+                                </div>
+                                <div class="col-sm-12 mt-2">
+                                    <p class="txt-dark-content input-group" style="width:100%">
+                            .           <b>. DB is part of </b>
+                                    </p>
+                                </div>
+                                <div class="col-sm-12" style="display:flex;margin-top:-10px">
+                                     <input type="text" class="form-control form-control-sm" id="quiz-answer30" data-ans="line" >
+                                    <button class="btn  text-white bg-black ps-2 pe-2" data-error_counter="3" data-qs_count="30" id="quiz-answer30btn" onclick="checkInputs(this)" type="button" >Check</button>
+                                    <span id="quiz-answer-text30" class="hidden position-absolute error_mes bg-danger ps-1 pe-1 text-white"></span>
+                                </div>
+                                <div class="col-sm-12 mt-2">
+                                    <p class="txt-dark-content input-group" style="width:100%">
+                            .           <b>JC. Angles ABC and CBH are</b>
+                                    </p>
+                                </div>
+                                 <div class="col-sm-12" style="display:flex;margin-top:-10px">
+                                   <input type="text" class="form-control form-control-sm" id="quiz-answer31" data-ans="adjacent angles" >
+                                    <button class="btn  text-white bg-black ps-2 pe-2" data-error_counter="3" data-qs_count="31" id="quiz-answer31btn" onclick="checkInputs(this)" type="button" >Check</button>
+                                    <span id="quiz-answer-text31" class="hidden position-absolute error_mes bg-danger ps-1 pe-1 text-white"></span> 
+                                </div>
+                                 <div class="col-sm-12 mt-2">
+                                    <p class="txt-dark-content input-group" style="width:100%">
+                            .           <b>and form a </b>
+                                    </p>
+                                </div>
+                                 <div class="col-sm-12" style="display:flex;margin-top:-10px">
+                                    <input type="text" class="form-control form-control-sm" id="quiz-answer32" data-ans="linear pair" >
+                                    <button class="btn  text-white bg-black ps-2 pe-2" data-error_counter="3" data-qs_count="32" id="quiz-answer32btn" onclick="checkInputs(this)" type="button" >Check</button>
+                                    <span id="quiz-answer-text32" class="hidden position-absolute error_mes bg-danger ps-1 pe-1 text-white"></span>
+                                </div>
+                                <div class="col-sm-12 mt-2">
+                                    <p class="txt-dark-content input-group" style="width:100%">
+                            .           <b> . Angles ABC and DBH are </b>
+                                    </p>
+                                </div>
+                                 <div class="col-sm-12" style="display:flex;margin-top:-10px">
+                                     <input type="text" class="form-control form-control-sm" id="quiz-answer33" data-ans="vertical angles" >
+                                    <button class="btn  text-white bg-black ps-2 pe-2" data-error_counter="3" data-qs_count="33" id="quiz-answer33btn" onclick="checkInputs(this)" type="button" >Check</button>
+                                    <span id="quiz-answer-text33" class="hidden position-absolute error_mes bg-danger ps-1 pe-1 text-white"></span>
+                                </div>
+                                <div class="col-sm-12 mt-2">
+                                    <p class="txt-dark-content input-group" style="width:100%">
+                                <b> and have equal measures.  Planes X and Y are parallel planes.  These basic terms are the foundation of geometry.</b>
+                                    </p>
+                                </div>
+                            </div>
+                           
+                            
+                        </div>
+                     </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- section 20 -->
+    <section id="section20">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top_setion10">
+                    <div class="row">
+                     <div class="col-xl-1 col-lg-1 col-md-2 col-sm-1">
+                        <div class="icon-bg-light">
+                            <img src="https://m.fyioc.com/WhyNotImages/GeomU1L1_QuizIcon.png" class="video-icon">
+                        </div>
+                       </div>
+                       <div class="col-xl-10 col-md-10 col-sm-12">
+                        <p class="sect-txt-title-light sect-title-11 mt-5">
+                            QUIZ
+                        </p>
+                        
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+   
+		<!-- Assessment Quiz -->
+        <table style="width: 100%; height: auto; margin-left: auto; margin-right: auto;" border="1" cellpadding="20">
+            <tbody>
+            <tr>
+            <td style="background-color: white; width: 100%; ">
+            <b><span style="font-family: arial,helvetica,sans-serif;">&nbsp;  Answer the following questions.</span> </b>
+            <p><a:question index="1" /></p> 
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="2" /></p>
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="3" /></p> 
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="4" /></p>
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="5" /></p>
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="6" /></p> 
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="7" /></p>
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="8" /></p> 
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="9" /></p>
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="10" /></p>
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="11" /></p> 
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="12" /></p>
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="13" /></p> 
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="14" /></p>
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="15" /></p>
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="16" /></p> 
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="17" /></p>
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="18" /></p> 
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="19" /></p>
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="20" /></p>
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <div id="audio_holder"></div>
+            <!-- Assessment Quiz -->
+</div> 
+    <!-- js functions -->
+    <script src="https://m.fyioc.com/WhyNotScripts/js/VideoPlay.js"></script>
+    <script>
+        function checkInputs(){
+
+          
+            const answerNumber = event.target.dataset.qs_count
+            const triesRemaining = event.target.dataset.error_counter
+            const selectorString = `quiz-answer${answerNumber}`
+            const selectorStringButton = `quiz-answer${answerNumber}btn`
+            const selectorStringAnswer = `quiz-answer-text${answerNumber}`
+            const quizTwoAnswer = document.getElementById(selectorString);
+            const quizTwoAnswerButton = document.getElementById(selectorStringButton)
+            const quizTwoAnswerText = document.getElementById(selectorStringAnswer)
+            const answer = quizTwoAnswer.getAttribute('data-ans')
+            // const answer2 = quizTwoAnswer.getAttribute('data-ans2')
+            // const answer3 = quizTwoAnswer.getAttribute('data-ans3')
+            const userAnswer = quizTwoAnswer.value.toLowerCase()
+            const correctAnswer = userAnswer === answer.toLowerCase() ? true : false
+            const backToGlow = (quizTwoAnswer, quizTwoAnswerButton) => {
+                quizTwoAnswerButton.classList.remove("glow-on-hover-success")
+                quizTwoAnswerButton.classList.remove("glow-on-hover-wrong")
+                quizTwoAnswerButton.classList.add('glow-on-hover')
+                quizTwoAnswerButton.innerText = 'Check'
+            }
+            if(correctAnswer){
+                quizTwoAnswer.classList.remove("is-invalid")
+                quizTwoAnswer.classList.add("is-valid")
+                quizTwoAnswerButton.innerText = 'Correct!'
+                quizTwoAnswerButton.classList.add("glow-on-hover-success")
+                quizTwoAnswerButton.classList.remove("glow-on-hover")
+                quizTwoAnswerButton.classList.remove('glow-on-hover-wrong')
+                quizTwoAnswerText.classList.remove('bg-danger')
+                quizTwoAnswerText.classList.add('bg-success')
+            } else {
+                quizTwoAnswerText.classList.remove('bg-success') 
+                quizTwoAnswerText.classList.add('bg-danger')
+                quizTwoAnswer.classList.remove("is-valid")
+                quizTwoAnswer.classList.add("is-invalid")
+                quizTwoAnswerButton.classList.remove("glow-on-hover-success")
+                quizTwoAnswerButton.classList.remove("glow-on-hover")
+                quizTwoAnswerButton.classList.add('glow-on-hover-wrong')
+                quizTwoAnswerButton.innerText = 'Wrong'
+                setTimeout(() => backToGlow(quizTwoAnswer,quizTwoAnswerButton), 1500);
+                let updateTries = ''
+                if(quizTwoAnswerButton.getAttribute('data-error_counter') == 0){
+                    updateTries = 0;
+                } else {
+                    updateTries = Number(triesRemaining) - 1;
+                }
+                document.getElementById(selectorStringButton).setAttribute('data-error_counter', updateTries)
+                if(quizTwoAnswerButton.getAttribute('data-error_counter') == 0 ){
+                    quizTwoAnswerText.innerHTML = `Answer: ${quizTwoAnswer.getAttribute('data-ans')}`
+                    quizTwoAnswerText.classList.remove('hidden')
+                }
+            }
+        }
+
+        const checkList10 = document.querySelectorAll("#practice2");
+
+        checkList10.forEach(function(elem, index){
+
+            elem.addEventListener("click", function(event){
+
+                if(elem.checked){
+
+                    if(event.target.getAttribute('data-value') == "yes"){
+                        elem.classList.remove('is-invalid');
+                        elem.classList.add('is-valid');
+                    }
+
+                    if(event.target.getAttribute('data-value') == "no"){
+                        elem.classList.remove('is-valid');
+                        elem.classList.add('is-invalid');
+                    }
+
+                } else {
+                    elem.classList.remove('is-valid');
+                    elem.classList.remove('is-invalid');
+                }
+
+            });
+
+        });
+
+        const checkList3 = document.querySelectorAll("#practice3");
+
+        checkList3.forEach(function(elem, index){
+
+            elem.addEventListener("click", function(event){
+
+                if(elem.checked){
+
+                    if(event.target.getAttribute('data-value') == "yes"){
+                        elem.classList.remove('is-invalid');
+                        elem.classList.add('is-valid');
+                    }
+
+                    if(event.target.getAttribute('data-value') == "no"){
+                        elem.classList.remove('is-valid');
+                        elem.classList.add('is-invalid');
+                    }
+
+                } else {
+                    elem.classList.remove('is-valid');
+                    elem.classList.remove('is-invalid');
+                }
+
+            });
+
+        });
+    </script>
+</body>
+</html>
