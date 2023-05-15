@@ -1129,6 +1129,7 @@
             let drag = null;
             await fchartBtns.forEach( button => {
                 button.addEventListener("click", (event) => {
+                    fchartBtns.forEach(element => { element.classList.remove('shadow-lg', 'floating'); });
                     drag = event.target;
                     drag.classList.add('shadow-lg', 'floating');
                 }, false);
