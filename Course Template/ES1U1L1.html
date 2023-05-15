@@ -138,6 +138,19 @@
             vertical-align: middle;
         }
         
+        .floating { 
+            animation-name: floating;
+            animation-duration: .5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes floating {
+            0% { transform: translate(0,  0px); }
+            50%  { transform: translate(0, 6px); }
+            100%   { transform: translate(0, 0px); }   
+        }
+
         /* Extra small devices (phones, 600px and down) */
         @media only screen and (max-width: 600px) {
             .fontSize{
@@ -1019,6 +1032,67 @@
                     </div>
                 </div>
             </div>
+            <div class="section section_twentynine" style="background-color: #88b14b;">
+                <div class="container">
+                    <div class="row text-white">
+                        <div class="col-12">
+                            <!-- Assessment Quiz -->
+                            <table style="height: auto; margin-left: auto; margin-right: auto; margin-top: 5em;" border="1" cellpadding="20">
+                                <tbody>
+                                <tr>
+                                <td style="background-color: white; width: 710px; ">
+                                <b><span style="font-family: arial,helvetica,sans-serif;">&nbsp;  Answer the following questions.</span> </b>
+                                <p><a:question index="1" /></p> 
+                                <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                                <p><a:question index="2" /></p>
+                                <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                                <p><a:question index="3" /></p> 
+                                <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                                <p><a:question index="4" /></p>
+                                <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                                <p><a:question index="5" /></p>
+                                <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                                <p><a:question index="6" /></p> 
+                                <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                                <p><a:question index="7" /></p>
+                                <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                                <p><a:question index="8" /></p> 
+                                <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                                <p><a:question index="9" /></p>
+                                <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                                <p><a:question index="10" /></p>
+                                <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                                <p><a:question index="11" /></p> 
+                                <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                                <p><a:question index="12" /></p>
+                                <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                                <p><a:question index="13" /></p> 
+                                <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                                <p><a:question index="14" /></p>
+                                <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                                <p><a:question index="15" /></p>
+                                <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                                <p><a:question index="16" /></p> 
+                                <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                                <p><a:question index="17" /></p>
+                                <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                                <p><a:question index="18" /></p> 
+                                <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                                <p><a:question index="19" /></p>
+                                <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                                <p><a:question index="20" /></p>
+                                <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+                                </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <!-- Assessment Quiz -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
         </div>
     </body>
     <script>
@@ -1052,22 +1126,21 @@
             const fchartBtns = document.querySelectorAll(".chartDataBtn");
             const chartDataContainerAnswer = document.querySelectorAll(".chartDataContainerAnswer");
 
-            let drag;
+            let drag = null;
             await fchartBtns.forEach( button => {
-                button.addEventListener("dragstart", (event) => {
+                button.addEventListener("click", (event) => {
                     drag = event.target;
+                    drag.classList.add('shadow-lg', 'floating');
                 }, false);
             })
 
             await chartDataContainerAnswer.forEach( elem => {
-                elem.addEventListener("dragover", (event) => {
-                    event.preventDefault()
-                })
-                elem.addEventListener("drop", (event) => {
+                elem.addEventListener("click", (event) => {
+                    if(!drag) return null;
+                    console.log(drag)
                     let data = elem.getAttribute('data-con');
                     let dragData = drag.getAttribute('isbelongto');
 
-                    
                     let draggedElem = drag.cloneNode(true);
                     draggedElem.style.width = '80%';
                     draggedElem.setAttribute("draggable", "false");
@@ -1083,58 +1156,57 @@
                             draggedElem.remove();
                         }, 2000);
                     }
+                    drag.classList.remove('shadow-lg', 'floating');
+                    draggedElem.classList.remove('shadow-lg', 'floating');
+                    drag = null;
                 })
             })
         }
         
         // INTERACTIVE 11 START DRAG AND SWAP SCRIPT
-        const toDrag = document.querySelectorAll(".swap_drop")
-        const toDrop = document.querySelectorAll(".swap_drop")
+        var toDragDropArr = [];
+        const toDragDrop = document.querySelectorAll(".swap_drop")
 
-        toDrag.forEach((elem) => {
-            elem.addEventListener("dragstart", (event) => {
-                event.dataTransfer.setData("answer", elem.id)
+        toDragDrop.forEach((elem) => {
+            elem.addEventListener("click", (event) => {
+                this.dragValidation(elem)
             })
-        })
-
-        toDrop.forEach((elem) => {
-            this.dragValidation(elem)
         })
 
         function dragValidation(elem) {
-            elem.addEventListener("dragover", (event) => {
-                event.preventDefault()
-            })
-            elem.addEventListener("drop", (event) => {
-                event.preventDefault()
-                const answer = event.dataTransfer.getData("answer")
-                const correctAnswer = event.currentTarget.getAttribute("data-ans")
-                const dataText = event.currentTarget.getAttribute("data-text")
+            if(toDragDropArr.length < 2){
+                toDragDropArr.push(elem.id);
+                toDragDropArr.forEach(element => {
+                    document.getElementById(element).querySelector('.dragvalue').classList.add('shadow-lg', 'floating')
+                });
+            }
+            
+            if(toDragDropArr.length < 2){
+                return null;
+            }
+            
+            let d1 = document.getElementById(toDragDropArr[0]);
+            let d2 = document.getElementById(toDragDropArr[1]);
 
-                let adj1 = event.currentTarget
-                let adj2 = document.getElementById(answer)
+            let d1_attr = d1.parentElement.querySelector('.intr_11_choice').getAttribute("data-text");
+            let d2_attr = d2.parentElement.querySelector('.intr_11_choice').getAttribute("data-text");
+            
+            d1.parentElement.querySelector('.intr_11_choice').setAttribute("data-text", d2_attr);
+            d2.parentElement.querySelector('.intr_11_choice').setAttribute("data-text", d1_attr);
+            
+            let d1_value = d1.parentElement.querySelector('.intr_11_choice').querySelector('.dragvalue');
+            let d2_value = d2.parentElement.querySelector('.intr_11_choice').querySelector('.dragvalue');
 
-                let getFromSwap = adj1.parentElement.querySelector('.intr_11_choice').getAttribute("data-text");
-                let getToSwap = adj2.parentElement.querySelector('.intr_11_choice').getAttribute("data-text");
+            d1.parentElement.querySelector('.intr_11_choice').appendChild(d2_value);
+            d2.parentElement.querySelector('.intr_11_choice').appendChild(d1_value);
 
-                let getFromSwapContent = adj1.parentElement.querySelector('.intr_11_choice').querySelector('.dragvalue');
-                let getToSwapContent = adj2.parentElement.querySelector('.intr_11_choice').querySelector('.dragvalue');
+            d1.setAttribute("data-isdrag", "true");
+            d2.setAttribute("data-isdrag", "true");
 
-                adj1.parentElement.querySelector('.intr_11_choice').appendChild(getToSwapContent);
-                adj2.parentElement.querySelector('.intr_11_choice').appendChild(getFromSwapContent);
-
-                adj1.parentElement.querySelector('.intr_11_choice').setAttribute("data-text", getToSwap);
-                adj2.parentElement.querySelector('.intr_11_choice').setAttribute("data-text", getFromSwap);
-
-                adj1.setAttribute("data-isdrag", "true");
-                adj2.setAttribute("data-isdrag", "true");
-
-                this.dragCheckMatch();
-            })
-        }
-
-        function dragCheckMatch(){
-            toDrag.forEach((elem) => {
+            toDragDropArr = [];
+            
+            toDragDrop.forEach((elem) => {
+                document.getElementById(elem.id).querySelector('.dragvalue').classList.remove('shadow-lg', 'floating')
                 if(elem.querySelector('.intr_11_choice').getAttribute("data-ans") == elem.querySelector('.intr_11_choice').getAttribute("data-text")){
                     document.getElementById(elem.id).parentElement.querySelector('.practice-result-label').innerHTML = '<span class="material-icons fs-1 position-absolute" style="right: 0; top: 1px;">verified</span>';
                     document.getElementById(elem.id).parentElement.querySelector('.practice-result-label').style.color = '#198754'
@@ -1144,6 +1216,7 @@
                         document.getElementById(elem.id).parentElement.querySelector('.practice-result-label').style.color = '#dc3545'
                     }
                 }
+                
             });
         }
         // INTERACTIVE 11 END
