@@ -229,6 +229,9 @@ input.is-invalid~.form-check-label{
     .sect-title-3{
         text-align: left;
     }
+    .sect-title-11{
+        margin-top:50px;
+    }
 }
  
 /* For Tablet View */
@@ -258,12 +261,19 @@ and (max-device-width: 1058px) {
  #section10{
     padding: 20px;
  }
+ .sect-title-11{
+        margin-left: 40px;
+        margin-top:60px;
+    }
     
 }
  
 /* For Mobile Portrait View */
 @media screen and (max-device-width: 480px)
 and (orientation: portrait) {
+    .row-quiz{
+    width: auto !important;
+}
     .txt-title{
     font-size: 1.5rem;
     }
@@ -314,6 +324,10 @@ and (orientation: portrait) {
         margin-left: 0px;
         margin-top: 20px;
         text-align: center;
+    }
+    .sect-title-11{
+        margin-left: 40px;
+        margin-top:-80px;
     }
   
     .desktop-tablet{
@@ -459,31 +473,40 @@ and (-webkit-min-device-pixel-ratio: 3) {
 
     <!-- section 3 -->
     <section id="setion3">
-        <div class="container">
-            <div class="col-lg-10 col-12 offset-lg-1">
+        <div class="container-fluid">
+            <div class="col-lg-12 col-12">
                 <div id="top_setion3">
                     <div class="row">
                        <div class="col-xl-6 col-md-6 col-sm-12">
                             <div class="row">
-                                <div class="col-xl-10 col-lg-8 col-md-12 col-sm-12">
-                                    <p class="sect-txt-title-dark mt-5 sec-3-title">What You <br>  Should Know</p>
+                                <div class="container">
+                                    <div class="col-md-8 offset-md-4">
+                                        <div class="col-xl-10 col-lg-8 col-md-12 col-sm-12">
+                                            <p class="sect-txt-title-dark mt-5 sec-3-title">What You <br>  Should Know</p>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 p-0 m-0">
                                    <hr style="width: 100%;height:8px;background-color:#026D51;opacity: 1;">
                                 </div>
-                                <div class="col-xl-11 col-lg-11 col-md-11 col-sm-12">
-                                  <p class="txt-content-dark-title mb-5">
-                                    Before you begin, you should know:
-                                  </p>
-                                  <ul style="margin-left: -20px;">
-                                    <li class="txt-content-dark-content mb-3">
-                                       Know the processes of the scientific method
-                                    </li>
-                                    <li class="txt-content-dark-content mb-3">
-                                       Understand how a controlled experiment is conducted
-                                    </li>
-                                  </ul>
+                                <div class="container">
+                                    <div class="col-md-8 offset-md-4">
+                                        <div class="col-xl-11 col-lg-11 col-md-11 col-sm-12">
+                                            <p class="txt-content-dark-title mb-5">
+                                                Before you begin, you should know:
+                                            </p>
+                                            <ul style="margin-left: -20px;">
+                                                <li class="txt-content-dark-content mb-3">
+                                                Know the processes of the scientific method
+                                                </li>
+                                                <li class="txt-content-dark-content mb-3">
+                                                Understand how a controlled experiment is conducted
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
+                                
                             </div>
                        </div>
                        <div class="col-xl-6 col-md-6 col-sm-12 bg-dark-gray">
@@ -494,7 +517,7 @@ and (-webkit-min-device-pixel-ratio: 3) {
                                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 p-0 m-0">
                                    <hr style="width: 100%;height:8px;background-color:#026D51;opacity: 1;">
                                 </div>
-                                 <div class="col-xl-11 col-lg-11 col-md-11 col-sm-12">
+                                 <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
                                   <p class="txt-content-dark-title mb-5">
                                     By the end of this lesson, you should <br> be able to:
                                   </p>
@@ -1137,13 +1160,13 @@ and (-webkit-min-device-pixel-ratio: 3) {
             <div class="col-lg-10 col-12 offset-lg-1">
                 <div id="top_setion10">
                     <div class="row">
-                     <div class="col-xl-1 col-lg-1 col-md-2 col-sm-1">
+                     <div class="col-xl-1 col-lg-1 col-md-2 col-sm-5 row-quiz">
                         <div class="icon-bg-light" style="margin:auto">
                             <img src="https://m.fyioc.com/WhyNotImages/GeomU1L1_QuizIcon.png" class="dark-icon text-center" style="width:60px">
                         </div>
                        </div>
-                       <div class="col-xl-10 col-md-10 col-sm-12">
-                        <p class="sect-txt-title-light sect-title-11 mt-5">
+                       <div class="col-xl-10 col-md-10 col-sm-9">
+                        <p class="sect-txt-title-light sect-title-11">
                             QUIZ
                         </p>
                         

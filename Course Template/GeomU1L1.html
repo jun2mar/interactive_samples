@@ -100,7 +100,7 @@ body {
 #section20 {
     background-color: #2B2B2B;
     padding: 50px;
-    height:220px;
+    height:200px;
 }
 #top_setion1 {
     background: url('https://m.fyioc.com/WhyNotImages/GeomU1L1_header.png') no-repeat;
@@ -211,6 +211,12 @@ input.is-invalid~.form-check-label{
  .for-mobile{
     display: none;
 }
+.class-contain{
+    margin-left: 100px;
+}
+.sect-title-11{
+    margin-top:40px;
+}
 /* For Desktop View */
 @media screen and (min-width: 1024px) {
     #top_setion1 {
@@ -247,13 +253,23 @@ and (max-device-width: 1058px) {
     .for-mobile{
         display: none;
     }
-
+ .sect-title-11{
+        margin-left: 40px;
+        margin-top:20px;
+    }
     
 }
  
 /* For Mobile Portrait View */
 @media screen and (max-device-width: 480px)
 and (orientation: portrait) {
+    .row-quiz{
+    width: auto !important;
+}
+.sect-title-11{
+        margin-left: 40px;
+        margin-top:-90px;
+    }
     .txt-title{
     font-size: 1.5rem;
     }
@@ -274,6 +290,9 @@ and (orientation: portrait) {
     }
     #setion4 {
         padding:20px 20px 40px 20px;
+    }
+    #section20{
+        height: 170px;
     }
     .title-wordbank{
         text-align: center;
@@ -303,7 +322,7 @@ and (orientation: portrait) {
         font-size: 1.5rem;
         text-align: center;
     }
-    .sect-title-1 , .sect-title-2 ,.sect-title-3 ,.sect-title-4 , .sect-title-5 , .sect-title-6 , .sect-title-7 , .sect-title-8 , .sect-title-9 , .sect-title-10, .sect-title-11{
+    .sect-title-1 , .sect-title-2 ,.sect-title-3 ,.sect-title-4 , .sect-title-5 , .sect-title-6 , .sect-title-7 , .sect-title-8 , .sect-title-9 , .sect-title-10{
         margin-left: 0px;
         margin-top: 20px;
         text-align: center;
@@ -443,39 +462,45 @@ and (-webkit-min-device-pixel-ratio: 3) {
 
     <!-- section 3 -->
     <section id="setion3">
-        <div class="container">
-            <div class="col-lg-10 col-12 offset-lg-1">
+        <div class="container-fluid">
+            <div class="col-lg-12 col-12 ">
                 <div id="top_setion3">
                     <div class="row">
                        <div class="col-xl-6 col-md-6 col-sm-12">
                             <div class="row">
-                                <div class="col-xl-10 col-lg-8 col-md-12 col-sm-12">
-                                    <p class="sect-txt-title-dark mt-5 sec-3-title">What You <br> Should Know</p>
+                                <div class="container">
+                                    <div class="col-md-8 col-lg-8 col-xl-4 offset-md-1 offset-lg-4">
+                                        <p class="sect-txt-title-dark mt-5 sec-3-title">What You Should Know</p>
+                                    </div>
                                 </div>
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 p-0 m-0">
                                    <hr style="width: 100%;height:8px;background-color:#000;opacity: 1;">
                                 </div>
-                                <div class="col-xl-11 col-lg-11 col-md-11 col-sm-12">
-                                  <p class="txt-content-dark-title mb-5">
-                                    Before you begin, you <br> should know:
-                                  </p>
-                                  <ul style="margin-left: -20px;">
-                                    <li class="txt-content-dark-content mb-3">
-                                        The difference between upper and lowercase letters.
-                                    </li>
-                                    <li class="txt-content-dark-content mb-3">
-                                        The difference between cursive and non-cursive letters.
-                                    </li>
-                                    <li class="txt-content-dark-content mb-5">
-                                        The basic concept of the coordinate plane from Algebra I.
+                                <div class="container">
+                                    <div class="col-md-8 col-lg-8 col-xl-4 offset-md-1 offset-lg-4">
+                                        <div class="col-xl-11 col-lg-11 col-md-11 col-sm-12">
+                                            <p class="txt-content-dark-title mb-5">
+                                                Before you begin, you <br> should know:
+                                            </p>
+                                            <ul style="margin-left: -20px;">
+                                                <li class="txt-content-dark-content mb-3">
+                                                    The difference between upper and lowercase letters.
+                                                </li>
+                                                <li class="txt-content-dark-content mb-3">
+                                                    The difference between cursive and non-cursive letters.
+                                                </li>
+                                                <li class="txt-content-dark-content mb-3">
+                                                    The basic concept of the coordinate plane from Algebra I.
 
-                                    </li>
-                                    <li class="txt-content-dark-content mb-5">
-                                        How to solve multi-step equations with variables on both sides.
-
-                                    </li>
-                                  </ul>
+                                                </li>
+                                                <li class="txt-content-dark-content mb-5">
+                                                    How to solve multi-step equations with variables on both sides.
+                                                </li>
+                                            </ul>
+                                            </div>
+                                    </div>
                                 </div>
+                                
                             </div>
                        </div>
                        <div class="col-xl-6 col-md-6 col-sm-12 bg-dark-gray">
@@ -486,7 +511,7 @@ and (-webkit-min-device-pixel-ratio: 3) {
                                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 p-0 m-0">
                                    <hr style="width: 100%;height:8px;background-color:#000;opacity: 1;">
                                 </div>
-                                 <div class="col-xl-11 col-lg-11 col-md-11 col-sm-12">
+                                 <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
                                   <p class="txt-content-dark-title mb-5">
                                     By the end of this lesson, you <br> should be able to:
                                   </p>
@@ -1446,13 +1471,13 @@ and (-webkit-min-device-pixel-ratio: 3) {
             <div class="col-lg-10 col-12 offset-lg-1">
                 <div id="top_setion10">
                     <div class="row">
-                     <div class="col-xl-1 col-lg-1 col-md-2 col-sm-1">
-                        <div class="icon-bg-light">
-                            <img src="https://m.fyioc.com/WhyNotImages/GeomU1L1_QuizIcon.png" class="video-icon">
+                     <div class="col-xl-1 col-lg-1 col-md-2 col-sm-1 row-quiz" >
+                        <div class="icon-bg-light" style="width:90px">
+                            <img src="https://m.fyioc.com/WhyNotImages/GeomU1L1_QuizIcon.png" class="video-icon" style="width:60px">
                         </div>
                        </div>
                        <div class="col-xl-10 col-md-10 col-sm-12">
-                        <p class="sect-txt-title-light sect-title-11 mt-5">
+                        <p class="sect-txt-title-light sect-title-11">
                             QUIZ
                         </p>
                         
